@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>關西旅遊網t</title>
+    <title>關西旅遊網</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="topbar">
+    <header id="topbar">
         <h1 class="logo">
-            <a href="./index.html"><img src="./images/favicon.ico" alt="關西旅遊網"></a>
+            <a href="./index.html"><img src="" alt="關西旅遊網"></a>
         </h1>
         <nav class="navigation">
             <ul class="menu">
@@ -19,17 +20,97 @@
                 <li><a href="">聯絡我們</a></li>
             </ul>
             <ul class="icon">
-                <li><a class="icon-fb" href="" ></a></li>
-                <li><a class="icon-line" href="" ></a></li>
+                <li><a class="icon-shoppingcar" href="" ><img src="./images/shoppingcar.png" alt="會員"></a></li>
+                <li><a class="icon-member" href="" ><img src="./images/User.png" alt="購物車"></a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="banner_wapper"></section>
-        <section id="topics"></section>
-        <section id="free"></section>
-        <section id="partner"></section>
+        <section id="banner_wrapper">
+            <div class="blurred_background">
+                <img src="./images/autumn-7423358_1920.jpg" alt="park">
+                <div class="content">
+                    <h2>親自踏上旅程</h2>
+                    <h3>感受獨特瞬間</h3>
+                </div>
+            </div>
+        </section>
+        <section id="topics">
+            <header class="title">
+                <h2>主題行程</h2>
+                <h3>TOPICS</h3>
+            </header>
+            <div class="box_list">
+                <article class="item">
+                    <a href="">
+                        <figure><img src="" alt=""></figure>
+                        <div class="content">
+                            <h1>家族出遊</h1>
+                            <p>與家人共度每好時光</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="item">
+                    <a href="">
+                        <figure><img src="" alt=""></figure>
+                        <div class="content">
+                            <h1>朋友出遊</h1>
+                            <p>與朋友一起收集回憶</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="item">
+                    <a href="">
+                        <figure><img src="" alt=""></figure>
+                        <div class="content">
+                            <h1>美食之旅</h1>
+                            <p>品味當地的特色美食</p>
+                        </div>
+                    </a>
+                </article>
+                <a href="" class="btn">
+                    <span>查看更多</span>
+                </a>
+            </div>
+        </section>
+
+        <section id="free">
+            <header class="title">
+                <h2>自由編輯</h2>
+                <h3>FREE</h3>
+            </header>
+            <div class="box_list">
+                <article class="item">
+                    <figure><img src="" alt=""></figure>
+                    <figure><img src="" alt=""></figure>
+                    <figure><img src="" alt=""></figure>
+                    <figure><img src="" alt=""></figure>
+                    <figure><img src="" alt=""></figure>
+                </article>
+            </div>
+            <a href="" class="btn">
+                <span>查看更多</span>
+            </a>
+        </section>
+
+        <section id="partner">
+            <header class="title">
+                <h2>合作夥伴</h2>
+                <h3>PARTNER</h3>
+            </header>
+            <div class="box_list">
+                <article class="item">
+                    <figure><img src="" alt=""></figure>
+                    <figure><img src="" alt=""></figure>
+                    <figure><img src="" alt=""></figure>
+                    <figure><img src="" alt=""></figure>
+                    <figure><img src="" alt=""></figure>
+                    <figure><img src="" alt=""></figure>
+                </article>
+            </div>
+        </section>
+
         <section id="footer"></section>
     </main>
 </body>
