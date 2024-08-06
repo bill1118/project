@@ -47,7 +47,6 @@ table {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 10px 0;
 	position: fixed;
 	width: 100%; 
     z-index: 999;
@@ -55,6 +54,7 @@ table {
 }
 
 .logo{
+	padding: 0 0 0 30px;
 	width: 65px;
 }
 .navigation {
@@ -173,10 +173,10 @@ button:hover{
 .box-list{
 	display: flex;
     justify-content: center;
-	align-items: flex-start;
+	align-items: center;
 	max-width: 1440px;
 	width: 80%;
-	gap: 52px;
+	gap: 50px;
 	
 }
 .box-list .item img{
