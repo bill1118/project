@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +9,11 @@
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header id="topbar">
+    <header id="container-topbar">
         <h1 class="logo">
-            <a href="./index.html"><img src="" alt="關西旅遊網logo"></a>
+            <a href="./index.html"><img src="./images/logo.png" alt="關西旅遊網logo"></a>
         </h1>
         <nav class="navigation">
             <ul class="menu">
@@ -20,102 +22,100 @@
                 <li><a href="">聯絡我們</a></li>
             </ul>
             <ul class="icon">
-                <li><a class="icon-shoppingcar" href="" ><img src="./images/shoppingcar.png" alt="會員"></a></li>
-                <li><a class="icon-member" href="" ><img src="./images/User.png" alt="購物車"></a></li>
+                <li><a class="icon-shoppingcar" href=""><img src="./images/shoppingcar.png" alt="會員"></a></li>
+                <li><a class="icon-member" href=""><img src="./images/User.png" alt="購物車"></a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="banner_wrapper">
-                <img src="./images/autumn-7423358_1920.jpg" alt="park">
-                <div class="content">
-                    <h2>親自踏上旅程</h2>
-                    <h3>感受獨特瞬間</h3>
-                </div>
+
+        <section id="container-banner">
+            <img src="./images/topbar-background.png" alt="park">
+            <div class="content">
+                <h2></h2>
+                <h3></h3>
             </div>
         </section>
-        <section id="topics">
+        
+        <section id="container-topics">
             <header class="title">
                 <h2>主題行程</h2>
             </header>
-            <div class="trips_container">
-                <div class="trip">
+            <div class="more-info">
+                <a href="">
+                    <button>了解行程</button>
+                </a>
+            </div>
+            <div class="box-list">
+                <div class="item">
                     <a href="">
-                        <figure><img src="./images/family.jpeg" alt="家族出遊"></figure>
+                        <figure><img src="./images/family.png" alt="家族出遊"></figure>
                         <div class="content">
                             <h3>家族出遊</h1>
                             <p>與家人共度每好時光</p>
                         </div>
                     </a>
                 </div>
-                <div class="trip">
+                <div class="item">
                     <a href="">
-                        <figure><img src="./images/friend.jpg" alt="朋友出遊"></figure>
+                        <figure><img src="./images/friend.png" alt="朋友出遊"></figure>
                         <div class="content">
                             <h3>朋友出遊</h1>
                             <p>與朋友一起收集回憶</p>
                         </div>
                     </a>
                 </div>
-                <div class="trip">
+                <div class="item">
                     <a href="">
-                        <figure><img src="./images/food.jpeg" alt="美食旅遊"></figure>
+                        <figure><img src="./images/food.png" alt="美食旅遊"></figure>
                         <div class="content">
                             <h3>美食之旅</h1>
                             <p>品味當地的特色美食</p>
                         </div>
                     </a>
                 </div>
-                <div class="more_info">
-                    <button>了解行程</button>
-                </div>
-                
             </div>
         </section>
 
-        <section id="free">
+        <section id="container-free">
             <header class="title">
-                <h2>自由編輯</h2>
+                <h2>自由規劃</h2>
             </header>
-            <div class="free_container">
+            <div class="item">
                 <div class="item">
-                    <figure><img src="" alt=""></figure>
-                    <figure><img src="" alt=""></figure>
-                    <figure><img src="" alt=""></figure>
-                    <figure><img src="" alt=""></figure>
-                    <figure><img src="" alt=""></figure>
+                    <figure><img src="./images/free.png" alt=""></figure>
                 </div>
             </div>
-            <div class="more_info">
-                <button>查看更多</button>
+            <div class="more-info">
+                <a href="">
+                    <button>查看更多</button>
+                </a>
             </div>
         </section>
 
-        <section id="partner">
+        <section id="container-partner">
             <header class="title">
                 <h2>合作夥伴</h2>
             </header>
-            <div class="icon_container">
-                <div class="item">
-                    <div class="icon">
-                        <img src="" alt="">
-                    </div>
-                    <div class="icon">
-                        <img src="" alt="">
-                    </div>
-                    <div class="icon">
-                        <img src="" alt="">
-                    </div>
-                    <div class="icon">
-                        <img src="" alt="">
-                    </div>
-                    <div class="icon">
-                        <img src="" alt="">
-                    </div>
-                    <div class="icon">
-                        <img src="" alt="">
-                    </div>
+            <div class="icon-list">
+                <div class="icon">
+                    <img src="./images/logo-1.png" alt="">
+                </div>
+                <div class="icon">
+                    <img src="./images/logo-2.png" alt="">
+                </div>
+                <div class="icon">
+                    <img src="./images/logo-3.png" alt="">
+                </div>
+                <div class="icon">
+                    <img src="./images/logo-4.png" alt="">
+                </div>
+                <div class="icon">
+                    <img src="./images/logo-5.png" alt="">
+                </div>
+                <div class="icon">
+                    <img src="./images/logo-6.png" alt="">
                 </div>
             </div>
         </section>
@@ -125,4 +125,5 @@
         </section>
     </main>
 </body>
+
 </html>
