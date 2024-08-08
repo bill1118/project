@@ -17,6 +17,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	text-decoration: none;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -57,46 +58,46 @@ table {
 	padding: 0 0 0 30px;
 	width: 65px;
 }
-.navigation {
+#container-topbar .navigation {
     display: flex;
 	padding: 0 50px;
 }
 
-.navigation .menu {
+#container-topbar .navigation .menu {
 	display: flex;
 	align-items: center;
     gap: 20px;
 }
 
-.navigation .menu li {
+#container-topbar .navigation .menu li {
     border-right: solid 1px rgba(161, 92, 56, 1);
 	padding: 0 20px 0 0;
 }
 
-.navigation .menu li:last-child {
+#container-topbar .navigation .menu li:last-child {
     border-right: none;
 }
 
-.navigation .menu a{
+#container-topbar .navigation .menu a{
 	color: rgba(161, 92, 56, 1);
 	text-decoration: none;
 	font-size: 1.2rem;
 	border-bottom: solid 2px transparent;
 }
 
-.navigation .menu a:hover {
+#container-topbar .navigation .menu a:hover {
     border-bottom: solid 2px rgba(161, 92, 56, 1);
     transition: 0.35s ease-in-out;
 	padding-bottom: 6px;
 }
 
-.navigation .icon{
+#container-topbar .navigation .icon{
 	display: flex;
 	padding: 0 0 0 100px;
 	gap: 20px;
 }
 
-.navigation .icon a img{
+#container-topbar .navigation .icon a img{
 	width: 24px;
 	height: 24px;
 	color: rgba(161, 92, 56, 1);
@@ -108,13 +109,13 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+	width: 100%;
 }
 
 #container-topics, #container-free, #container-partner{
 	text-align: center;
     padding: 50px 20px;
     background-color: white;
-    max-width: 1440px;
 }
 
 #container-topics h2, #container-free h2, #container-partner h2{
@@ -127,14 +128,14 @@ section {
 	content: '';
     width: 140px;
     height: 5px;
-    background-color: rgba(161, 24, 24, 0.623);
+    background-color: #A62014;
     display: block;
     margin: 10px auto 0;
 }
 
 button {
     background-color: rgb(255, 255, 255);
-    color: rgba(161, 24, 24, 0.623);
+    color:  #A62014;
     padding: 6px 20px;
     font-size: 16px;
     border-radius: 10px;
@@ -142,7 +143,7 @@ button {
 }
 
 button:hover{
-	background-color: rgb(233, 221, 221);
+	background-color: #C3A6A0;
 }
 
 /* container-banner */
@@ -169,27 +170,33 @@ button:hover{
 /* container-topics */
 #container-topics .more-info {
 	padding: 0 0 20px 0;
+	
 }
 .box-list{
 	display: flex;
     justify-content: center;
 	align-items: center;
-	max-width: 1440px;
-	width: 80%;
+	max-width: 1280px;
 	gap: 50px;
 	
 }
+.box-list figure{
+	height: 35vh;
+}
 .box-list .item img{
     flex: 1;
-    box-shadow: 0px 5px 8px #898989;
+    box-shadow: 0 5px 8px #898989;
     border-radius: 20px;
+	height: 100%;
+	width: 100%;
+	object-fit:cover;
 }
 
 .item h3{
 	font-size: 24px;
     margin: 15px 0 10px;
 	color: black;
-	text-decoration: none;
+	
 }
 
 .item p{
@@ -197,6 +204,11 @@ button:hover{
     margin: 15px 0 10px;
 	color: black;
 }
+/* container-free */
+#container-free{
+	background-color: #F7F1F0;
+}
+
 /* container-partner */
 .icon-list{
 	display: flex;
@@ -211,5 +223,40 @@ button:hover{
 #container-free .more-info {
 	padding: 20px 0 0 0;
 }
+/* container-footer */
+footer {
+	background-color: #A62014;
+}
 
+footer div{
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 50px 30px 50px;
+}
 
+footer nav{
+	padding: 0 70px 0 0;
+}
+
+footer .menu-list{
+	display: flex;
+	justify-content: center;
+}
+
+footer .menu{
+	padding: 10px 20px;
+}
+
+footer .menu .submenu{
+	padding: 10px 0;
+}
+
+footer .menu .submenu a{
+	color: black;
+}
+
+footer .small{
+	margin: 0;
+	padding: 0;
+	justify-content: center;
+}
