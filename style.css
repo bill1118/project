@@ -109,6 +109,7 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+	width: 100%;
 }
 
 #container-topics, #container-free, #container-partner{
@@ -169,21 +170,26 @@ button:hover{
 /* container-topics */
 #container-topics .more-info {
 	padding: 0 0 20px 0;
-	align-self:flex-end;
+	
 }
 .box-list{
 	display: flex;
     justify-content: center;
 	align-items: center;
-	max-width: 1440px;
-	width: 80%;
+	max-width: 1280px;
 	gap: 50px;
 	
 }
+.box-list figure{
+	height: 35vh;
+}
 .box-list .item img{
     flex: 1;
-    box-shadow: 0px 5px 8px #898989;
+    box-shadow: 0 5px 8px #898989;
     border-radius: 20px;
+	height: 100%;
+	width: 100%;
+	object-fit:cover;
 }
 
 .item h3{
@@ -202,6 +208,7 @@ button:hover{
 #container-free{
 	background-color: #F7F1F0;
 }
+
 /* container-partner */
 .icon-list{
 	display: flex;
@@ -218,15 +225,13 @@ button:hover{
 }
 /* container-footer */
 footer {
-    padding: 20px;
 	background-color: #A62014;
 }
 
 footer div{
-	width: 85%;
 	display: flex;
 	justify-content: space-between;
-	padding: 50px 50px;
+	padding: 20px 50px 30px 50px;
 }
 
 footer nav{
