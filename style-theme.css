@@ -1,0 +1,117 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* container-topbar */
+#container-topbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	width: 100%; 
+    z-index: 999;
+	background-color: white;
+}
+
+.logo{
+	padding: 0 0 0 30px;
+	width: 65px;
+}
+#container-topbar .navigation {
+    display: flex;
+	padding: 0 50px;
+}
+
+#container-topbar .navigation .menu {
+	display: flex;
+	align-items: center;
+    gap: 20px;
+}
+
+#container-topbar .navigation .menu li {
+    border-right: solid 1px rgba(161, 92, 56, 1);
+	padding: 0 20px 0 0;
+}
+
+#container-topbar .navigation .menu li:last-child {
+    border-right: none;
+}
+
+#container-topbar .navigation .menu a{
+	color: rgba(161, 92, 56, 1);
+	text-decoration: none;
+	font-size: 1.2rem;
+	border-bottom: solid 2px transparent;
+}
+
+#container-topbar .navigation .menu a:hover {
+    border-bottom: solid 2px rgba(161, 92, 56, 1);
+    transition: 0.35s ease-in-out;
+	padding-bottom: 6px;
+}
+
+#container-topbar .navigation .icon{
+	display: flex;
+	padding: 0 0 0 100px;
+	gap: 20px;
+}
+
+#container-topbar .navigation .icon a img{
+	width: 24px;
+	height: 24px;
+	color: rgba(161, 92, 56, 1);
+}
+
+/* container-banner */
+#container-banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#container-banner .container-date-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
