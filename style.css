@@ -25,7 +25,8 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: 1.5;
+	font-family:"蘋方-繁", "PingFang TC", "黑體-繁", "Heiti TC", "微軟正黑體", "Microsoft JhengHei", "Noto Sans TC", sans-serif;
 }
 ol, ul {
 	list-style: none;
@@ -154,8 +155,8 @@ button:hover{
 
 #container-banner img{
 	width: 100%;
-	height: auto;
-	opacity: 0.9;
+	height: 100%;
+	object-fit: cover;
 }
 
 #container-banner .content{
@@ -167,10 +168,18 @@ button:hover{
 	font-size: 48px;
 }
 
+#container-banner .slide-text figure{
+	position: absolute;
+	top: 22%;
+	right: 10%;
+}
+
+
 /* container-topics */
-#container-topics .more-info {
-	padding: 0 0 20px 0;
-	
+#container-topics .layout-button
+{
+	padding-left: 1300px;
+	padding-bottom: 34px;
 }
 .box-list{
 	display: flex;
@@ -210,15 +219,47 @@ button:hover{
 	background-color: #F7F1F0;
 }
 
-/* container-partner */
-.icon-list{
+#container-free .title{
+	padding-bottom: 72px;
+}
+
+#container-free .item{
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
+#container-free figure{
+	height: 30vh;
+	width: 15vw;
+}
+
+#container-free figure img{
+	flex: 1;
+    box-shadow: 0 5px 8px #898989;
+    border-radius: 20px;
+	height: 100%;
+	width: 100%;
+	object-fit:cover;
+}
+
+#container-free .more-info .layout-button{
+	padding-top: 72px;
+}
+
+/* container-partner */
+#container-partner .title{
+	padding-bottom: 72px;
+}
+.icon-list{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 50px;
+}
+
 .icon-list .icon{
-	padding: 0 20px;
+	padding: 0 35px;
 }
 
 #container-free .more-info {
@@ -227,12 +268,16 @@ button:hover{
 /* container-footer */
 footer {
 	background-color: #A62014;
+	color: white;
+	
 }
 
 footer div{
 	display: flex;
-	justify-content: space-between;
-	padding: 20px 50px 30px 50px;
+	justify-content: center;
+	gap: 450px;
+	/* max-width: 1650px;
+	width: 100%; */
 }
 
 footer nav{
@@ -245,7 +290,12 @@ footer .menu-list{
 }
 
 footer .menu{
-	padding: 10px 20px;
+	padding: 10px 50px;
+	opacity: 0.9;
+}
+
+footer .navigation h2{
+	border-bottom: solid 1px white  ;
 }
 
 footer .menu .submenu{
@@ -253,11 +303,18 @@ footer .menu .submenu{
 }
 
 footer .menu .submenu a{
-	color: black;
+	color: white;
+}
+
+footer .submenu-icon{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 10px;
 }
 
 footer .small{
 	margin: 0;
 	padding: 0;
 	justify-content: center;
+	opacity: 0.9;
 }
