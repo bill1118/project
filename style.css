@@ -254,7 +254,7 @@ button:hover {
 }
 
 #container-banner .content {
-	position: absolute;
+	position: relative;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -291,11 +291,11 @@ button:hover {
 
 .box-list .item img {
 	flex: 1;
-    box-shadow: 0 5px 8px #898989;
-    border-radius: 20px;
+	box-shadow: 0 5px 8px #898989;
+	border-radius: 20px;
 	height: 100%;
 	width: 100%;
-	object-fit:cover;
+	object-fit: cover;
 }
 
 .item h3 {
