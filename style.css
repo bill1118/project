@@ -253,16 +253,7 @@ button:hover {
 	object-fit: cover;
 }
 
-#container-banner .content {
-	position: relative;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	color: white;
-	font-size: 48px;
-}
-
-#container-banner .slide-text figure {
+#container-banner .slide-text .list-2 {
 	position: absolute;
 	top: 22%;
 	right: 10%;

@@ -11,6 +11,7 @@
     --height: 150vh;
 }
 
+/* banner */
 #container-banner .slide {
     position:absolute;
     width: var(--width);
@@ -43,9 +44,9 @@ li.item {
     float: left;
 }
 
-ul.list {
+#container-banner .list-1 {
     /* 修改為新增html第一張重覆後+1 */
-    width: calc(var(--width) * 4);
+    width: calc(var(--width) * 5);
 
     height: inherit;
 
@@ -55,6 +56,15 @@ ul.list {
 
     /* 延遲1s */
     animation: move 15s ease 1s infinite;
+}
+
+/* text */
+#container-banner .slide {
+    position:absolute;
+    width: var(--width);
+    height: var(--height);
+    max-width: 100%;
+    overflow: hidden;
 }
 
 @keyframes move {
