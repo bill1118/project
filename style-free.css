@@ -207,9 +207,9 @@ h2{
 p{
 	font-size: 12px;
 }
-
+/* #container-banner */
 #container-banner {
-	background-image: url(./images/banner/1440-load-redd-f-peYW3VwICpE-unsplash.jpg);
+	background-image: url(./images/banner/1440-redd-f-peYW3VwICpE-unsplash\ -clip.jpg);
 	background-size: cover;
 	background-position: center;
 	height: 370PX;
@@ -234,12 +234,13 @@ p{
 
 #container-banner input {
 	padding: 10px;
-	font-size: 16px;
+	font-size: 20px;
 	border-radius: 15px;
 	border: none;
 	outline: none;
 }
 
+/* container-database */
 #container-database {
 	display: flex;
 	flex-direction: row;
@@ -260,9 +261,8 @@ p{
 
 .select-bar {
 	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	gap: 80px;
+	justify-content: space-between;
+	width: 100%;
 }
 
 .box-left select {
@@ -270,6 +270,7 @@ p{
 	border: none;
 	outline: none;
 	width: 250px;
+	font-weight: 550;
 }
 
 .box-left .list {
@@ -280,14 +281,18 @@ p{
 	padding-bottom: 10px;
 }
 
-a {
+.list a {
 	text-decoration: none;
 	color: black;
+	font-weight: 550;
 }
 
-.boxlist {
+#box-list {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+
 }
 
 .list-item {
@@ -295,11 +300,13 @@ a {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	margin: 0 0 35px 0;	
+	gap: 5px;
 }
 
 .list-item figure {
-	height: 25vh;
-	width: 18vw;
+	height: 20vh;
+	width: 12vw;
 }
 
 .list-item img{
@@ -321,6 +328,10 @@ a {
 	justify-content: center;
 	align-items: center;
 	border-bottom: 1px solid black;
+	gap: 8px;
+	letter-spacing: 2px;
+	padding-bottom: 5px;
+	padding-right: 120px;
 }
 
 .text-content {
@@ -329,6 +340,8 @@ a {
 	justify-content: center;
 	align-items: flex-start;
 	gap: 5px;
+	letter-spacing: 5px;
+	font-weight: 550;
 }
 
 .box-right {
@@ -338,4 +351,64 @@ a {
 	justify-content: center;
 	align-items: center;
 	background-color: #F7F1F0;
+}
+
+/* footer */
+footer {
+	background-color: #A62014;
+	color: white;
+	font-size: 12px;
+	line-height:1.5;
+	letter-spacing: 3px;
+}
+
+footer div {
+	display: flex;
+	justify-content: center;
+	gap: 450px;
+	/* max-width: 1650px;
+	width: 100%; */
+}
+
+footer nav {
+	padding: 0 70px 0 0;
+}
+
+footer .menu-list {
+	display: flex;
+	justify-content: center;
+}
+
+footer .menu {
+	padding: 10px 50px;
+	opacity: 0.9;
+}
+
+footer .navigation h2 {
+	border-bottom: solid 1px white;
+}
+
+footer .menu .submenu {
+	padding: 10px 0;
+}
+
+footer .menu .submenu a {
+	color: white;
+}
+
+footer .submenu-icon {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 10px;
+}
+
+footer .small {
+	margin: 0;
+	padding: 0;
+	justify-content: center;
+	opacity: 0.9;
+}
+
+footer h2{
+	font-size: 12px;
 }

@@ -356,11 +356,13 @@ button:hover {
 	padding: 20px 0 0 0;
 }
 
-/* container-footer */
+/* footer */
 footer {
 	background-color: #A62014;
 	color: white;
-
+	font-size: 12px;
+	line-height:1.5;
+	letter-spacing: 3px;
 }
 
 footer div {
