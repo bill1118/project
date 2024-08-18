@@ -242,9 +242,10 @@ button:hover {
 }
 
 /* container-banner */
-#container-bannerr {
+#container-banner {
 	position: relative;
 	text-align: center;
+	height: 60%;
 }
 
 #container-banner img {

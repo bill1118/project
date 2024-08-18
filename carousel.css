@@ -42,11 +42,13 @@ li.item {
     height: inherit;
     text-align: center;
     float: left;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #container-banner .list-1 {
     /* 修改為新增html第一張重覆後+1 */
-    width: calc(var(--width) * 5);
+    width: calc(var(--width) * 4);
 
     height: inherit;
 
