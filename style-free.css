@@ -245,18 +245,19 @@ p{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	align-items: center;
+	align-items:flex-start;
 	position: relative;
 }
 
+/* box-left  */
 #container-database .box-left {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	width: 65%;
-	margin: 80px;
 	gap: 60px;
+	margin: 80px;
 }
 
 .select-bar {
@@ -322,7 +323,7 @@ p{
 	align-items: center;
 }
 
-.title {
+.list-text .title {
 	white-space: nowrap;
 	display: flex;
 	justify-content: center;
@@ -344,6 +345,7 @@ p{
 	font-weight: 550;
 }
 
+/* box-right  */
 .box-right {
 	width: 35%;
 	display: flex;
@@ -351,8 +353,30 @@ p{
 	justify-content: center;
 	align-items: center;
 	background-color: #F7F1F0;
+	gap: 60px;
+	padding-top: 80px;
 }
 
+.box-right .title{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	letter-spacing: 5px;
+}
+
+.box-right .title::after{
+	content: "";
+	position: absolute;
+	bottom: -5px;
+    width: 345px;
+    height: 1px;
+    background-color: #000; 
+}
+
+.box-right .title p{
+	font-size: 20px;
+}
 /* footer */
 footer {
 	background-color: #A62014;
