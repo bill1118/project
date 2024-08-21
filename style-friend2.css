@@ -18,6 +18,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 	text-decoration: none;
+	letter-spacing: 2px;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -43,6 +44,10 @@ table {
 	border-spacing: 0;
 }
 
+:root{
+	--primary:#A62014;
+	--secend:#A15C38;
+}
 /* container-topbar */
 #container-topbar {
 	display: flex;
@@ -134,6 +139,13 @@ section p{
 	padding-bottom: 50px;
 }
 
+.layout-table_list{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 80px;
+}
+
 #container-banner figure{
 	width: 40%;
 	height: 100%;
@@ -149,13 +161,50 @@ section p{
 }
 
 table{
-    display: flex;
-    justify-content: space-between;
-    gap: 50px;
+	border-collapse: separate;
+	border: 1px solid black;
+	border-radius: 30px;
+	border-bottom: none;
 }
 
+th:first-child {
+	border-top-left-radius: 30px;
+}
 
+th:last-child {
+	border-top-right-radius: 30px;
+}
 
+th {
+    padding: 10px 30px; 
+	background-color: var(--secend);
+}
+
+td{
+	border-bottom: 1px solid black;
+	padding: 10px 30px; 
+}
+
+.content{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #F7F1F0;
+	border-radius: 30px;
+	width: 80%;
+	
+}
+
+.content h2{
+	font-size: 20px;
+	font-weight: 600;
+	margin: 20px;
+}
+
+.content p{
+	line-height: 30px;
+}
 #container-banner .btn{
 	padding-left: 1200px;
 }
@@ -165,6 +214,6 @@ table{
 	border: 0.5px solid rgba(166, 32, 20, 0.9);
 	color:  #a62014;
 	height: 40px;
-	width: 120px;
+	width: 100px;
 	cursor: pointer;
 }

@@ -131,6 +131,11 @@ table {
 	border-spacing: 0;
 }
 
+:root{
+	--primary:#A62014;
+	--secend:#A15C38;
+}
+
 /* container-topbar */
 #container-topbar {
 	display: flex;
@@ -159,7 +164,7 @@ table {
 }
 
 #container-topbar .navigation .menu li {
-	border-right: solid 1px rgba(161, 92, 56, 1);
+	border-right: solid 1px var(--secend);
 	padding: 0 20px 0 0;
 }
 
@@ -168,14 +173,14 @@ table {
 }
 
 #container-topbar .navigation .menu a {
-	color: rgba(161, 92, 56, 1);
+	color: var(--secend);
 	text-decoration: none;
 	font-size: 1.2rem;
 	border-bottom: solid 2px transparent;
 }
 
 #container-topbar .navigation .menu a:hover {
-	border-bottom: solid 2px rgba(161, 92, 56, 1);
+	border-bottom: solid 2px var(--secend);
 	transition: 0.35s ease-in-out;
 	padding-bottom: 6px;
 }
@@ -189,7 +194,7 @@ table {
 #container-topbar .navigation .icon a img {
 	width: 24px;
 	height: 24px;
-	color: rgba(161, 92, 56, 1);
+	color: var(--secend);
 }
 
 /* 主要內容共用區 */
@@ -350,6 +355,11 @@ button:hover {
 
 .icon-list .icon {
 	padding: 0 35px;
+	width: 100%;
+}
+
+.icon img{
+	width: 100%;
 }
 
 #container-free .more-info {
