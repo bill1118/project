@@ -330,12 +330,22 @@ button:hover {
 
 #container-free figure img {
 	flex: 1;
-	box-shadow: 0 5px 8px #898989;
-	border-radius: 20px;
+	/* box-shadow: 0 5px 8px #898989; */
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
 }
+
+#container-free figure .layout-1{
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+#container-free figure .layout-2{
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+
 
 #container-free .more-info .layout-button {
 	padding-top: 72px;
