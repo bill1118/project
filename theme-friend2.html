@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>關西旅遊網</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link rel="stylesheet" href="./css/style-friend2.css">
+    <script type="text/babel" src="./jsx/Topbar.jsx"></script>
+    <script type="text/babel" src="./jsx/Footer.jsx"></script>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        function App() {
+            return (
+                <>
+                    <Topbar />
+                    <main>
+                        <section id="container-banner">
+                            <div className="layout-space"></div>
+                            <div className="layout-list">
+                                <figure></figure>
+                                <div className="layout-table_list">
+                                    <table>
+                                        <tr>
+                                            <th>出發時間</th>
+                                            <th>售價</th>
+                                            <th>狀態</th>
+                                        </tr>
+                                        <tr>
+                                            <td>2024/09/27(五)</td>
+                                            <td>$13,000起</td>
+                                            <td><button>額滿</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2024/10/11(五)</td>
+                                            <td>$15,000起</td>
+                                            <td><button>額滿</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2024/11/08(五)</td>
+                                            <td>$13,000起</td>
+                                            <td><button>額滿</button></td>
+                                        </tr>
+                                        <tr>
+
+                                        </tr>
+                                    </table>
+                                    <div className="content">
+                                        <h2>好友樂悠遊</h2>
+                                        <p>與朋友一起在京阪神收集回憶，</p>
+                                        <p>帶上您的三五好友，</p>
+                                        <p>計畫一次難忘的朋友之旅，</p>
+                                        <p>無論是探索新城市、享受美食，</p>
+                                        <p>還是一起挑戰極限，</p>
+                                        <p>我們都能為您們安排充滿驚喜的旅程。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="btn">
+                                <figure></figure>
+                                <button>報名行程</button>
+                            </div>
+                        </section>
+                    </main>
+                    <Footer />
+                </>
+            )
+        }
+
+        ReactDOM
+            .createRoot(document.getElementById('root'))
+            .render(<App />);
+    </script>
+
+
+</body>
+
+</html>
