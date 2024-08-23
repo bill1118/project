@@ -1,50 +1,83 @@
-function ContainerJourney() {
-    return <>
-        <section id="container-journey">
-            <div className="box-title">
-                <div className="title-list">
-                    <div className="title">
-                        <h2>天守閣</h2>
+function ContainerJourney(props) {
+    return (
+        <>
+            <section id="container-journey">
+                <div className="box-title">
+                    <div className="title-list">
+                        <div className="title">
+                            <h2>{props.h2}</h2>
+                        </div>
+                        <div className="title">
+                            <h3>{props.h3}</h3>
+                        </div>
+                        <div className="title">
+                            <h4>{props.h4}</h4>
+                        </div>
                     </div>
-                    <div className="title">
-                        <h2>道頓堀</h2>
-                    </div>
-                    <div className="title">
-                        <h2>甲賀流</h2>
+                    <div className="content">
+                        <h5>{props.h5}</h5>
                     </div>
                 </div>
-                <div className="content">
-                    <h4>第一天</h4>
+                <div className="box-primary">
+                    <figure>{props.img}</figure>
+                    <div className="title">
+                        <h1>{props.h1}</h1>
+                    </div>
+                    <div className="content">
+                        <h2>{props.h2}</h2>
+                        <p>日本著名的歷史城堡，<br />
+                            為封建權利的象徵之一，<br />
+                            代表擁有者有著強大的武力。<br />
+                            在這裡可以了解<br />
+                            大阪的歷史和文化。<br />
+                            周圍的公園四季皆美，<br />
+                            很適合與朋友散步和拍照。<br />
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div className="box-primary">
-                <figure></figure>
-                <div className="title">
-                    <h1>大阪</h1>
+                <div className="box-second">
+                    <figure className="big">{props.imgb}</figure>
+                    <figure className="small">{props.imgs}</figure>
+                    <div className="content">
+                        <h3>{props.h3}</h3>
+                        <p>大阪著名的美食街，<br />
+                            有各種當地特色美食，<br />
+                            如章魚燒、大阪燒和串燒。<br />
+                        </p>
+                    </div>
                 </div>
-                <div className="content">
-                    <h3>天守閣</h3>
-                    <p>日本著名的歷史城堡，</p>
-                    <p>為封建權利的象徵之一，</p>
-                    <p>代表擁有者有著強大的武力。</p>
-                    <p>在這裡可以了解</p>
-                    <p>大阪的歷史和文化。</p>
-                    <p>周圍的公園四季皆美，</p>
-                    <p>很適合與朋友散步和拍照。</p>
-                </div>
-            </div>
-            <div className="box-second">
-                <figure className="big"></figure>
-                <figure className="small"></figure>
-                <div className="content">
-                    <h3>道頓堀</h3>
-                    <p>
-                        大阪著名的美食街，<br />
-                        有各種當地特色美食，<br />
-                        如章魚燒、大阪燒和串燒。<br />
-                    </p>
-                </div>
-            </div>
-        </section>
-    </>
+            </section>
+        </>
+    )
 }
+
+const App = () => {
+    //建立陣列物件資料
+    const products = [
+        {
+            id: 1,
+            img: <img src="../images/4-theme-friend/pexels-satoshi-4058519.jpg" alt="大阪" />,
+            imgb:<img src="../images/4-theme-friend/pexels-satoshi-4058519.jpg" alt="大阪" />,
+            imgs:<img src="../images/4-theme-friend/pexels-satoshi-4058519.jpg" alt="大阪" />,
+            h1: '大阪',
+            h2: '天守閣',
+            h3: '道頓堀',
+            h4: '加賀流',
+            h5: '第一天',
+        },
+
+    ]
+
+    return (
+        <>
+            {/*使用迴圈，將陣列物件中的資料填入*/}
+            {/*在輸出(return)時使用js的話，要加上{}*/}
+            {
+                products.map((item) => {
+                    //將陣列傳給元件
+                    return <ContainerJourney key={item.id}  img={item.img} imgb={item.imgb} imgs={item.imgs} h1={item.h1} h2={item.h2} h3={item.h3} h4={item.h4} h5={item.h5} />
+                })
+            }
+        </>
+    );
+};

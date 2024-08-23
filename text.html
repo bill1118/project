@@ -14,12 +14,13 @@
         integrity="sha512-1/8Tj23BRrWnKZXeBruk6wTnsMJbi/lJsk9bsRgVwb6j5q39n0A00gFjbCTaDo5l5XrPVv4DZXftrJExhRF/Ug=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="./style-friend.css">
+    <link rel="stylesheet" href="./css/style-friend2.css">
 </head>
 
 <body>
     <div id="root"></div>
     <script type="text/babel">
-        function Card(props) {
+        function ContainerJourney(props) {
             return (
                 <>
                     <section id="container-journey">
@@ -77,7 +78,7 @@
             const products = [
                 {
                     id: 1,
-                    img: <img src="./images/sky.jpg" alt="大阪" />,
+                    img: <img src="./images/4-theme-friend/pexels-satoshi-4058519.jpg" alt="大阪" />,
                     imgb:<img src="./images/sky.jpg" alt="大阪" />,
                     imgs:<img src="./images/sky.jpg" alt="大阪" />,
                     h1: '大阪',
@@ -96,7 +97,7 @@
                     {
                         products.map((item) => {
                             //將陣列傳給元件
-                            return <Card key={item.id}  img={item.img} imgb={item.imgb} imgs={item.imgs} h1={item.h1} h2={item.h2} h3={item.h3} h4={item.h4} h5={item.h5} />
+                            return <ContainerJourney key={item.id}  img={item.img} imgb={item.imgb} imgs={item.imgs} h1={item.h1} h2={item.h2} h3={item.h3} h4={item.h4} h5={item.h5} />
                         })
                     }
                 </>
