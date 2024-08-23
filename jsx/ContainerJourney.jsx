@@ -50,34 +50,3 @@ function ContainerJourney(props) {
         </>
     )
 }
-
-const App = () => {
-    //建立陣列物件資料
-    const products = [
-        {
-            id: 1,
-            img: <img src="../images/4-theme-friend/pexels-satoshi-4058519.jpg" alt="大阪" />,
-            imgb:<img src="../images/4-theme-friend/pexels-satoshi-4058519.jpg" alt="大阪" />,
-            imgs:<img src="../images/4-theme-friend/pexels-satoshi-4058519.jpg" alt="大阪" />,
-            h1: '大阪',
-            h2: '天守閣',
-            h3: '道頓堀',
-            h4: '加賀流',
-            h5: '第一天',
-        },
-
-    ]
-
-    return (
-        <>
-            {/*使用迴圈，將陣列物件中的資料填入*/}
-            {/*在輸出(return)時使用js的話，要加上{}*/}
-            {
-                products.map((item) => {
-                    //將陣列傳給元件
-                    return <ContainerJourney key={item.id}  img={item.img} imgb={item.imgb} imgs={item.imgs} h1={item.h1} h2={item.h2} h3={item.h3} h4={item.h4} h5={item.h5} />
-                })
-            }
-        </>
-    );
-};

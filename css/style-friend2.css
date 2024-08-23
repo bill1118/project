@@ -354,6 +354,7 @@ h4,h5 {
 	justify-content: flex-start;
 	align-items: center;
 	width: 100%;
+	margin-bottom: 100px;
 }
 /* box-title */
 #container-journey .box-title {

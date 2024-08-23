@@ -19,6 +19,30 @@
     <div id="root"></div>
     <script type="text/babel">
         function App() {
+            const products = [
+                {
+                    id: 1,
+                    img: <img src="./images/4-theme-friend/pexels-satoshi-4058519.jpg" alt="大阪" />,
+                    imgb: <img src="./images/4-theme-friend/food-1614130_640.jpg" alt="大阪" />,
+                    imgs: <img src="./images/4-theme-friend/pexels-haugenzhays-1798631.jpg" alt="大阪" />,
+                    h1: '大阪',
+                    h2: '天守閣',
+                    h3: '道頓堀',
+                    h4: '加賀流',
+                    h5: '第一天',
+                },
+                {
+                    id: 2,
+                    img: <img src="./images/4-theme-friend/pexels-satoshi-4058519.jpg" alt="大阪" />,
+                    imgb: <img src="./images/4-theme-friend/pexels-satoshi-4058519.jpg" alt="大阪" />,
+                    imgs: <img src="./images/4-theme-friend/pexels-satoshi-4058519.jpg" alt="大阪" />,
+                    h1: '大阪',
+                    h2: '天守閣',
+                    h3: '道頓堀',
+                    h4: '加賀流',
+                    h5: '第一天',
+                },
+            ];
             return (
                 <>
                     <Topbar />
@@ -69,13 +93,47 @@
                                 <button>報名行程</button>
                             </div>
                         </section>
-                        <ContainerJourney/>
+
+                        {
+                            products.map((item, index) => (
+                                <React.Fragment key={item.id}>
+                                    
+                                        <ContainerJourney
+                                            img={item.img}
+                                            imgb={item.imgb}
+                                            imgs={item.imgs}
+                                            h1={item.h1}
+                                            h2={item.h2}
+                                            h3={item.h3}
+                                            h4={item.h4}
+                                            h5={item.h5}
+                                        />
+                                    
+
+                                    {/* 在第一個產品和第二個產品之間插入新的 <section> */}
+                                    {index === 0 && (
+                                        <section className="additional-section">
+                                            <h2>這是一個額外的區塊</h2>
+                                            <p>這個區塊在第一個和第二個產品之間插入。</p>
+                                        </section>
+                                    )}
+                                </React.Fragment>
+                            ))
+                        }
                     </main>
-                    
+
                     <Footer />
+
+
+
+
+
                 </>
             )
         }
+
+
+
 
         ReactDOM
             .createRoot(document.getElementById('root'))
