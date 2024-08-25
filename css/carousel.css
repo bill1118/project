@@ -9,6 +9,8 @@
 :root {
     --width: 150vw;
     --height: 150vh;
+    --width2: 40vw;
+    --height2: 40vh;
 }
 
 /* banner */
@@ -61,13 +63,56 @@ li.item {
 }
 
 /* text */
-#container-banner .slide {
+#container-banner .slide-text {
     position:absolute;
-    width: var(--width);
-    height: var(--height);
+    width: var(--height2);
+    height: var(--height2);
     max-width: 100%;
     overflow: hidden;
+    top: 10%;
+    right: 10%;
 }
+
+li.item-text:nth-child(1) {
+    background-image: url(../images/春white.svg);
+}
+
+li.item-text:nth-child(2) {
+    background-image: url(../images/夏white.svg);
+}
+
+li.item-text:nth-child(3) {
+    background-image: url(../images/秋white.svg);
+}
+
+li.item-text:nth-child(4) {
+    background-image: url(../images/winnterwhite.svg);
+}
+
+li.item-text {
+    flex: 1;
+    width: var(--width2);
+    height: inherit;
+    text-align: center;
+    float: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#container-banner .list-2 {
+    /* 修改為新增html第一張重覆後+1 */
+    width: calc(var(--width2) * 4);
+
+    height: 100%;
+
+    /* 定位 */
+    position: relative;
+    z-index: 20;
+
+    /* 延遲1s */
+    animation: move2 15s ease 1s infinite;
+}
+
 
 @keyframes move {
     0% {
@@ -84,5 +129,23 @@ li.item {
 
     100% {
         transform: translate(calc(-3 * var(--width)));
+    }
+}
+
+@keyframes move2 {
+    0% {
+        transform: translate(calc(0 * var(--width2)));
+    }
+
+    33% {
+        transform: translate(calc(-1 * var(--width2)));
+    }
+
+    66% {
+        transform: translate(calc(-2 * var(--width2)));
+    }
+
+    100% {
+        transform: translate(calc(-3 * var(--width2)));
     }
 }

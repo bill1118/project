@@ -261,13 +261,6 @@ section {
 	object-fit: cover;
 }
 
-#container-banner .slide-text .list-2 {
-	position: absolute;
-	top: 22%;
-	right: 10%;
-}
-
-
 /* container-topics */
 #container-topics .layout-button {
 	padding-left: 1300px;
