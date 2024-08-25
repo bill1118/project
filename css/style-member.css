@@ -215,7 +215,7 @@ section{
     justify-content: flex-start;
     align-items: center;
     gap: 25px;
-    border-radius: 99px;
+    border-radius: 20px;
     padding: 35px 0;
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 1px 1px 1px black;
@@ -255,25 +255,16 @@ section{
     color: inherit; 
 }
 
-.boxleft .integral{
-    width: 35%;
-    height: 8%;
-    border: 1px solid rgba(0, 0, 0, 0.2);;
+.boxleft .information a:hover{
+    border: 1px solid var(--primary);
+    color: var(--primary);
     border-radius: 99px;
 }
 
-.boxleft .integral a{
-    text-align: center;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 100%;
-    color: inherit; 
-    text-align: center;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+.information a:hover img {
+    filter: sepia(1) saturate(19) hue-rotate(-10deg);
 }
+
 
 .boxleft .account{
     width: 35%;
@@ -295,10 +286,21 @@ section{
     align-items: center;
 }
 
+.boxleft .account a:hover{
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    border-radius: 99px;
+}
+
+.account a:hover img {
+    filter: sepia(1) saturate(19) hue-rotate(-10deg);
+}
+
+
 .boxleft .order{
     width: 35%;
     height: 8%;
-    border: 1px solid rgba(0, 0, 0, 0.2);;
+    border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 99px;
 }
 
@@ -313,6 +315,46 @@ section{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.boxleft .order  a:hover{
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    border-radius: 99px;
+}
+
+.order  a:hover img {
+    filter: sepia(1) saturate(19) hue-rotate(-10deg);
+}
+
+.boxleft .integral{
+    width: 35%;
+    height: 8%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 99px;
+}
+
+.boxleft .integral a{
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    color: inherit; 
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.boxleft .integral  a:hover{
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    border-radius: 99px;
+}
+
+.integral a:hover img {
+    filter: sepia(1) saturate(19) hue-rotate(-10deg);
 }
 
 .boxleft .signout{
@@ -335,6 +377,16 @@ section{
     align-items: center;
 }
 
+.boxleft .signout  a:hover{
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    border-radius: 99px;
+}
+
+.signout a:hover img {
+    filter: sepia(1) saturate(19) hue-rotate(-10deg);
+}
+
 .boxright{
     width: 50%;
     height: 60%;
@@ -343,11 +395,9 @@ section{
     justify-content: flex-start;
     align-items: flex-start;
     gap: 25px;
-    border-radius: 99px;
-    padding: 35px 0;
+    border-radius: 20px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 1px 1px 1px black;
-    background-color: #A15C38;
     margin-right: 200px;
     padding: 35px;
 }
@@ -370,6 +420,85 @@ section{
 .boxright .title span{
     font-size: 12px;
 }
+
+.boxright .list{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.boxright .list form{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 25px;
+    gap: 50px;
+}
+
+.list .title{
+    display: flex;
+    gap: 50px;
+}
+
+.list .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:flex-start;
+    margin-top: 10px;
+    gap: 50px;
+}
+
+.content .gender{
+    display: flex;
+    gap: 30px;
+}
+
+.content button{
+    border: none;
+    background: none;
+    color: var(--primary);
+    cursor: pointer;
+}
+
+.list .content .name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+}
+
+.list .content .mail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+}
+
+.list .content .tel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+}
+
+.list .content .birthday{
+    display: flex;
+    gap: 50px;
+}
+
+.list .content .birthday select{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 25px;
+    border-radius: 99px;
+}
+
+.boxright .btn{
+    margin-top: 15px;
+    margin-left: 300px;
+}
+
 /* footer */
 footer {
 	background-color: #A62014;

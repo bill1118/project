@@ -37,21 +37,20 @@
                                         <img src="./images/icon/users.svg" alt="" />
                                         <p>個人資料</p>
                                     </a>
-
                                 </div>
-                                <div className="integral">
+                                <div className="account">
                                     <a href="">
                                         <img src="./images/icon/link.svg" alt="" />
                                         <p>帳戶綁定</p>
                                     </a>
                                 </div>
-                                <div className='account'>
+                                <div className='order'>
                                     <a href="">
                                         <img src="./images/icon/ticket-alt.svg" alt="" />
                                         <p>訂單查詢</p>
                                     </a>
                                 </div>
-                                <div className='order'>
+                                <div className='integral'>
                                     <a href="">
                                         <img src="./images/icon/ticket.svg" alt="" />
                                         <p>我的積分</p>
@@ -68,10 +67,50 @@
                                     <h3>個人資料</h3>
                                     <span>為保護您的個資，僅用於提供個人化服務</span>
                                 </div>
+                                <div className="list">
+                                    <form action="">
+                                        <div className="title">
+                                            <p>姓名</p>
+                                            <label htmlFor="gender">性別</label>
+                                            <p>電子郵件</p>
+                                            <p>電話號碼</p>
+                                            <label htmlFor="year">生日</label>
+                                        </div>
+                                        <div className="content">
+                                            <div className="name">
+                                                <p>QQ</p>
+                                                <button>變更</button>
+                                            </div>
+                                            <div className="gender">
+                                                <div>男<input type="radio" name="gender" defaultValue="genderm" /></div>
+                                                <div>女<input type="radio" name="gender" defaultValue="genderw" /></div>
+                                                <div>不公開<input type="radio" name="gender" defaultValue="gendero" /></div>
+                                            </div>
+                                            <div className="mail">
+                                                <p>shenhuo68@shtravel.com.tw</p>
+                                                <button>變更</button>
+                                            </div>
+                                            <div className="tel">
+                                                <p>09+68-686868</p>
+                                                <button>變更</button>
+                                            </div>
+                                            <div className="birthday">
+                                                <select id="year" name="year">
+                                                    <option defaultValue="option">選擇年分</option>
+                                                </select>
+                                                <select id="month" name="month">
+                                                    <option defaultValue="option">選擇月分</option>
+                                                </select>
+                                                <select id="day" name="day">
+                                                    <option defaultValue="option">選擇日期</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
                         </section>
                     </main >
-
                     <Footer />
                 </>
             )
@@ -81,6 +120,8 @@
             .createRoot(document.getElementById('root'))
             .render(<App />);
     </script>
+
+    <script src="./js/birthday.js"></script>
 </body>
 
 </html>
