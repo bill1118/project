@@ -2,7 +2,7 @@ function Footer() {
     return (
         <>
             <footer>
-                <div>
+                <div id="foot">
                     <h1 className="logo">
                         <a href="./index.html">
                             <img src="./images/logo/Union-logo-brown 1.svg" alt=""/>
@@ -54,7 +54,7 @@ function Footer() {
                 <div className="small">
                     <small>版權所有 © 2024 神火旅遊</small>
                 </div>
-
+                <div id="gotop"><img src="./images/icon/top.btn.svg" alt=""/></div>
             </footer>
         </>
     )

@@ -248,6 +248,19 @@ section {
 	color: var(--secend);
 }
 
+#gotop{
+    position: fixed;
+    right: 50px;
+    bottom: 20px;
+    z-index: 999;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+	cursor: pointer;
+}
+
+
 /* container-banner */
 #container-banner {
 	position: relative;
@@ -369,7 +382,7 @@ section {
 	width: 100%;
 }
 
-.icon img{
+.icon-list .icon img{
 	width: 100%;
 }
 

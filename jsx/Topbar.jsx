@@ -9,10 +9,10 @@ function Topbar() {
                 </h1>
                 <nav className="navigation">
                     <ul className="menu">
-                        <li><a href="">主題行程</a></li>
-                        <li><a href="">自由編輯</a></li>
+                        <li><a href="#container-topics">主題行程</a></li>
+                        <li><a href="#container-free">自由編輯</a></li>
                         <li><a href="">旅遊資訊</a></li>
-                        <li><a href="">聯絡我們</a></li>
+                        <li><a href="#foot">聯絡我們</a></li>
                     </ul>
                     <ul class="icon">
                         <li><a className="icon-shoppingcar" href=""><img src="./images/icon/shoppingcar.png" alt="購物車"/></a></li>
