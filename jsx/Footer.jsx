@@ -54,7 +54,9 @@ function Footer() {
                 <div className="small">
                     <small>版權所有 © 2024 神火旅遊</small>
                 </div>
-                <div id="gotop"><img src="./images/icon/top.btn.svg" alt=""/></div>
+                <div id="gotop" onClick={()=>{
+                    $('html,body').animate({ scrollTop: 0 }, 1000);
+                }}><img src="./images/icon/top.btn.svg" alt=""/></div>
             </footer>
         </>
     )
