@@ -11,6 +11,7 @@
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script type="text/babel" src="./jsx/Topbar.jsx"></script>
     <script type="text/babel" src="./jsx/Footer.jsx"></script>
+    <script type="text/babel" src="./jsx/BirthdaySelector.jsx"></script>
     <link rel="stylesheet" href="./css/style-member.css">
 </head>
 
@@ -95,21 +96,45 @@
                                                 <button>變更</button>
                                             </div>
                                             <div className="birthday">
-                                                <select id="year" name="year">
+                                                <select id="year" name="year" onClick={() => {
+                                                    const yearSelect = document.getElementById('year');
+                                                    const currentYear = new Date().getFullYear();
+                                                    const startYear = 1950; // 可根據需要更改起始年份
+
+                                                    for (let year = currentYear; year >= startYear; year--) {
+                                                        const option = document.createElement('option');
+                                                        option.value = year;
+                                                        option.textContent = year;
+                                                        yearSelect.appendChild(option);
+                                                    }
+
+                                                }}>
                                                     <option defaultValue="option">選擇年分</option>
                                                 </select>
-                                                <select id="month" name="month">
-                                                    <option defaultValue="option">選擇月分</option>
-                                                </select>
-                                                <select id="day" name="day">
-                                                    <option defaultValue="option">選擇日期</option>
+
+                                                <BirthdaySelector/>
+
+                                                <select id="day" name="day" onClick={() => {
+                                                    const yearSelect = document.getElementById('day');
+                                                    const currentYear = new Date().getFullYear();
+                                                    const startYear = 1950; // 可根據需要更改起始年份
+
+                                                    for (let year = currentYear; year >= startYear; year--) {
+                                                        const option = document.createElement('option3');
+                                                        option.value = year;
+                                                        option.textContent = year;
+                                                        yearSelect.appendChild(option);
+                                                    }
+
+                                                }}>
+                                                    <option defaultValue="option3">選擇日期</option>
                                                 </select>
                                             </div>
                                         </div>
                                     </form>
                                 </div>
                             </div>
-                        </section>
+                        </section >
                     </main >
                     <Footer />
                 </>
@@ -120,8 +145,7 @@
             .createRoot(document.getElementById('root'))
             .render(<App />);
     </script>
-
-    <script src="./js/birthday.js"></script>
+    
 </body>
 
 </html>

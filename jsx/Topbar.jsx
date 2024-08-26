@@ -14,7 +14,7 @@ function Topbar() {
                         <li><a href="">旅遊資訊</a></li>
                         <li><a href="#foot">聯絡我們</a></li>
                     </ul>
-                    <ul class="icon">
+                    <ul className="icon">
                         <li><a className="icon-shoppingcar" href=""><img src="./images/icon/shoppingcar.png" alt="購物車"/></a></li>
                         <li><a className="icon-member" href=""><img src="./images/icon/User.png" alt="會員"/></a></li>
                     </ul>
