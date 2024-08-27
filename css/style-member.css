@@ -207,6 +207,7 @@ section{
     gap: 50px;
 }
 
+/* boxleft */
 .boxleft{
     width: 20%;
     height: 60%;
@@ -387,6 +388,7 @@ section{
     filter: sepia(1) saturate(19) hue-rotate(-10deg);
 }
 
+/* boxright */
 .boxright{
     width: 50%;
     height: 60%;
@@ -481,12 +483,12 @@ section{
     gap: 150px;
 }
 
-.list .content .birthday{
+.list .content .birthday-selector{
     display: flex;
     gap: 50px;
 }
 
-.list .content .birthday select{
+.list .content .birthday-selector select{
     display: flex;
     justify-content: center;
     align-items: center;

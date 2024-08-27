@@ -275,6 +275,35 @@ th {
 	vertical-align:middle;
 }
 
+.list td {
+	border-bottom: 1px solid black;
+	padding: 10px 30px;
+	vertical-align:middle;
+}
+
+#container-banner tr button {
+	border: 0.5px solid gray;
+	color: gray;
+	height: 100%;
+	width: 100%;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+#container-banner .list td .btn2 {
+	border: 0.5px solid var(--secend);
+	color: var(--secend);
+	height: 100%;
+	width: 100%;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+#container-banner .list td .btn2:hover{
+	color: white;
+	background-color: var(--primary);
+}
+
 .arrow {
 	width: 220%;
 	display: flex;
@@ -285,19 +314,6 @@ th {
 
 .arrow .arrowl{
 	margin-left: 25px;
-}
-.list td {
-	border-bottom: 1px solid black;
-	padding: 10px 30px;
-	vertical-align:middle;
-}
-
-#container-banner tr button {
-	border: 0.5px solid rgba(166, 32, 20, 0.9);
-	color: #a62014;
-	height: 100%;
-	width: 100%;
-	cursor: pointer;
 }
 
 #container-banner .layout-table_list .content {
@@ -352,6 +368,15 @@ th {
 #container-banner .btn a{
 	color: var(--secend)
 }
+
+#container-banner .btn div:hover{
+	background-color: var(--primary);
+}
+
+#container-banner .btn div:hover a{
+	color:white
+}
+
 
 /* #container-journey */
 /* 共用 */
@@ -680,4 +705,11 @@ footer .small {
 
 footer h2{
 	font-size: 12px;
+}
+
+.bee-animation{
+	position: absolute;
+	right:20%;
+
+	z-index: 999;
 }

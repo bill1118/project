@@ -9,9 +9,13 @@
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/MotionPathPlugin.min.js"></script>
     <link rel="stylesheet" href="./css/style-friend.css">
     <script type="text/babel" src="./jsx/Topbar.jsx"></script>
     <script type="text/babel" src="./jsx/Footer.jsx"></script>
+    <script type="text/babel" src="./jsx/BeeAnimation.jsx"></script>
     <script type="text/babel" src="./jsx/ContainerJourney.jsx"></script>
     <script type="text/babel" src="./jsx/ContainerJourney2.jsx"></script>
 </head>
@@ -67,30 +71,40 @@
                                 <figure></figure>
                                 <div className="layout-table_list">
                                     <table>
-                                        <tr>
-                                            <th>出發時間</th>
-                                            <th>售價</th>
-                                            <th>狀態</th>
-                                        </tr>
-                                        <tr class="list">
-                                            <td>2024/09/27(五)</td>
-                                            <td>$13,000起</td>
-                                            <td><button>額滿</button></td>
-                                        </tr>
-                                        <tr class="list">
-                                            <td>2024/10/11(五)</td>
-                                            <td>$15,000起</td>
-                                            <td><button>額滿</button></td>
-                                        </tr>
-                                        <tr class="list">
-                                            <td>2024/11/08(五)</td>
-                                            <td>$13,000起</td>
-                                            <td><button>額滿</button></td>
-                                        </tr>
-                                        <tr className="arrow">
-                                            <td className="arrowl"><img src="./images/icon/Arrow2.svg" alt="left"/></td>
-                                            <td><img src="./images/icon/Arrow1.svg" alt="right"/></td>
-                                        </tr>
+                                        <tbody>
+                                            <tr>
+                                                <th>出發時間</th>
+                                                <th>售價</th>
+                                                <th>狀態</th>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr className="list">
+                                                <td>2024/09/27(五)</td>
+                                                <td>$13,000起</td>
+                                                <td><button>額滿</button></td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr className="list">
+                                                <td>2024/10/11(五)</td>
+                                                <td>$15,000起</td>
+                                                <td><button>額滿</button></td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr className="list">
+                                                <td>2024/11/08(五)</td>
+                                                <td>$13,000起</td>
+                                                <td><button className="btn2">預定</button></td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr className="arrow">
+                                                <td className="arrowl"><img src="./images/icon/Arrow2.svg" alt="left" /></td>
+                                                <td><img src="./images/icon/Arrow1.svg" alt="right" /></td>
+                                            </tr>
+                                        </tbody>
                                     </table>
                                     <div className="content">
                                         <h2>好友樂悠遊</h2>
@@ -108,40 +122,42 @@
                                 <div><a href="">報名行程</a></div>
                             </div>
                         </section>
+                        
+                        {products.map((item, index) => (
+                            <React.Fragment key={item.id}>
+                                <ContainerJourney
+                                    img={item.img}
+                                    imgb={item.imgb}
+                                    imgs={item.imgs}
+                                    h1={item.h1}
+                                    h2={item.h2}
+                                    h3={item.h3}
+                                    h4={item.h4}
+                                    h5={item.h5}
+                                />
 
-                        {
-                            products.map((item, index) => (
-                                <React.Fragment key={item.id}>
-                                    <ContainerJourney
-                                        img={item.img}
-                                        imgb={item.imgb}
-                                        imgs={item.imgs}
-                                        h1={item.h1}
-                                        h2={item.h2}
-                                        h3={item.h3}
-                                        h4={item.h4}
-                                        h5={item.h5}
-                                    />
-                                    {/* 在第一個產品和第二個產品之間插入新的 <section> */}
-                                    {index === 0 && (
-                                        <>
-                                            {products2.map((item2) => (
-                                                <ContainerJourney2
-                                                    key={item2.id}
-                                                    img={item2.img}
-                                                    imgb={item2.imgb}
-                                                    imgs={item2.imgs}
-                                                    h1={item2.h1}
-                                                    h2={item2.h2}
-                                                    h3={item2.h3}
-                                                    h4={item2.h4}
-                                                    h5={item2.h5}
-                                                />
-                                            ))}
-                                        </>
-                                    )}
-                                </React.Fragment>
-                            ))
+                                {/* 在第一個產品和第二個產品之間插入新的 <section> */}
+                                {index === 0 && (
+                                    <>
+                                        {products2.map((item2) => (
+                                            
+                                            <ContainerJourney2
+                                                key={item2.id}
+                                                img={item2.img}
+                                                imgb={item2.imgb}
+                                                imgs={item2.imgs}
+                                                h1={item2.h1}
+                                                h2={item2.h2}
+                                                h3={item2.h3}
+                                                h4={item2.h4}
+                                                h5={item2.h5}
+                                                
+                                            />
+                                        ))}
+                                    </>
+                                )}
+                            </React.Fragment>
+                        ))
                         }
                     </main>
                     <Footer />
@@ -152,5 +168,7 @@
             .createRoot(document.getElementById('root'))
             .render(<App />);
     </script>
+
 </body>
+
 </html>

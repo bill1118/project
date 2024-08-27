@@ -1,6 +1,9 @@
 function ContainerJourney(props) {
     return (
         <>
+            <section className="bee-animation">
+                <BeeAnimation />
+            </section>
             <section id="container-journey">
                 <div className="box-title">
                     <div className="title-list">
