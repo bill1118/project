@@ -9,9 +9,11 @@
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/MotionPathPlugin.min.js"></script>
+
     <link rel="stylesheet" href="./css/style-friend.css">
     <script type="text/babel" src="./jsx/Topbar.jsx"></script>
     <script type="text/babel" src="./jsx/Footer.jsx"></script>
@@ -23,7 +25,20 @@
 <body>
     <div id="root"></div>
     <script type="text/babel">
+        const { useEffect } = React;
         function App() {
+            useEffect(() => {
+                const member = document.getElementById('member');
+                member.addEventListener('click', () => {
+                    document.getElementById('loginPopup').style.display = 'block';
+                })
+
+                const close = document.getElementById('closePopup')
+                close.addEventListener('click', () => {
+                    document.getElementById('loginPopup').style.display = 'none';
+                });
+
+            });
             const products = [
                 {
                     id: 1,
@@ -122,7 +137,7 @@
                                 <div><a href="">報名行程</a></div>
                             </div>
                         </section>
-                        
+
                         {products.map((item, index) => (
                             <React.Fragment key={item.id}>
                                 <ContainerJourney
@@ -140,7 +155,7 @@
                                 {index === 0 && (
                                     <>
                                         {products2.map((item2) => (
-                                            
+
                                             <ContainerJourney2
                                                 key={item2.id}
                                                 img={item2.img}
@@ -151,7 +166,7 @@
                                                 h3={item2.h3}
                                                 h4={item2.h4}
                                                 h5={item2.h5}
-                                                
+
                                             />
                                         ))}
                                     </>
