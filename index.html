@@ -23,27 +23,16 @@
     <script type="text/babel">
         const { useEffect } = React;
         function App() {
-            useEffect(() => {
-                const member = document.getElementById('member');
-                member.addEventListener('click', () => {
-                    document.getElementById('loginPopup').style.display = 'block';
-                })
 
-                const close = document.getElementById('closePopup')
-                close.addEventListener('click', () => {
-                    document.getElementById('loginPopup').style.display = 'none';
-                });
-
-            });
 
             return (
                 <React.Fragment>
 
                     <Topbar />
-                    
+
                     <main>
                         <section id="container-banner">
-                            <img src="./images/topbar-background.png" alt="banner" />
+                            <img src="./images/images/topbar-background.png" alt="banner" />
                             <div className="slide">
                                 <ul className="list-1">
                                     <li className="item">

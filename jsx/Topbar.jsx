@@ -1,6 +1,18 @@
 
 
 function Topbar() {
+    useEffect(() => {
+        const member = document.getElementById('member');
+        member.addEventListener('click', () => {
+            document.getElementById('loginPopup').style.display = 'block';
+        })
+
+        const close = document.getElementById('closePopup')
+        close.addEventListener('click', () => {
+            document.getElementById('loginPopup').style.display = 'none';
+        });
+
+    });
     return (
         <>
             <header id="container-topbar">
@@ -19,8 +31,9 @@ function Topbar() {
                         <li><a id="member" className="member" href=""><img src="./images/icon/User.png" alt="會員" /></a></li>
                     </ul>
                 </nav>
+                {/* logoin */}
                 <div id="loginPopup" className="loginPopup">
-                    <div className="list"> 
+                    <div className="list">
                         <div className="popupContent">
                             <span id="closePopup" className="closePopup">&times;</span>
                         </div>

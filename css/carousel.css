@@ -74,19 +74,19 @@ li.item {
 }
 
 li.item-text:nth-child(1) {
-    background-image: url(../images/春white.svg);
+    background-image: url(../images/index/springwhite.svg);
 }
 
 li.item-text:nth-child(2) {
-    background-image: url(../images/夏white.svg);
+    background-image: url(../images/index/summerwhite.svg)
 }
 
 li.item-text:nth-child(3) {
-    background-image: url(../images/秋white.svg);
+    background-image: url(../images/index/autumnwhite.svg);
 }
 
 li.item-text:nth-child(4) {
-    background-image: url(../images/winnterwhite.svg);
+    background-image: url(../images/index/winnterwhite.svg);
 }
 
 li.item-text {

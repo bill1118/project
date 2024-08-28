@@ -27,18 +27,7 @@
     <script type="text/babel">
         const { useEffect } = React;
         function App() {
-            useEffect(() => {
-                const member = document.getElementById('member');
-                member.addEventListener('click', () => {
-                    document.getElementById('loginPopup').style.display = 'block';
-                })
-
-                const close = document.getElementById('closePopup')
-                close.addEventListener('click', () => {
-                    document.getElementById('loginPopup').style.display = 'none';
-                });
-
-            });
+        
             const products = [
                 {
                     id: 1,
