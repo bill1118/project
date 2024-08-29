@@ -1,142 +1,4 @@
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-	text-decoration: none;
-	letter-spacing: 2px;
-}
 
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-	display: block;
-}
-
-body {
-	line-height: 1.5;
-	font-family: "蘋方-繁", "PingFang TC", "黑體-繁", "Heiti TC", "微軟正黑體", "Microsoft JhengHei", "Noto Sans TC", sans-serif;
-}
-
-ol,
-ul {
-	list-style: none;
-}
-
-blockquote,
-q {
-	quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-	content: '';
-	content: none;
-}
-
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-:root{
-	--primary:#A62014;
-	--secend:#A15C38;
-}
-/* logoin */
 .popup {
     display: none; /* 默认隐藏 */
     justify-content: center;
@@ -155,7 +17,7 @@ table {
     padding: 20px;
     border-radius: 8px;
     width: 30%;
-    height: 65%;
+    height: 75%;
     text-align: center;
     position: relative;
 }
@@ -216,7 +78,7 @@ form input {
     font-size: 12px;
 }
 
-.options{
+#loginForm .options{
     display: flex;
     justify-content:flex-start;
     align-items: center;
@@ -226,6 +88,10 @@ form input {
     width: 80%;
 }
 
+#loginForm .options .remeber{
+    width: 40%;
+}
+
 .options input{
     width: 10%;
     border-radius: 99px;
@@ -233,10 +99,11 @@ form input {
 
 .options a{
     color: black;
-    margin-left: 48%;
+    margin-left: 25%;
+    width: 50%;
 }
 
-form button {
+form .confirm {
     width: 75%;
     padding: 10px;
     background-color: white;
@@ -245,6 +112,7 @@ form button {
     border-radius: 99px;
     cursor: pointer;
     margin-bottom: 50px;
+    margin-top: 25px;
 }
 
 form button:hover{
@@ -252,14 +120,55 @@ form button:hover{
     background-color: var(--primary);
 }
 
-.icon {
+#loginForm .icon {
     display: flex;
     justify-content: center;
     gap:50%;
     transform: scale(0.3);
 }
 
-span{
+#loginForm span{
     font-size: 12px;
 }
 
+/* register */
+#registerForm{
+    height: 100%;
+}
+
+#registerForm  form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#registerForm .phone{
+    width: 74%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+#registerForm #regMessage{
+    width: 50%;
+}
+
+
+#registerForm .phone .code{
+    border-radius: 15px;
+    padding: 10px;
+    width: 35%;
+    cursor: pointer;
+}
+
+#registerForm .phone .code:hover{
+    background-color: #E4E4E4;
+    color: black;
+}
+
+#registerForm .icon{
+    display: flex;
+    justify-content: center;
+    gap:50%;
+    transform: scale(0.3);
+}

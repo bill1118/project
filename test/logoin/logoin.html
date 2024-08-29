@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員登入頁面</title>
+    <link rel="stylesheet" href="../logoin/logoin.css">
+</head>
+
+<body>
+    <!-- 登入按钮 -->
+    <button id="openPopupBtn">登入</button>
+
+    <!-- 登入和註冊表單的彈窗 -->
+    <div id="loginPopup" class="popup" style="display: none;">
+        <div class="popupContent">
+            <span id="closePopup" class="closePopup">&times;</span>
+            <div class="tabs">
+                <button id="loginTab" class="">登入</button>
+                <button id="registerTab">註冊</button>
+            </div>
+            <div id="loginForm" class="form active">
+                <form>
+                    <input type="text" id="username" name="username" placeholder="請輸入電子郵件或電話號碼" required />
+                    <input type="password" id="password" name="password" placeholder="請輸入密碼" required />
+                    <div class="options">
+                        <div class="remeber">
+                            <input type="checkbox" id="rememberMe" name="rememberMe" />
+                            <label for="rememberMe">記住我</label>
+                        </div>
+                        <a href="#">忘記密碼/修改密碼</a>
+                    </div>
+                    <button type="submit" class="confirm">登入</button>
+                    <span>或快速登入</span>
+                    <div class="icon">
+                        <a href=""><img src="../images/icon/facebook.png" alt="facebook"></a>
+                        <a href=""><img src="../images/icon/apple-logo.png" alt="google"></a>
+                        <a href=""><img src="../images/icon/google.png" alt="apple"></a>
+                    </div>
+                    <span>登入即表示您了解並同意關西旅遊網服務條款及隱私權政策</span>
+                </form>
+            </div>
+            <div id="registerForm" class="form">
+                <form>
+                    <input type="text" id="regUsername" name="regUsername" placeholder="請輸入電子郵件" required />
+                    <input type="tel" id="regTel" name="regTel" placeholder="請輸入電話號碼" required>
+                    <div class="phone">
+                        <input type="tel" id="regMessage" inputmode="numeric" autocomplete="one-time-code"
+                            placeholder="輸入手機驗證碼">
+                        <button type="submit" class="code">取得驗證碼</button>
+                    </div>
+                    <input type="password" id="regPassword" name="regPassword" placeholder="請輸入密碼(6-20英數字)" required />
+                    <input type="passwordConfirm" id="passwordConfirm" name="passwordConfirm" placeholder="請再次輸入密碼"
+                        required />
+                    <button type="submit" class="confirm">註冊</button>
+                    <span>或快速登入</span>
+                    <div class="icon">
+                        <a href=""><img src="../images/icon/facebook.png" alt="facebook"></a>
+                        <a href=""><img src="../images/icon/apple-logo.png" alt="google"></a>
+                        <a href=""><img src="../images/icon/google.png" alt="apple"></a>
+                    </div>
+                    <span>註冊即表示您了解並同意關西旅遊網服務條款及隱私權政策</span>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="../logoin/logoin.js"></script>
+</body>
+
+</html>

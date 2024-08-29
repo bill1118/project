@@ -19,7 +19,7 @@
     <script type="text/babel" src="./jsx/Footer.jsx"></script>
     <script type="text/babel" src="./jsx/BeeAnimation.jsx"></script>
     <script type="text/babel" src="./jsx/ContainerJourney.jsx"></script>
-    <script type="text/babel" src="./jsx/ContainerJourney2.jsx"></script>
+    <script type="text/babel" src="./jsx/ContainerJourneyTwo.jsx"></script>
 </head>
 
 <body>
@@ -49,7 +49,7 @@
                     h2: '伏見稻荷',
                     h3: '二條城',
                     h4: '鮮魚刺身',
-                    h5: '第二天',
+                    h5: '第三天',
                 },
             ];
             const products2 = [
@@ -62,7 +62,7 @@
                     h2: '北野異人館',
                     h3: '神戶港',
                     h4: '神戶和牛',
-                    h5: '第三天',
+                    h5: '第二天',
                 },
             ];
             return (
@@ -129,7 +129,7 @@
 
                         {products.map((item, index) => (
                             <React.Fragment key={item.id}>
-                                <ContainerJourney
+                                <ContainerJourney 
                                     img={item.img}
                                     imgb={item.imgb}
                                     imgs={item.imgs}
@@ -145,7 +145,7 @@
                                     <>
                                         {products2.map((item2) => (
 
-                                            <ContainerJourney2
+                                            <ContainerJourneyTwo 
                                                 key={item2.id}
                                                 img={item2.img}
                                                 imgb={item2.imgb}
@@ -176,3 +176,5 @@
 </body>
 
 </html>
+
+

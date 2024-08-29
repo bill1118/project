@@ -2,7 +2,7 @@ function ContainerJourney(props) {
     return (
         <>
             <section className="bee-animation">
-                <BeeAnimation />
+                <BeeAnimation uniqueId="1"  />
             </section>
             <section id="container-journey">
                 <div className="box-title">
@@ -53,3 +53,6 @@ function ContainerJourney(props) {
         </>
     )
 }
+
+
+

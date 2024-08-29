@@ -1,4 +1,4 @@
-function ContainerJourney2(props) {
+function ContainerJourneyTwo(props) {
     React.useEffect(() => {
         // 動畫的 JavaScript 代碼
         gsap.registerPlugin(MotionPathPlugin);
@@ -16,7 +16,9 @@ function ContainerJourney2(props) {
     }, []);
     return (
         <>
-        
+            <section className="bee-animation" style={{ transform: 'scaleX(-1) translateX(-780px)'}}>
+                <BeeAnimation  uniqueId="2"/>
+            </section>
             <section id="container-journey2">
                 <div className="box-title">
                     <div className="title-list">
