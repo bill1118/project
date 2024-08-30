@@ -1,37 +1,52 @@
 <!DOCTYPE html>
-<html lang="zh-Hant-TW">
-
+<html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script><!-- 舊版 -->
-    <script type="text/babel" src="./test.jsx"></script>
-</head>
-
-<body>
-    <div id="root"></div>
-    <script type="text/babel">
-        
-        function App() {
-            return (
-                <>
-                    <RegisterForm/>
-                </>
-            )
+    <title>Scroll Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
         }
 
-        ReactDOM
-            .createRoot(document.getElementById('root'))
-            .render(<App />);
-    </script>
+        /* 全局平滑滚动效果 */
+        html {
+            scroll-behavior: smooth;
+        }
 
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smoove/0.2.10/jquery.smoove.min.js"></script>
-    <script src="./test.js"></script>
+        section {
+            height: 600px;
+            padding: 20px;
+        }
+
+        /* 滾動位置偏移 */
+        .scroll-offset {
+            scroll-margin-top: 10px; /* 向上偏移10px */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="menu">
+        <a href="#section1">Section 1</a>
+        <a href="#section2">Section 2</a>
+        <a href="#section3">Section 3</a>
+    </div>
+
+    <section id="section1" class="scroll-offset" style="background-color: lightcoral;">
+        <h2>Section 1</h2>
+        <p>Content of Section 1</p>
+    </section>
+
+    <section id="section2" class="scroll-offset" style="background-color: lightblue;">
+        <h2>Section 2</h2>
+        <p>Content of Section 2</p>
+    </section>
+
+    <section id="section3" class="scroll-offset" style="background-color: lightgreen;">
+        <h2>Section 3</h2>
+        <p>Content of Section 3</p>
+    </section>
+
 </body>
-
 </html>

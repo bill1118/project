@@ -92,19 +92,19 @@ form input {
     width: 40%;
 }
 
-.options input{
+#loginForm .options input{
     width: 10%;
     border-radius: 99px;
 }
 
-.options a{
+#loginForm .options a{
     color: black;
     margin-left: 25%;
     width: 50%;
 }
 
-form .confirm {
-    width: 75%;
+#loginForm form .confirm {
+    width: 70%;
     padding: 10px;
     background-color: white;
     color: var(--primary);
@@ -115,7 +115,7 @@ form .confirm {
     margin-top: 25px;
 }
 
-form button:hover{
+#loginForm form button:hover{
     color: white;
     background-color: var(--primary);
 }
@@ -143,7 +143,7 @@ form button:hover{
 }
 
 #registerForm .phone{
-    width: 74%;
+    width: 70%;
     display: flex;
     justify-content:space-between;
     align-items: center;
@@ -155,7 +155,8 @@ form button:hover{
 
 
 #registerForm .phone .code{
-    border-radius: 15px;
+    border: 1px solid;
+    border-radius: 17px;
     padding: 10px;
     width: 35%;
     cursor: pointer;
@@ -171,4 +172,25 @@ form button:hover{
     justify-content: center;
     gap:50%;
     transform: scale(0.3);
+}
+
+#registerForm span{
+    font-size: 12px;
+}
+
+#registerForm form .confirm {
+    width: 70%;
+    padding: 10px;
+    background-color: white;
+    color: var(--primary);
+    border:1px solid var(--primary);
+    border-radius: 99px;
+    cursor: pointer;
+    margin-bottom: 50px;
+    margin-top: 25px;
+}
+
+#registerForm form button:hover{
+    color: white;
+    background-color: var(--primary);
 }

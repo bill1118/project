@@ -11,7 +11,7 @@ function Footer() {
                     <nav className="navigation">
                         <ul className="menu-list">
                             <li className="menu">
-                                <h2>關西旅遊旅行社有限公司</h2>
+                                <h2>神火旅遊旅行社有限公司</h2>
                                 <ul className="submenu">
                                     <li>甲種旅遊業 交觀甲字第90001號</li>
                                     <li>品保甲北 3000 號</li>
