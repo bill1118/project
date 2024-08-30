@@ -295,7 +295,7 @@ section {
 
 .box-list {
 	display: flex;
-	justify-content: center;
+	justify-content:flex-start;
 	align-items: center;
 	width: 75%;
 	gap: 50px;
@@ -309,7 +309,7 @@ section {
 
 .box-list .item figure {
 	height: 50vh;
-	width: 23vw;
+	width: 20vw;
 }
 
 .box-list .item img {
