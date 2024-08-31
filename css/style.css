@@ -226,11 +226,12 @@ section {
 #container-free h2::after,
 #container-partner h2::after {
 	content: '';
-	width: 140px;
-	height: 5px;
+	width: 100px;
+	height: 3px;
 	background-color: #A62014;
 	display: block;
 	margin: 10px auto 0;
+	margin-top: 20px;
 }
 
 #container-topics .more-info {
@@ -275,7 +276,7 @@ section {
 #container-banner {
 	position: relative;
 	text-align: center;
-	height: 60%;
+	
 }
 
 #container-banner img {
@@ -303,6 +304,25 @@ section {
     overflow-y: hidden;
 }
 
+.box-list::-webkit-scrollbar{
+	height: 10px;
+}
+
+.box-list::-webkit-scrollbar-thumb {
+    background: rgb(196, 69, 69);
+	cursor: pointer;
+	width: 10px;
+
+	
+}
+
+.box-list::-webkit-scrollbar-track{
+	position: relative;
+	background-color: #dbdada; /* 設置軌道可滑動部分的背景顏色 */
+	background-clip:  content-box;
+    border: 3px solid transparent; /* 用透明邊框縮短可視滾動槽 */
+}
+
 .box-list .item{
 	width: 100%;
 }
@@ -328,9 +348,10 @@ section {
 }
 
 .item p {
-	font-size: 14px;
+	font-size: 16px;
 	margin: 15px 0 10px;
 	color: black;
+	margin-bottom: 40px;
 }
 
 /* container-free */
@@ -452,6 +473,15 @@ footer .submenu-icon {
 	justify-content: space-between;
 	padding-top: 10px;
 }
+
+footer .submenu-icon .line:hover{
+	transform:  scale(1.2);
+}
+
+footer .submenu-icon .facebook:hover{
+	transform:  scale(1.2);
+}
+
 
 footer .small {
 	margin: 0;

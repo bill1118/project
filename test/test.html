@@ -1,52 +1,21 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scroll Example</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
+    <link rel="stylesheet" href="../test/test.css">
 
-        /* 全局平滑滚动效果 */
-        html {
-            scroll-behavior: smooth;
-        }
-
-        section {
-            height: 600px;
-            padding: 20px;
-        }
-
-        /* 滾動位置偏移 */
-        .scroll-offset {
-            scroll-margin-top: 10px; /* 向上偏移10px */
-        }
-    </style>
 </head>
+
 <body>
-
-    <div class="menu">
-        <a href="#section1">Section 1</a>
-        <a href="#section2">Section 2</a>
-        <a href="#section3">Section 3</a>
-    </div>
-
-    <section id="section1" class="scroll-offset" style="background-color: lightcoral;">
-        <h2>Section 1</h2>
-        <p>Content of Section 1</p>
-    </section>
-
-    <section id="section2" class="scroll-offset" style="background-color: lightblue;">
-        <h2>Section 2</h2>
-        <p>Content of Section 2</p>
-    </section>
-
-    <section id="section3" class="scroll-offset" style="background-color: lightgreen;">
-        <h2>Section 3</h2>
-        <p>Content of Section 3</p>
-    </section>
+    <div class="flight-component">
+        <span>New York</span>
+        <input type="range" class="flight" style="--val:0" value="0" min="0" max="100" oninput="this.style='--val:'+this.value" aria-label="percentage flown" />
+        <span>Madrid</span>
+      </div>
 
 </body>
+
 </html>

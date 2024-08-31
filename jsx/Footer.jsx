@@ -32,18 +32,17 @@ function Footer() {
                                 <h2>服務</h2>
                                 <ul className="submenu">
                                     <li><a href="#">主題行程</a></li>
-                                    <li><a href="#">自由規劃</a></li>
+                                    <li><a href="free.html">自由規劃</a></li>
                                     <li><a href="#">連絡我們</a></li>
-                                    <li><a href="#">會員登入</a></li>
                                 </ul>
                             </li>
                             <li className="menu">
                                 <h2>Follow us</h2>
                                 <ul className="submenu-icon">
-                                    <li>
+                                    <li className="line">
                                         <a href=""><img src="./images/icon/line.png" alt=""/></a>
                                     </li>
-                                    <li>
+                                    <li className="facebook">
                                         <a href=""><img src="./images/icon/fb.png" alt=""/></a>
                                     </li>
                                 </ul>
