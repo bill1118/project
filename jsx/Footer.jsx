@@ -5,7 +5,7 @@ function Footer() {
                 <div id="foot">
                     <h1 className="logo">
                         <a href="./index.html">
-                            <img src="./images/logo/Union-logo-brown 1.svg" alt=""/>
+                            <img src="./images/logo/logo-union-white.svg" alt="神火旅遊"/>
                         </a>
                     </h1>
                     <nav className="navigation">

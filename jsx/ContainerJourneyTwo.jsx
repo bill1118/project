@@ -17,7 +17,7 @@ function ContainerJourneyTwo(props) {
     return (
         <>
             <section className="bee-animation" style={{ transform: 'scaleX(-1) translateX(-780px)'}}>
-                <BeeAnimation  uniqueId="2"/>
+                <TrainAnimation  uniqueId="2"/>
             </section>
             <section id="container-journey2">
                 <div className="box-title">

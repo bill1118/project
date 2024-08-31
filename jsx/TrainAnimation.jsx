@@ -1,4 +1,4 @@
-const BeeAnimation = ({ uniqueId }) => {
+const TrainAnimation = ({ uniqueId }) => {
     React.useEffect(() => {
         gsap.registerPlugin(MotionPathPlugin);
         gsap.to(`#bee-${uniqueId}`, {

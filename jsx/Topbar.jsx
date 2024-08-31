@@ -19,7 +19,7 @@ function Topbar() {
     return (
         <header id="container-topbar">
             <h1 className="logo">
-                <a href="./index.html"><img src="./images/logo/Union-logo-brown 1.svg" alt="神火旅遊網logo" /></a>
+                <a href="./index.html"><img src="./images/logo/logo-union-linear.svg" alt="神火旅遊網logo" /></a>
             </h1>
             <nav className="navigation">
                 <ul className="menu">
