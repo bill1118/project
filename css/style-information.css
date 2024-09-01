@@ -1,0 +1,850 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Serif+TC:wght@200..900&display=swap');
+
+
+
+:root {
+    --primary-1: #262220;
+    --primary-2: #A62014;
+    --primary-3: #A15C38;
+    --primary-4: #FFFFFF;
+    --secondary-1: #F7F1F0;
+    --secondary-2: #C3A6A0;
+    --third-1: #6E6E6E;
+    --third-2: #E4E4E4;
+
+    /* 文字 */
+    /*NOTO SANS TC :Regular400/Medium 500  */
+    /*Noto Serif TC:SemiBold 600/Black 900  */
+}
+
+/* 重置所有標籤的樣式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* 重置字體 */
+body {
+    font-family:
+        /*西文*/
+        -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial,
+        /*中文*/
+        "蘋方-繁", "PingFang TC", "黑體-繁", "Heiti TC", "微軟正黑體", "Microsoft JhengHei", "Noto Sans TC", sans-serif;
+    font-size: 100%;
+    line-height: 1.5;
+}
+
+/* 重置標題 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+/* 重置列表 */
+ul,
+ol {
+    list-style: none;
+
+}
+
+/* 重置圖片 */
+img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+/* 重置連接 */
+a {
+    text-decoration: none;
+}
+
+#gotop {
+    position: fixed;
+    right: 20px;
+    bottom: 260px;
+    z-index: 999;
+
+    width: 50px;
+    height: 50px;
+    /* 新增 */
+    /* display: none; */
+    background-color: var(--secondary-1);
+    border-radius: 50%;
+    padding: 5px;
+
+    cursor: pointer;
+    /* 游標樣式:手指 */
+}
+
+#butler {
+    position: fixed;
+    right: 20px;
+    bottom: 320px;
+    z-index: 998;
+
+    width: 50px;
+    height: 50px;
+    /* 新增 */
+    /* display: none; */
+    background-color: var(--secondary-1);
+    border-radius: 50%;
+    padding: 5px;
+
+    cursor: pointer;
+    /* 游標樣式:手指 */
+}
+
+
+/* 頁首區 */
+#container-topbar {
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 5rem;
+    padding: 16px 24px 20px;
+    background-color: var(--primary-4);
+
+
+}
+
+/* logo區 */
+.logo {
+    width: 11rem;
+    /* 将 logo 设置为相对于根元素字体大小的宽度 */
+    height: auto;
+    /* 自动调整高度，保持宽高比 */
+}
+
+
+
+/* 在大解析度下隱藏折疊菜單圖標 */
+.menu-icon {
+    display: none;
+}
+
+
+/* 導覽列 */
+#container-topbar .navigation {
+    display: flex;
+    align-items: center;
+
+}
+
+#container-topbar .navigation .menu {
+    display: flex;
+    align-items: center;
+    padding: 0 1.5vw;
+}
+
+#container-topbar .navigation .menu li {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+    border-right: solid 1px var(--primary-3);
+    padding: 0 24px 0 24px;
+}
+
+
+#container-topbar .navigation .menu li:last-child {
+    border-right: none;
+}
+
+
+#container-topbar .navigation .menu a {
+    color: var(--primary-3);
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-bottom: solid 2px transparent;
+}
+
+#container-topbar .navigation .menu a:hover {
+    border-bottom: solid 2px var(--primary-3);
+    transition: 0.35s ease-in-out;
+    padding-bottom: 6px;
+}
+
+#container-topbar .navigation .icon {
+    display: flex;
+    align-items: center;
+}
+
+#container-topbar .navigation .icon a img {
+    padding: 0 24px 0 0;
+}
+
+/* 在解析度低於907px時顯示折疊菜單圖標 */
+
+@media screen and (max-width: 907px) {
+
+    /* container-topbar的基础布局 */
+    #container-topbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 24px;
+        position: relative;
+    }
+
+    /* 菜单按钮样式 */
+    .menu-icon {
+        display: block;
+        font-size: 36px;
+        cursor: pointer;
+        color: var(--primary-3);
+        margin-left: auto;
+        padding: 10px;
+    }
+
+    /* 保持图标显示在菜单按钮旁边 */
+    #container-topbar .navigation .icon {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        /* 调整为靠右对齐 */
+        align-items: center;
+        margin-left: 10px;
+        /* 减小margin以适应小屏幕 */
+    }
+
+    /* 隐藏菜单内容，初始状态 */
+    #container-topbar .navigation .menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: var(--primary-4);
+    }
+
+    /* 激活状态下显示菜单内容 */
+    #container-topbar .navigation .menu.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 100%;
+        /* 从按钮下方展开 */
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+        background-color: var(--primary-4);
+    }
+
+    /* 菜单项的样式 */
+    #container-topbar .navigation .menu li {
+        padding: 12px 0;
+        width: 100%;
+        white-space: nowrap;
+        /* 确保文字不会换行 */
+    }
+
+    /* 图标的水平排列 */
+    #container-topbar .navigation .icon li {
+        margin: 0 10px;
+    }
+}
+
+/* 确保图标在更小的屏幕上也能显示 */
+@media screen and (max-width: 400px) {
+
+    /* 调整图标的显示样式 */
+    #container-topbar .navigation .icon {
+        display: flex;
+        justify-content: flex-end;
+        /* 确保图标在小屏幕上靠右显示 */
+        margin-left: 5px;
+        /* 减小左边距以节省空间 */
+        width: auto;
+        /* 防止图标容器在小屏幕上被压缩 */
+        overflow: visible;
+        /* 确保内容不会被裁剪 */
+    }
+
+    /* 调整图标内部的间距，防止在小屏幕上消失 */
+    #container-topbar .navigation .icon li {
+        margin: 0 5px;
+        /* 减少图标之间的间距，以适应小屏幕 */
+    }
+
+    /* 调整菜单项的字体大小和间距 */
+    #container-topbar .navigation .menu li {
+        font-size: 14px;
+        /* 缩小字体大小以适应小屏幕 */
+        padding: 10px 0;
+    }
+}
+
+/* banner區  */
+main {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+#information {
+    width: 100%;
+    height: 400px;
+    /* 你可以根據需要調整高度 */
+    background-image: url('../images/ifm/image-bn-ifm.jpg');
+    background-size: cover;
+    background-position: center center;
+    opacity: 0.9;
+    /* 设置透明度为90% */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+#information .title h2 {
+    font-family: "Noto Serif TC", serif;
+    font-optical-sizing: auto;
+    /* 根据文本的大小自动调整字体*/
+    font-weight: 900;
+    font-style: normal;
+    font-size: 2.2rem;
+    /* 調整字體大小 */
+    letter-spacing: 0.6rem;
+    /* 調整字距 */
+    line-height: 0.6rem;
+    /* 調整字高 */
+    text-align: center;
+    margin: 0;
+    color: var(--primary-4);
+    /* 設置文字顏色 */
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /* 設置文字陰影 */
+}
+
+/* 內容區 */
+
+/* 分隔符圖片調整 */
+.divider-image {
+    display: block;
+    margin: 20px auto;
+    /* 在上下内容之间添加合适的间距 ， 圖片上下居中*/
+    max-width: 50%;
+    /* 限制分隔符的最大宽度 */
+    height: auto;
+    /* 保持图像的比例 */
+}
+
+@media screen and (max-width: 1024px) {
+    .divider-image {
+        max-width: 70%;
+        /* 針對平板螢幕調整 */
+        margin: 15px auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .divider-image {
+        max-width: 90%;
+        /* 針對手機螢幕調整 */
+        margin: 10px auto;
+    }
+}
+
+
+/* 區塊 */
+
+/* 文字對齊與內邊距調整 */
+.content-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* 水平置中 */
+    align-items: center;
+    /* 垂直置中 */
+    flex-direction: column;
+    /* 若內容為垂直排列 */
+    text-align: left;
+    /*使内容内部的文字左对齐 */
+    padding: 20px;
+    /* 添加内邊距避免内容貼邊 */
+    background-color: var(--secondary-1);
+}
+
+@media screen and (max-width: 1024px) {
+    .content-section {
+        padding: 18px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content-section {
+        padding: 15px;
+    }
+}
+
+
+/* 内容标题 */
+.section-header {
+    font-family: "Noto Sans TC";
+    font-optical-sizing: auto;
+    /* 根据文本的大小自动调整字体*/
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 0.2rem;
+    /* 調整字距 */
+    line-height: 1.5rem;
+    /* 調整字高 */
+    text-align: center;
+    margin: 20px auto;
+    /* 根据需要调整外边距 */
+    font-size: 1.4rem;
+    /* 根据需要调整字体大小 */
+    color: var(--primary-2);
+
+}
+
+/* 保持内容区块内文字的左对齐 */
+.strategy .section-content {
+    margin-right: 55px;
+}
+
+.tips .section-content {
+    margin-right: 40px;
+}
+
+.cultural-guide .section-content {
+    margin-right: 40px;
+    margin-bottom: 5%;
+}
+
+
+.content-section h4 {
+    font-family: "Noto Sans TC";
+    font-optical-sizing: auto;
+    /* 根据文本的大小自动调整字体*/
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.2rem;
+    /* 調整字距 */
+    line-height: 0.6rem;
+    /* 調整字高 */
+    text-align: left;
+    margin: 25px auto 15px;
+    /* 上边距25px，下边距15px，水平居中 */
+    font-size: 1.2rem;
+    /* 根据需要调整字体大小 */
+    color: var(--primary-1);
+}
+
+/* 讓列表內容置中 */
+.content-section ul {
+    font-family: "Noto Sans TC";
+    font-optical-sizing: auto;
+    /* 根据文本的大小自动调整字体*/
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.2rem;
+    /* 調整字距 */
+    line-height: 0.6rem;
+    /* 調整字高 */
+    padding-left: 1px;
+    /* 添加适当的左内边距以显示黑点 */
+    margin-left: 0;
+    /* 移除默認的左外邊距 */
+    text-align: left;
+    list-style-type: disc;
+    list-style-position: inside;
+    /* 列表符号和文本对齐 */
+    /* 确保显示黑点 */
+}
+
+.content-section ol {
+    font-family: "Noto Sans TC";
+    font-optical-sizing: auto;
+    /* 根据文本的大小自动调整字体*/
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.2rem;
+    /* 調整字距 */
+    line-height: 1rem;
+    /* 調整字高 */
+    padding-left: 40px;
+    /* 添加适当的左内边距以显數字 */
+    margin-left: 0;
+    /* 移除默認的左外邊距 */
+    text-align: left;
+    /* 列表项左对齐 */
+    list-style-type: decimal;
+    /* 确保显示数字 */
+}
+
+.content-section li {
+    font-family: "Noto Sans TC";
+    font-optical-sizing: auto;
+    /* 根据文本的大小自动调整字体*/
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.2rem;
+    /* 調整字距 */
+    line-height: 1.5rem;
+    /* 調整字高 */
+    text-align: left;
+    /* 确保列表項的文字居中 */
+    margin: 0 auto;
+    /* 置中列表項 */
+}
+
+.content-section .preparation li .after-br {
+    /* display: block; */
+    margin-top: 10px;
+    /* 控制间距 */
+    margin-left: 120px;
+    /* 向右移动20px，您可以调整这个值 */
+    line-height: 0.5;
+    /* 控制行高 */
+}
+
+.content-section .strategy li .after-br {
+    /* display: block; */
+    margin-top: 10px;
+    /* 控制间距 */
+    margin-left: 120px;
+    /* 向右移动20px，您可以调整这个值 */
+    line-height: 0.5;
+    /* 控制行高 */
+}
+
+.content-section .strategy li .after-br-1 {
+    /* display: block; */
+    margin-top: 10px;
+    /* 控制间距 */
+    margin-left: 140px;
+    /* 向右移动20px，您可以调整这个值 */
+    line-height: 0.5;
+    /* 控制行高 */
+}
+
+.content-section .strategy li .after-br-2 {
+    /* display: block; */
+    margin-top: 10px;
+    /* 控制间距 */
+    margin-left: 100px;
+    /* 向右移动20px，您可以调整这个值 */
+    line-height: 0.5;
+    /* 控制行高 */
+}
+
+.content-section .strategy li .after-br-3 {
+    /* display: block; */
+    margin-top: 10px;
+    /* 控制间距 */
+    margin-left: 100px;
+    /* 向右移动20px，您可以调整这个值 */
+    line-height: 0.5;
+    /* 控制行高 */
+}
+
+.content-section .tips li .after-br {
+    /* display: block; */
+    margin-top: 10px;
+    /* 控制间距 */
+    margin-left: 117px;
+    /* 您可以调整这个值 */
+    line-height: 0.5;
+    /* 控制行高 */
+}
+
+.content-section .tips li .after-br-1 {
+    /* display: block; */
+    margin-top: 10px;
+    /* 控制间距 */
+    margin-left: 150px;
+    /* 您可以调整这个值 */
+    line-height: 0.5;
+    /* 控制行高 */
+}
+
+.content-section .tips li .after-br-2 {
+    /* display: block; */
+    margin-top: 10px;
+    /* 控制间距 */
+    margin-left: 58px;
+    /* 您可以调整这个值 */
+    line-height: 0.5;
+    /* 控制行高 */
+}
+
+.content-section .tips li .after-br-3 {
+    /* display: block; */
+    margin-top: 10px;
+    /* 控制间距 */
+    margin-left: 116px;
+    /* 您可以调整这个值 */
+    line-height: 0.5;
+    /* 控制行高 */
+}
+
+.content-section .tips li .after-br-4 {
+    /* display: block; */
+    margin-top: 10px;
+    /* 控制间距 */
+    margin-left: 116px;
+    /* 您可以调整这个值 */
+    line-height: 0.5;
+    /* 控制行高 */
+}
+
+.content-section .tips li .after-br-5 {
+    /* display: block; */
+    margin-top: 10px;
+    /* 控制间距 */
+    margin-left: 96px;
+    /* 您可以调整这个值 */
+    line-height: 0.5;
+    /* 控制行高 */
+}
+
+@media screen and (max-width: 768px) {
+    .content-section h4 {
+        font-size: 1.1rem;
+        margin: 20px auto 10px;
+    }
+
+    .content-section ul,
+    .content-section ol {
+        padding-left: 10px;
+        /* 確保文字對齊適當 */
+    }
+
+    .content-section li {
+        margin-left: 0;
+        line-height: 1.5rem;
+    }
+
+    .after-br,
+    .after-br-1,
+    .after-br-2,
+    .after-br-3,
+    .after-br-4,
+    .after-br-5 {
+        display: none; /* 在小螢幕上隱藏 after-br */
+    }
+}
+
+
+    /* 頁尾區 */
+    footer {
+        background-color: var(--primary-2);
+        color: var(--primary-4);
+        padding: 20px;
+        /* 添加 padding 以確保内容可建 */
+        margin-top: auto;
+        /* 確保 footer 在頁面底部 */
+    }
+
+    footer div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        /* 保持所有元素在一行，并允许必要时换行 */
+    }
+
+    footer .navigation {
+        padding: 0 70px 0 0;
+        font-family: 'Noto Sans TC', sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-size: 0.8rem;
+        /* 調整字體大小 */
+        letter-spacing: 0.1rem;
+        /* 調整字距 */
+    }
+
+    footer .navigation .menu-list {
+        display: flex;
+        justify-content: center;
+    }
+
+    footer .menu {
+        padding: 10px 50px;
+        opacity: 0.8rem;
+    }
+
+    footer .navigation h2 {
+        border-bottom: solid 1px var(--primary-4);
+    }
+
+
+    footer .menu .submenu {
+        padding: 10px 0;
+    }
+
+    footer .menu .submenu a {
+        color: var(--primary-4);
+    }
+
+    footer .submenu-icon {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 10px;
+    }
+
+    footer .small {
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        opacity: 0.9;
+    }
+
+
+    /* 1440px以下解析度的布局调整 */
+    @media screen and (max-width: 1300px) {
+        footer .navigation .menu-list {
+            flex-wrap: wrap;
+            /* 允许子元素换行，但不会缩排 */
+            justify-content: center;
+            /* 居中对齐内容 */
+        }
+
+        footer .menu {
+            flex-basis: calc(50% - 40px);
+            /* 每个菜单项占据一半宽度，并留出间距 */
+            margin-bottom: 20px;
+            text-align: center;
+            padding: 0;
+        }
+
+        footer .menu-list li {
+            margin: 10px 20px;
+            /* 控制子元素之间的间距，避免缩排 */
+        }
+
+        footer .menu h2 {
+            font-size: 1rem;
+            /* 调整标题的字体大小 */
+        }
+
+        footer .submenu li,
+        footer .submenu a {
+            font-size: 0.9rem;
+            /* 调整子菜单项的字体大小 */
+        }
+
+        footer .navigation {
+            padding: 0 20px;
+            /* 减少导航栏的内边距，增加空间 */
+        }
+    }
+
+    /* 1024px以下解析度的布局调整 */
+    @media screen and (max-width: 1024px) {
+        footer .navigation .menu-list {
+            flex-direction: column;
+            /* 将所有菜单项垂直排列 */
+            align-items: center;
+            /* 将所有内容垂直排列，并居中对齐 */
+        }
+
+        footer .menu {
+            width: 100%;
+            /* 使菜单项占据整个父容器的宽度 */
+            margin-bottom: 15px;
+            text-align: center;
+            padding: 0;
+        }
+
+        footer .logo {
+            margin-bottom: 20px;
+            /* 为Logo添加底部外边距，避免与内容过于紧密 */
+        }
+
+        footer .navigation {
+            padding: 0;
+            text-align: center;
+        }
+
+
+
+        footer .menu h2 {
+            font-size: 0.9rem;
+            /* 调整标题的字体大小 */
+        }
+
+        footer .submenu li,
+        footer .submenu a {
+            font-size: 0.8rem;
+            /* 调整子菜单项的字体大小 */
+        }
+
+        footer .submenu-icon {
+            justify-content: center;
+            /* 确保icon居中显示 */
+        }
+
+        footer .small {
+            text-align: center;
+            padding-top: 10px;
+        }
+
+    }
+
+    /* 768px以下解析度的布局调整 */
+    @media screen and (max-width: 768px) {
+        footer div {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        footer .logo {
+            margin-bottom: 15px;
+            /* 进一步调整Logo与内容之间的间距 */
+        }
+
+        footer .menu h2 {
+            font-size: 0.85rem;
+            /* 进一步缩小标题的字体大小 */
+        }
+
+        footer .submenu li,
+        footer .submenu a {
+            font-size: 0.75rem;
+            /* 进一步缩小子菜单项的字体大小 */
+        }
+
+        footer .menu {
+            padding: 5px 10px;
+            /* 减少内边距，提供更多空间 */
+        }
+
+        footer .navigation {
+            text-align: center;
+            padding: 0;
+        }
+
+        footer .navigation .menu-list {
+            align-items: center;
+            /* 确保菜单列表居中 */
+        }
+
+        footer .submenu-icon {
+            justify-content: center;
+        }
+
+        footer .small {
+            text-align: center;
+            padding-top: 10px;
+        }
+    }

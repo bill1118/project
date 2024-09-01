@@ -32,18 +32,19 @@ function Footer() {
                                 <h2>服務</h2>
                                 <ul className="submenu">
                                     <li><a href="#">主題行程</a></li>
-                                    <li><a href="free.html">自由規劃</a></li>
-                                    <li><a href="#">連絡我們</a></li>
+                                    <li><a href="./free.html">自由規劃</a></li>
+                                    <li><a href="./information.html">旅遊資訊</a></li>
+                                    <li><a href="./contact-us.html">聯絡我們</a></li>
                                 </ul>
                             </li>
                             <li className="menu">
                                 <h2>Follow us</h2>
                                 <ul className="submenu-icon">
                                     <li className="line">
-                                        <a href=""><img src="./images/icon/line.png" alt=""/></a>
+                                        <a href=""><img src="./images/icon/line.png" alt="line"/></a>
                                     </li>
                                     <li className="facebook">
-                                        <a href=""><img src="./images/icon/fb.png" alt=""/></a>
+                                        <a href=""><img src="./images/icon/fb.png" alt="fb"/></a>
                                     </li>
                                 </ul>
                             </li>
@@ -51,7 +52,7 @@ function Footer() {
                     </nav>
                 </div>
                 <div className="small">
-                    <small>版權所有 © 2024 神火旅遊</small>
+                    <small>版權所有 &copy; 2024 神火旅遊</small>
                 </div>
                 <div id="gotop" onClick={()=>{
                     $('html,body').animate({ scrollTop: 0 }, 1000);

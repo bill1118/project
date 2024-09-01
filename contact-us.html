@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>神火旅遊</title>
+    <link rel="icon" href="./favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- 自訂的css -->
+    <link rel="stylesheet" href="./css/style-contact-us.css">
+</head>
+
+<body>
+    <!-- 頁首區 -->
+    <header id="container-topbar">
+        <!-- logo區 -->
+        <h1 class="logo">
+            <a href="./index.html"><img src="./images/logo/logo-union-linear.svg" alt="神火旅遊logo"></a>
+        </h1>
+
+
+        <!-- 導覽列 -->
+        <nav class="navigation">
+            <!-- 折疊菜單圖標 -->
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+                <ul class="menu">
+                    <li><a href="#">主題行程</a></li>
+                    <li><a href="./free.html">自由規劃</a></li>
+                    <li><a href="./information.html">旅遊資訊</a></li>
+                    <li><a href="./contact-us.html">聯絡我們</a></li>
+                </ul>
+                <ul class="icon">
+                    <li><a class="icon-brown-shoppingcar" href="#"><img
+                                src="./images/icon/shoppingcar-brown.svg" alt="購物車"></a></li>
+                    <li><a class="icon-brown-member" href="#"><img src="./images/icon/User-brown.svg"
+                                alt="會員"></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- banner區 -->
+    <main>
+        <section id="contact-us">
+            <header class="title">
+                <h2>聯絡我們</h2>
+            </header>
+        </section>
+        <!-- 內容區 -->
+        <section id="content">
+            <div class="box">
+                <div class="col-1">
+                    <div class="text">
+                        <h1>神火旅遊</h1>
+                        <address>
+                            <p>電話：02-3322-2777</p>
+                            <p>傳真：02-3322-2778</p>
+                            <P>地址：台北市中正區一段條條大路68號</P>
+                            <P>信箱：shenhuo68@shtravel.com.tw</P>
+                        </address>
+                    </div>
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d451.8441420006867!2d121.52466923407864!3d25.042450470562876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjXCsDAyJzMyLjYiTiAxMjHCsDMxJzMwLjMiRQ!5e0!3m2!1szh-TW!2stw!4v1724225327952!5m2!1szh-TW!2stw"
+                            width="360" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe></https:>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <form action="" method="post" name="form-contact" id="form-contact" title="聯絡我們表單">
+                        <label for="username">姓名*</label>
+                        <input type="text" name="username" id="username" title="姓名欄位" placeholder="請輸入姓名" required
+                            autocomplete>
+                        <label for="tel">聯絡電話*</label>
+                        <input type="tel" name="tel" id="tel" title="聯絡電話欄位" placeholder="請輸入聯絡電話" required
+                            autocomplete>
+                        <label for="email">電子郵件*</label>
+                        <input type="email" name="email" id="email" title="email欄位" placeholder="請輸入電子郵件" required
+                            autocomplete>
+                        <label for="email">問題項目</label>
+                        <input type="email" name="email" id="email" title="email欄位" autocomplete>
+                        <label for="message">您的建議</label>
+                        <textarea name="message" id="message" title="留言欄位" rows="10" required
+                            placeholder="請輸入您的意見"></textarea>
+                        <small>此表單為練習作品，不具有收集資料的功能。</small>
+
+                        <button name="btn__contact--submit" id="btn__contact--submit" title="送出按鈕">
+                            <span>確認送出</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- 裝飾雲 -->
+            <div class="cloud-container">
+                <div class="clowd_r"><img src="./images/icon/ctu/icon-ctu-r-cloud.svg" alt="裝飾紅雲"></div>
+                <div class="clowd_w"><img src="./images/icon/ctu/icon-ctu-b-cloud.svg" alt="裝飾棕雲"></div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- 頁尾區 -->
+    <footer>
+        <div>
+            <!-- logo -->
+            <h1 class="logo">
+                <a href="#">
+                    <img src="./images/logo/logo-union-white.svg" alt="神火旅遊">
+                </a>
+            </h1>
+
+
+
+            <nav class="navigation">
+                <ul class="menu-list">
+                    <li class="menu">
+                        <h2>神火旅遊旅行社有限公司</h2>
+                        <ul class="submenu">
+                            <li>甲種旅遊業 交觀甲字第90001號</li>
+                            <li>品保甲北 3000 號</li>
+                            <li>代表人:沈水</li>
+                            <li>聯絡人:沈佳宜</li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <h2>聯絡資訊</h2>
+                        <ul class="submenu">
+                            <li>電話:02-3322-2777</li>
+                            <li>傳真:02-3322-2778</li>
+                            <li>地址:台北市中正區一段條條大路68號</li>
+                            <li>信箱:shenhuo68@shtravel.com.tw</li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <h2>服務</h2>
+                        <!-- 子按鈕 -->
+                        <ul class="submenu">
+                            <li><a href="#">主題行程</a></li>
+                            <li><a href="./free.html">自由規劃</a></li>
+                            <li><a href="./information.html">旅遊資訊</a></li>
+                            <li><a href="./contact-us.html">聯絡我們</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <h2>Follow us</h2>
+                        <ul class="submenu-icon">
+                            <li>
+                                <a href=""><img src="./images/icon/line.png" alt="line"></a>
+                            </li>
+                            <li>
+                                <a href=""><img src="./images/icon/fb.png" alt="fb"></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="small">
+            <small>版權所有 &copy; 2024 神火旅遊</small>
+        </div>
+    </footer>
+
+    <!-- 自訂的JS，一定要寫在最下面，要在最後執行-->
+    <script src="./js/script-ctu-inf-itn.js"></script>
+</body>
+
+</html>

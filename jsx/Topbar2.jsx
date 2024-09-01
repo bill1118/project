@@ -1,6 +1,6 @@
 const { useState } = React;
 
-function Topbar() {
+function Topbar2() {
     const [isPopupVisible, setPopupVisible] = useState(false);
     const [isLoginActive, setLoginActive] = useState(true);
 
@@ -29,8 +29,8 @@ function Topbar() {
                     <li><a href="./contact-us.html">聯絡我們</a></li>
                 </ul>
                 <ul className="icon">
-                    <li><a className="icon-shoppingcar" href=""><img src="./images/icon/shoppingcar-white.svg" alt="購物車" /></a></li>
-                    <li><a className="member" href="#" onClick={togglePopup}><img src="./images/icon/User-white.svg" alt="會員" /></a></li>
+                    <li><a className="icon-shoppingcar" href=""><img src="./images/icon/shoppingcar-brown.svg" alt="購物車" /></a></li>
+                    <li><a className="member" href="#" onClick={togglePopup}><img src="./images/icon/User-brown.svg" alt="會員" /></a></li>
                 </ul>
             </nav>
             

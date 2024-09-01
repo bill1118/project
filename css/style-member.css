@@ -86,7 +86,7 @@ video {
     font: inherit;
     vertical-align: baseline;
     text-decoration: none;
-    letter-spacing: 1.5px;
+    letter-spacing: 2px;
     line-height: 1.2rem;
 }
 
@@ -147,6 +147,7 @@ table {
     width: 100%;
     z-index: 999;
     background-color: white;
+    
 }
 
 .logo {
@@ -650,7 +651,7 @@ section {
 
 /* footer */
 footer {
-    background-color: #A62014;
+    background-color: var(--primary);
     color: white;
     font-size: 12px;
     line-height: 1.5;
@@ -702,4 +703,8 @@ footer .small {
     padding: 0;
     justify-content: center;
     opacity: 0.9;
+}
+
+footer h2{
+	font-size: 12px;
 }

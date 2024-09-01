@@ -87,6 +87,8 @@ video {
 	vertical-align: baseline;
 	text-decoration: none;
 	letter-spacing: 2px;
+	line-height: 1.2rem;
+	font-family: "Noto Sans TC", "蘋方-繁", "PingFang TC", "黑體-繁", "Heiti TC", "微軟正黑體", "Microsoft JhengHei", "Noto Sans TC", sans-serif;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -102,11 +104,6 @@ menu,
 nav,
 section {
 	display: block;
-}
-
-body {
-	line-height: 1.5rem;
-	font-family: "Noto Sans TC", "蘋方-繁", "PingFang TC", "黑體-繁", "Heiti TC", "微軟正黑體", "Microsoft JhengHei", "Noto Sans TC", sans-serif;
 }
 
 ol,
@@ -146,6 +143,7 @@ table {
 	width: 100%;
 	z-index: 999;
 	background-color: white;
+	padding: 16px 24px 20px;
 }
 
 .logo {
@@ -653,8 +651,6 @@ footer {
 	background-color: var(--primary);
 	color: white;
 	font-size: 12px;
-	line-height:1.5;
-	letter-spacing: 3px;
 }
 
 footer div {
@@ -697,6 +693,11 @@ footer .submenu-icon {
 	padding-top: 10px;
 }
 
+
+footer h2{
+	font-size: 12px;
+}
+
 footer .small {
 	margin: 0;
 	padding: 0;
@@ -704,13 +705,20 @@ footer .small {
 	opacity: 0.9;
 }
 
-footer h2{
-	font-size: 12px;
-}
-
 .bee-animation{
 	position: absolute;
 	right:20%;
+	z-index: 99;
+}
 
-	z-index: 999;
+#gotop{
+    position: fixed;
+    right: 50px;
+    bottom: 20px;
+    z-index: 999;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 100%;
+	cursor: pointer;
 }

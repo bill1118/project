@@ -88,7 +88,7 @@ video {
 	vertical-align: baseline;
 	text-decoration: none;
 	letter-spacing: 2px;
-	line-height: 1.5rem;
+	line-height: 1.2rem;
 	font-family: "Noto Sans TC", "蘋方-繁", "PingFang TC", "黑體-繁", "Heiti TC", "微軟正黑體", "Microsoft JhengHei", "Noto Sans TC", sans-serif;
 }
 
@@ -108,7 +108,8 @@ section {
 }
 
 ol,
-ul {
+ul
+{
 	list-style: none;
 }
 
@@ -143,7 +144,7 @@ table {
 	position: fixed;
 	width: 100%;
 	z-index: 999;
-	background-color: white;
+    padding: 16px 24px 20px;
 }
 
 .logo {
@@ -163,7 +164,7 @@ table {
 }
 
 #container-topbar .navigation .menu li {
-	border-right: solid 1px var(--secend);
+	border-right: solid 1px white;
 	padding: 0 20px 0 0;
 }
 
@@ -172,14 +173,14 @@ table {
 }
 
 #container-topbar .navigation .menu a {
-	color: var(--secend);
+	color: white;
 	text-decoration: none;
 	font-size: 1.2rem;
 	border-bottom: solid 2px transparent;
 }
 
 #container-topbar .navigation .menu a:hover {
-	border-bottom: solid 2px var(--secend);
+	border-bottom: solid 2px white;
 	transition: 0.35s ease-in-out;
 	padding-bottom: 6px;
 }
@@ -193,7 +194,7 @@ table {
 #container-topbar .navigation .icon a img {
 	width: 24px;
 	height: 24px;
-	color: var(--secend);
+	color: white;
 }
 
 /* 主要內容共用區 */
@@ -435,8 +436,6 @@ footer {
 	background-color: #A62014;
 	color: white;
 	font-size: 12px;
-	line-height:1.5;
-	letter-spacing: 3px;
 }
 
 footer div {
