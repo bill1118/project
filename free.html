@@ -5,301 +5,141 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>神火旅遊</title>
+    <title>關西旅遊網</title>
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-
     <link rel="stylesheet" href="./css/style-free.css">
-    <link rel="stylesheet" href="./css/logoin.css">
-    
-    <script type="text/babel" src="./jsx/Topbar.jsx"></script>
+    <script type="text/babel" src="./jsx/Topbar2.jsx"></script>
     <script type="text/babel" src="./jsx/Footer.jsx"></script>
+    <script type="text/babel" src="./jsx/FreeEdit.jsx"></script>
 </head>
 
 <body>
-    <header id="container-topbar">
-        <h1 class="logo">
-            <a href="./index.html"><img src="./images/logo/logo-union-linear.svg" alt="關西旅遊網logo"></a>
-        </h1>
-        <nav class="navigation">
-            <ul class="menu">
-                <li><a href="./ninetheme.html">主題行程</a></li>
-                <li><a href="./free.html">自由規劃</a></li>
-                <li><a href="./information.html">旅遊資訊</a></li>
-                <li><a href="./contact-us.html">聯絡我們</a></li>
-            </ul>
-            <ul class="icon">
-                <li><a class="icon-shoppingcar" href=""><img src="./images/icon/shoppingcar.png" alt="購物車"></a></li>
-                <li><a class="icon-member" href=""><img src="./images/icon/User.png" alt="會員"></a></li>
-            </ul>
-        </nav>
-    </header>
+    <div id="root"></div>
+    <script type="text/babel">
+        function App() {
+            const products = [{
+                id: 1,
+                img: <img src="./images/free/freecompress-pexels-eko-cahyono-102048560-9831406.jpg" alt="黑門市場" />,
+                img1: <img src="./images/icon/map-marker.svg" alt="地標" />,
+                img2: <img src="./images/icon/circle btn (1).svg" alt="大阪" />,
+                p: '大阪',
+                h2: '黑門市場',
+            },
+            {
+                id: 1,
+                img: <img src="./images/free/freecompress-pexels-eko-cahyono-102048560-9831406.jpg" alt="黑門市場" />,
+                img1: <img src="./images/icon/map-marker.svg" alt="地標" />,
+                img2: <img src="./images/icon/circle btn (1).svg" alt="大阪" />,
+                p: '大阪',
+                h2: '黑門市場',
+            },
+            {
+                id: 1,
+                img: <img src="./images/free/freecompress-pexels-eko-cahyono-102048560-9831406.jpg" alt="黑門市場" />,
+                img1: <img src="./images/icon/map-marker.svg" alt="地標" />,
+                img2: <img src="./images/icon/circle btn (1).svg" alt="大阪" />,
+                p: '大阪',
+                h2: '黑門市場',
+            },
+            {
+                id: 1,
+                img: <img src="./images/free/freecompress-pexels-eko-cahyono-102048560-9831406.jpg" alt="黑門市場" />,
+                img1: <img src="./images/icon/map-marker.svg" alt="地標" />,
+                img2: <img src="./images/icon/circle btn (1).svg" alt="大阪" />,
+                p: '大阪',
+                h2: '黑門市場',
+            },
+            ];
+            return (
+                <>
+                    <Topbar2 />
+                    <main>
+                        <section id="container-banner">
+                            <div className="banner-content">
+                                <img src="./images/icon/inverted-commas 左.png" alt="" />
+                                <h1>輕鬆規劃行程</h1>
+                                <img src="./images/icon/inverted-commas 右.png" alt="" />
+                            </div>
+                            <div className="search-bar">
+                                <input type="text" placeholder="搜尋" />
+                            </div>
+                        </section>
 
-    <main>
-        <section id="container-banner">
-            <div class="banner-content">
-                <img src="./images/icon/inverted-commas 左.png" alt="">
-                <h1>輕鬆規劃行程</h1>
-                <img src="./images/icon/inverted-commas 右.png" alt="">
-            </div>
-            <div class="search-bar">
-                <input type="text" placeholder="搜尋">
-            </div>
-        </section>
+                        <section id="container-database">
+                            <div className="box-left">
+                                <div className="select-bar">
+                                    <div className="list">
+                                        <form action="">
+                                            <select name="" id="">
+                                                <option value="">所有地區</option>
+                                                <option value="北海道">北海道</option>
+                                                <option value="東北地區">東北地區</option>
+                                                <option value="中部地區">中部地區</option>
+                                                <option value="關東地區">關東地區</option>
+                                                <option value="關西地區">關西地區</option>
+                                                <option value="中國地區">中國地區</option>
+                                                <option value="四國地區">四國地區</option>
+                                                <option value="九州">九州</option>
+                                                <option value="沖繩">沖繩</option>
+                                            </select>
+                                        </form>
+                                    </div>
+                                    <div className="list">
+                                        <a href="">景點</a>
+                                    </div>
+                                    <div className="list">
+                                        <a href="">美食</a>
+                                    </div>
+                                </div>
+                                {products.map((item, index) => (
+                                    <React.Fragment key={item.id}>
+                                        <FreeEdit
+                                            img={item.img}
+                                            img1={item.img1}
+                                            img2={item.img2}
+                                            p={item.p}
+                                            h2={item.h2}
+                                        />
+                                    </React.Fragment>
+                                ))
+                                }
+                            </div>
+                            <div className="box-right">
+                                <div className="title">
+                                    <p>行程列表</p>
+                                    <a href=""><img src="./images/icon/Vector.svg" alt="download" /></a>
+                                </div>
+                                <img src="./images/free/section.day1.png" alt="day1" />
+                                <div className="box-list">
+                                    <div className="content">
+                                        <h2>第三天</h2>
+                                    </div>
+                                </div>
+                                <div className="btn">
+                                    <button>進入購物車<img src="./images/icon/Shopping cart.svg" alt="" /></button>
+                                </div>
+                                <div className="btn2">
+                                    <button>加入行程</button>
+                                </div>
+                            </div>
+                        </section>
 
-        <section id="container-database">
-            <div class="box-left">
-                <div class="select-bar">
-                    <div class="list">
-                        <form action="">
-                            <select name="" id="">
-                                <option value="">所有地區</option>
-                                <option value="北海道">北海道</option>
-                                <option value="東北地區">東北地區</option>
-                                <option value="中部地區">中部地區</option>
-                                <option value="關東地區">關東地區</option>
-                                <option value="關西地區">關西地區</option>
-                                <option value="中國地區">中國地區</option>
-                                <option value="四國地區">四國地區</option>
-                                <option value="九州">九州</option>
-                                <option value="沖繩">沖繩</option>
-                            </select>
-                        </form>
-                    </div>
 
-                    <div class="list">
-                        <a href="">景點</a>
-                    </div>
-                    <div class="list">
-                        <a href="">美食</a>
-                    </div>
-                </div>
-                <div id="box-list">
-                    <div class="list-item">
-                        <figure><img src="./images/free/freecompress-pexels-eko-cahyono-102048560-9831406.jpg" alt="">
-                        </figure>
-                        <div class="list-text">
-                            <div class="text-content">
-                                <div class="title">
-                                    <img src="./images/icon/map-marker.svg" alt="">
-                                    <p>大阪</p>
-                                </div>
-                                <div class="content">
-                                    <h2>黑門市場</h2>
-                                </div>
-                            </div>
-                            <div class="icon"><a href=""><img src="./images/icon/circle btn (1).svg" alt=""></a></div>
-                        </div>
-                    </div>
-                    <div class="list-item">
-                        <figure><img src="./images/free/freecompress-pexels-eko-cahyono-102048560-9831406.jpg" alt="">
-                        </figure>
-                        <div class="list-text">
-                            <div class="text-content">
-                                <div class="title">
-                                    <img src="./images/icon/map-marker.svg" alt="">
-                                    <p>大阪</p>
-                                </div>
-                                <div class="content">
-                                    <h2>黑門市場</h2>
-                                </div>
-                            </div>
-                            <div class="icon"><a href=""><img src="./images/icon/circle btn (1).svg" alt=""></a></div>
-                        </div>
-                    </div>
-                    <div class="list-item">
-                        <figure><img src="./images/free/freecompress-pexels-eko-cahyono-102048560-9831406.jpg" alt="">
-                        </figure>
-                        <div class="list-text">
-                            <div class="text-content">
-                                <div class="title">
-                                    <img src="./images/icon/map-marker.svg" alt="">
-                                    <p>大阪</p>
-                                </div>
-                                <div class="content">
-                                    <h2>黑門市場</h2>
-                                </div>
-                            </div>
-                            <div class="icon"><a href=""><img src="./images/icon/circle btn (1).svg" alt=""></a></div>
-                        </div>
-                    </div>
-                    <div class="list-item">
-                        <figure><img src="./images/free/freecompress-pexels-eko-cahyono-102048560-9831406.jpg" alt="">
-                        </figure>
-                        <div class="list-text">
-                            <div class="text-content">
-                                <div class="title">
-                                    <img src="./images/icon/map-marker.svg" alt="">
-                                    <p>大阪</p>
-                                </div>
-                                <div class="content">
-                                    <h2>黑門市場</h2>
-                                </div>
-                            </div>
-                            <div class="icon"><a href=""><img src="./images/icon/circle btn (1).svg" alt=""></a></div>
-                        </div>
-                    </div>
-                    <div class="list-item">
-                        <figure><img src="./images/free/freecompress-pexels-eko-cahyono-102048560-9831406.jpg" alt="">
-                        </figure>
-                        <div class="list-text">
-                            <div class="text-content">
-                                <div class="title">
-                                    <img src="./images/icon/map-marker.svg" alt="">
-                                    <p>大阪</p>
-                                </div>
-                                <div class="content">
-                                    <h2>黑門市場</h2>
-                                </div>
-                            </div>
-                            <div class="icon"><a href=""><img src="./images/icon/circle btn (1).svg" alt=""></a></div>
-                        </div>
-                    </div>
-                    <div class="list-item">
-                        <figure><img src="./images/free/freecompress-pexels-eko-cahyono-102048560-9831406.jpg" alt="">
-                        </figure>
-                        <div class="list-text">
-                            <div class="text-content">
-                                <div class="title">
-                                    <img src="./images/icon/map-marker.svg" alt="">
-                                    <p>大阪</p>
-                                </div>
-                                <div class="content">
-                                    <h2>黑門市場</h2>
-                                </div>
-                            </div>
-                            <div class="icon"><a href=""><img src="./images/icon/circle btn (1).svg" alt=""></a></div>
-                        </div>
-                    </div>
-                    <div class="list-item">
-                        <figure><img src="./images/free/freecompress-pexels-eko-cahyono-102048560-9831406.jpg" alt="">
-                        </figure>
-                        <div class="list-text">
-                            <div class="text-content">
-                                <div class="title">
-                                    <img src="./images/icon/map-marker.svg" alt="">
-                                    <p>大阪</p>
-                                </div>
-                                <div class="content">
-                                    <h2>黑門市場</h2>
-                                </div>
-                            </div>
-                            <div class="icon"><a href=""><img src="./images/icon/circle btn (1).svg" alt=""></a></div>
-                        </div>
-                    </div>
-                    <div class="list-item">
-                        <figure><img src="./images/free/freecompress-pexels-eko-cahyono-102048560-9831406.jpg" alt="">
-                        </figure>
-                        <div class="list-text">
-                            <div class="text-content">
-                                <div class="title">
-                                    <img src="./images/icon/map-marker.svg" alt="">
-                                    <p>大阪</p>
-                                </div>
-                                <div class="content">
-                                    <h2>黑門市場</h2>
-                                </div>
-                            </div>
-                            <div class="icon"><a href=""><img src="./images/icon/circle btn (1).svg" alt=""></a></div>
-                        </div>
-                    </div>
-                    <div class="list-item">
-                        <figure><img src="./images/free/freecompress-pexels-eko-cahyono-102048560-9831406.jpg" alt="">
-                        </figure>
-                        <div class="list-text">
-                            <div class="text-content">
-                                <div class="title">
-                                    <img src="./images/icon/map-marker.svg" alt="">
-                                    <p>大阪</p>
-                                </div>
-                                <div class="content">
-                                    <h2>黑門市場</h2>
-                                </div>
-                            </div>
-                            <div class="icon"><a href=""><img src="./images/icon/circle btn (1).svg" alt=""></a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="box-right">
-                <div class="title">
-                    <p>行程列表</p>
-                    <a href=""><img src="./images/icon/Vector.svg" alt="download"></a>
-                </div>
-                <img src="./images/free/section.day1.png" alt="day1">
-                <div class="box-list">
-                    <div class="content">
-                        <h2>第三天</h2>
-                    </div>
-                </div>
-                <div class="btn">
-                    <button>進入購物車<img src="./images/icon/Shopping cart.svg" alt=""></button>
-                </div>
-                <div class="btn2">
-                    <button>加入行程</button>
-                </div>
+                    </main>
+                    <Footer />
+                </>
+            )
+        }
+        ReactDOM
+            .createRoot(document.getElementById('root'))
+            .render(<App />);
+    </script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./js/index.js"></script>
 
-            </div>
 
-        </section>
-    </main>
-
-    <footer>
-        <div>
-            <h1 class="logo">
-                <a href="./index.html">
-                    <img src="./images/logo/logo-union-white.svg" alt="">
-                </a>
-            </h1>
-            <nav class="navigation">
-                <ul class="menu-list">
-                    <li class="menu">
-                        <h2>關西旅遊旅行社有限公司</h2>
-                        <ul class="submenu">
-                            <li>甲種旅遊業 交觀甲字第90001號</li>
-                            <li>品保甲北 3000 號</li>
-                            <li>代表人:關姬</li>
-                            <li>聯絡人:關東西</li>
-                        </ul>
-                    </li>
-                    <li class="menu">
-                        <h2>聯絡資訊</h2>
-                        <ul class="submenu">
-                            <li>電話:02-3322-2777</li>
-                            <li>傳真:02-3322-2778</li>
-                            <li>信箱:kansaitravel68@kstravel.com.tw</li>
-                            <li>地址:台北市中正區一段條條大路68號</li>
-                        </ul>
-                    </li>
-                    <li class="menu">
-                        <h2>服務</h2>
-                        <ul class="submenu">
-                            <li><a href="#">主題行程</a></li>
-                            <li><a href="#">自由規劃</a></li>
-                            <li><a href="#">旅遊資訊</a></li>
-                            <li><a href="#">聯絡我們</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu">
-                        <h2>Follow us</h2>
-                        <ul class="submenu-icon">
-                            <li>
-                                <a href=""><img src="./images/icon/line.png" alt=""></a>
-                            </li>
-                            <li>
-                                <a href=""><img src="./images/icon/fb.png" alt=""></a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        <div class="small">
-            <small>版權所有 © 2024 神火旅遊</small>
-        </div>
-
-    </footer>
 
 </body>
 

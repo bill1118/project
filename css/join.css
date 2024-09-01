@@ -446,6 +446,7 @@ input[type="tel"] {
 	color: #A62014;
 	border-color: #A62014;
 	border-width: .3px;
+	cursor: pointer;
 }
 
 #btn__contact--submit:hover {
@@ -456,6 +457,7 @@ input[type="tel"] {
 .btn {
 	display: flex;
 	justify-content: center;
+	
 }
 
 .in_l li {
