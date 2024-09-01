@@ -19,14 +19,14 @@ function Topbar2() {
     return (
         <header id="container-topbar">
             <h1 className="logo">
-                <a href="./index.html"><img src="./images/logo/logo-union-white.svg" alt="神火旅遊logo" /></a>
+                <a href="./index.html"><img src="./images/logo/logo-union-linear.svg" alt="神火旅遊logo" /></a>
             </h1>
             <nav className="navigation">
                 <ul className="menu">
-                    <li><a href="#container-topics">主題行程</a></li>
-                    <li><a href="#container-free">自由編輯</a></li>
-                    <li><a href="./information.html">旅遊資訊</a></li>
-                    <li><a href="./contact-us.html">聯絡我們</a></li>
+                <li><a href="./ninetheme.html">主題行程</a></li>
+                <li><a href="./free.html">自由規劃</a></li>
+                <li><a href="./information.html">旅遊資訊</a></li>
+                <li><a href="./contact-us.html">聯絡我們</a></li>
                 </ul>
                 <ul className="icon">
                     <li><a className="icon-shoppingcar" href=""><img src="./images/icon/shoppingcar-brown.svg" alt="購物車" /></a></li>

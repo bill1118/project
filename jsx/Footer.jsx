@@ -5,7 +5,7 @@ function Footer() {
                 <div id="foot">
                     <h1 className="logo">
                         <a href="./index.html">
-                            <img src="./images/logo/logo-union-white.svg" alt="神火旅遊"/>
+                            <img src="./images/logo/logo-union-white.svg" alt="神火旅遊" />
                         </a>
                     </h1>
                     <nav className="navigation">
@@ -31,7 +31,7 @@ function Footer() {
                             <li className="menu">
                                 <h2>服務</h2>
                                 <ul className="submenu">
-                                    <li><a href="#">主題行程</a></li>
+                                    <li><a href="./ninetheme.html">主題行程</a></li>
                                     <li><a href="./free.html">自由規劃</a></li>
                                     <li><a href="./information.html">旅遊資訊</a></li>
                                     <li><a href="./contact-us.html">聯絡我們</a></li>
@@ -41,10 +41,10 @@ function Footer() {
                                 <h2>Follow us</h2>
                                 <ul className="submenu-icon">
                                     <li className="line">
-                                        <a href=""><img src="./images/icon/line.png" alt="line"/></a>
+                                        <a href=""><img src="./images/icon/line.png" alt="line" /></a>
                                     </li>
                                     <li className="facebook">
-                                        <a href=""><img src="./images/icon/fb.png" alt="fb"/></a>
+                                        <a href=""><img src="./images/icon/fb.png" alt="fb" /></a>
                                     </li>
                                 </ul>
                             </li>
@@ -54,9 +54,9 @@ function Footer() {
                 <div className="small">
                     <small>版權所有 &copy; 2024 神火旅遊</small>
                 </div>
-                <div id="gotop" onClick={()=>{
+                <div id="gotop" onClick={() => {
                     $('html,body').animate({ scrollTop: 0 }, 1000);
-                }}><img src="./images/icon/top.btn.svg" alt=""/></div>
+                }}><img src="./images/icon/top.btn.svg" alt="" /></div>
             </footer>
         </>
     )
