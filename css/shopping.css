@@ -89,7 +89,6 @@ video {
 	font: inherit;
 	vertical-align: baseline;
 	text-decoration: none;
-	letter-spacing: 2px;
 	line-height: 1.2rem;
 }
 
@@ -147,7 +146,6 @@ body {
 	font-family:
 		"Noto Sans TC", sans-serif;
 	font-size: 100%;
-	line-height: 1.5;
 	letter-spacing: .2rem;
 }
 

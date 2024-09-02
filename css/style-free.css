@@ -86,7 +86,7 @@ video {
 	font: inherit;
 	vertical-align: baseline;
 	text-decoration: none;
-	letter-spacing: 2px;
+	letter-spacing: .2em;
 	line-height: 1.2rem;
 }
 

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>神火旅遊</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <link rel="stylesheet" href="./css/carousel.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/logoin.css">
+
+
+
+    <script type="text/babel" src="./jsx/Topbar.jsx"></script>
+    <script type="text/babel" src="./jsx/Footer.jsx"></script>
+
+</head>
+
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        function App() {
+
+            return (
+                <React.Fragment>
+
+                    <Topbar />
+                    <main>
+                        <section id="container-banner">
+                            <img src="./images/banner/topbar-background.png" alt="banner" />
+                            <div className="slide">
+                                <ul className="list-1">
+                                    <li className="item">
+                                    </li>
+                                    <li className="item">
+                                    </li>
+                                    <li className="item">
+                                    </li>
+                                    {/*新增重播*/}
+                                    <li className="item">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className="slide-text">
+                                <ul className="list-2">
+                                    <li className="item-text"></li>
+                                    <li className="item-text"></li>
+                                    <li className="item-text"></li>
+                                    <li className="item-text"></li>
+                                </ul>
+                            </div>
+                        </section>
+                        <section id="container-topics">
+                            <header className="title">
+                                <h2>主題行程</h2>
+                            </header>
+                            <div className="more-info">
+                                <a href="">了解行程</a>
+                            </div>
+                            <div className="box-list">
+                                <div className="item">
+                                    <a href="">
+                                        <figure><img src="./images/theme/family.jpeg" alt="寵愛爸媽行" /></figure>
+                                        <div className="content">
+                                            <h3>寵愛爸媽行</h3>
+                                            <p>和家人在東京神奈川共度美好時刻</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div className="item">
+                                    <a href="./theme-friend.html">
+                                        <figure><img src="./images/theme/friend.jpg" alt="好友樂悠遊" /></figure>
+                                        <div className="content">
+                                            <h3>好友樂悠遊</h3>
+                                            <p>與朋友一起在京阪神收集回憶</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div className="item">
+                                    <a href="">
+                                        <figure><img src="./images/theme/food.jpeg" alt="美食先打卡" /></figure>
+                                        <div className="content">
+                                            <h3>美食先打卡</h3>
+                                            <p>在京阪福品味當地新鮮特色美食</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div className="item">
+                                    <a href="">
+                                        <figure><img src="./images/theme/love.jpg" alt="浪漫蜜月行" /></figure>
+                                        <div className="content">
+                                            <h3>浪漫蜜月行</h3>
+                                            <p>到沖繩三重長野享受浪漫時光</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div className="item">
+                                    <a href="">
+                                        <figure><img src="./images/theme/staff.jpeg" alt="老闆帶咱玩" /></figure>
+                                        <div className="content">
+                                            <h3>老闆帶咱玩</h3>
+                                            <p>來去北海道名古屋放鬆一下</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div className="item">
+                                    <a href="">
+                                        <figure><img src="./images/theme/award.jpeg" alt="豪奢獎勵遊" /></figure>
+                                        <div className="content">
+                                            <h3>豪奢獎勵遊</h3>
+                                            <p>來到九州四國盡享頂級體驗</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div className="item">
+                                    <a href="">
+                                        <figure><img src="./images/theme/forest.jpeg" alt="上山下海趣" /></figure>
+                                        <div className="content">
+                                            <h3>上山下海趣</h3>
+                                            <p>前往長野新潟深入探索日本</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div className="item">
+                                    <a href="">
+                                        <figure><img src="./images/theme/landscape.jpg" alt="室內文藝行" /></figure>
+                                        <div className="content">
+                                            <h3>室內文藝行</h3>
+                                            <p>到京都奈良來場深度文化體驗</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div className="item">
+                                    <a href="">
+                                        <figure><img src="./images/theme/trians.jpeg" alt="鐵道迷必玩" /></figure>
+                                        <div className="content">
+                                            <h3>鐵道迷必玩</h3>
+                                            <p>來兵庫岐阜感受沿途絢爛的自然風光</p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </section>
+                        <section id="container-free">
+                            <header className="title">
+                                <h2>自由規劃</h2>
+                            </header>
+                            <div class="page-content">
+                                <div class="card">
+                                    <div class="content">
+                                        <h2 class="title">Mountain View</h2>
+                                        <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it,
+                                            the mountains</p>
+                                        <button class="btn">View Trips</button>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="content">
+                                        <h2 class="title">To The Beach</h2>
+                                        <p class="copy">Plan your next beach trip with these fabulous destinations</p>
+                                        <button class="btn">View Trips</button>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="content">
+                                        <h2 class="title">Desert Destinations</h2>
+                                        <p class="copy">It's the desert you've always dreamed of</p>
+                                        <button class="btn">Book Now</button>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="content">
+                                        <h2 class="title">Explore The Galaxy</h2>
+                                        <p class="copy">Seriously, straight up, just blast off into outer space today</p>
+                                        <button class="btn">Book Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="more-info">
+                                <a href="./free.html">查看更多</a>
+                            </div>
+                        </section>
+                        <section id="container-partner">
+                            <header className="title">
+                                <h2>合作夥伴</h2>
+                            </header>
+                            <div className="icon-list">
+                                <div className="icon">
+                                    <img src="./images/logo/logo 1.svg" alt="" />
+                                </div>
+                                <div className="icon">
+                                    <img src="./images/logo/logo-2.svg" alt="" />
+                                </div>
+                                <div className="icon">
+                                    <img src="./images/logo/logo-3.svg" alt="" />
+                                </div>
+                                <div className="icon">
+                                    <img src="./images/logo/logo-4.svg" alt="" />
+                                </div>
+                                <div className="icon">
+                                    <img src="./images/logo/logo-5.svg" alt="" />
+                                </div>
+                                <div className="icon">
+                                    <img src="./images/logo/logo-6.svg" alt="" />
+                                </div>
+                            </div>
+                        </section>
+                    </main>
+                    <Footer />
+                </React.Fragment>
+            )
+        }
+        ReactDOM
+            .createRoot(document.getElementById('root'))
+            .render(<App />);
+    </script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./js/index.js"></script>
+
+
+
+</body>
+
+</html>

@@ -90,8 +90,6 @@ video {
 	font: inherit;
 	vertical-align: baseline;
 	text-decoration: none;
-	letter-spacing: 2px;
-	line-height: 1.2rem;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -146,6 +144,7 @@ table {
 body {
 	font-family: "Noto Sans TC", sans-serif;
 	font-size: 100%;
+	line-height: 1.5;
 	/* background-color: */
 }
 
@@ -168,6 +167,14 @@ p {
 #stuff p,
 #insideoutside p {
 	letter-spacing: .2em;
+}
+
+/* 重置圖片 */
+img {
+	display: block;
+	width: 100%;
+	max-width: 100%;
+	height: auto;
 }
 
 /* container-topbar */
@@ -198,7 +205,7 @@ p {
 }
 
 #container-topbar .navigation .menu li {
-	border-right: solid 1px #A15C38;
+	border-right: solid 1px white;
 	padding: 0 20px 0 0;
 }
 
@@ -207,7 +214,7 @@ p {
 }
 
 #container-topbar .navigation .menu a {
-	color: #A15C38;
+	color: white;
 	text-decoration: none;
 	font-size: 1.2rem;
 	border-bottom: solid 2px transparent;

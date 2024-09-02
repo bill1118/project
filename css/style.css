@@ -87,7 +87,7 @@ video {
 	font: inherit;
 	vertical-align: baseline;
 	text-decoration: none;
-	letter-spacing: 2px;
+	letter-spacing: .2em;
 	line-height: 1.2rem;
 	font-family: "Noto Sans TC", "蘋方-繁", "PingFang TC", "黑體-繁", "Heiti TC", "微軟正黑體", "Microsoft JhengHei", "Noto Sans TC", sans-serif;
 }
