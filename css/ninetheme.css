@@ -170,7 +170,7 @@ p {
 }
 
 /* 重置圖片 */
-img {
+main img {
 	display: block;
 	width: 100%;
 	max-width: 100%;
