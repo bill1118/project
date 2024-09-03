@@ -107,6 +107,10 @@ section {
 	display: block;
 }
 
+*{
+	box-sizing: border-box;
+}
+
 ol,
 ul {
 	list-style: none;
@@ -660,22 +664,27 @@ footer {
 	background-color: #A62014;
 	color: white;
 	font-size: 12px;
+	padding: 20px;
+	margin-top: auto;
 }
 
 footer div {
 	display: flex;
 	justify-content: center;
-	gap: 450px;
+	align-items: center;
+    flex-wrap: wrap;
+
 	/* max-width: 1650px;
 	width: 100%; */
 }
 
-footer .logo{
+/* footer .logo{
 	padding: 20px;
-}
+} */
 
 footer nav {
 	padding: 0 70px 0 0;
+	font-optical-sizing: auto;
 }
 
 footer .menu-list {
@@ -684,8 +693,8 @@ footer .menu-list {
 }
 
 footer .menu {
-	padding: 20px 50px;
-	opacity: 0.9;
+	padding: 10px 50px;
+	opacity: 0.8;
 }
 
 footer .navigation h2 {
