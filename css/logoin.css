@@ -1,4 +1,15 @@
 
+:root {
+	--primary-1: #262220;
+    --primary-2: #A62014;
+    --primary-3: #A15C38;
+    --primary-4: #FFFFFF;
+    --secondary-1: #F7F1F0;
+    --secondary-2: #C3A6A0;
+    --third-1: #6E6E6E;
+    --third-2: #E4E4E4;
+}
+
 .popup {
     display: none; /* 默认隐藏 */
     justify-content: center;
@@ -48,7 +59,7 @@
 
 .tabs .active {
     background-color: #fff;
-    border-bottom: 3px solid var(--primary);
+    border-bottom: 3px solid var(--primary-2);
 }
 
 .form {
@@ -107,8 +118,8 @@ form input {
     width: 70%;
     padding: 10px;
     background-color: white;
-    color: var(--primary);
-    border:1px solid var(--primary);
+    color: var(--primary-2);
+    border:1px solid var(--primary-2);
     border-radius: 99px;
     cursor: pointer;
     margin-bottom: 50px;
@@ -117,7 +128,7 @@ form input {
 
 #loginForm form button:hover{
     color: white;
-    background-color: var(--primary);
+    background-color: var(--primary-2);
 }
 
 #loginForm .icon {
@@ -182,8 +193,8 @@ form input {
     width: 70%;
     padding: 10px;
     background-color: white;
-    color: var(--primary);
-    border:1px solid var(--primary);
+    color: var(--primary-2);
+    border:1px solid var(--primary-2);
     border-radius: 99px;
     cursor: pointer;
     margin-bottom: 50px;
@@ -192,5 +203,5 @@ form input {
 
 #registerForm form button:hover{
     color: white;
-    background-color: var(--primary);
+    background-color: var(--primary-2);
 }
