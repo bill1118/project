@@ -2,152 +2,57 @@
 @import url('https://fonts.googleapis.com/css2?&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Shrikhand&&family=Lobster&family=Noto+Sans+TC:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap');
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* 重置字體 */
+body {
+    font-family:
+        /*西文*/
+        -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial,
+        /*中文*/
+        "Noto Sans TC", sans-serif ,"蘋方-繁", "PingFang TC", "黑體-繁", "Heiti TC", "微軟正黑體", "Microsoft JhengHei", ;
+    font-size: 100%;
+    line-height: 1.5;
+    letter-spacing: .2em;
+}
+
+/* 重置標題 */
 h1,
 h2,
 h3,
 h4,
 h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
+h6 {
+    font-weight: normal;
+}
+
+/* 重置列表 */
 ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-	text-decoration: none;
+ol {
+    list-style: none;
+
+}
+/* 重置連接 */
+a {
+    text-decoration: none;
 }
 
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-	display: block;
-}
+:root {
+	--primary-1: #262220;
+    --primary-2: #A62014;
+    --primary-3: #A15C38;
+    --primary-4: #FFFFFF;
+    --secondary-1: #F7F1F0;
+    --secondary-2: #C3A6A0;
+    --third-1: #6E6E6E;
+    --third-2: #E4E4E4;
 
-body {
-	line-height: 1;
 }
-
-ol,
-ul {
-	list-style: none;
-}
-
-blockquote,
-q {
-	quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-	content: '';
-	content: none;
-}
-
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
-/* 重置字體 */
-body {
-	font-family: "Noto Sans TC", sans-serif;
-	font-size: 100%;
-	line-height: 1.5;
-	/* background-color: */
-}
-
 /* 重置標題 */
 
 h4 {
@@ -177,6 +82,7 @@ main img {
 	height: auto;
 }
 
+
 /* container-topbar */
 #container-topbar {
 	display: flex;
@@ -185,13 +91,12 @@ main img {
 	position: fixed;
 	width: 100%;
 	z-index: 999;
-	background-color: transparent;
-	padding:16px 24px 20px;
+	padding: 16px 24px 20px;
 }
 
 .logo {
-	padding: 0 0 0 30px;
-	width: 65px;
+	width: 11rem;
+	height: auto;
 }
 
 #container-topbar .navigation {
@@ -203,7 +108,6 @@ main img {
 	display: flex;
 	align-items: center;
 	gap: 20px;
-	letter-spacing: .2rem;
 }
 
 #container-topbar .navigation .menu li {
@@ -220,10 +124,11 @@ main img {
 	text-decoration: none;
 	font-size: 1.2rem;
 	border-bottom: solid 2px transparent;
+
 }
 
 #container-topbar .navigation .menu a:hover {
-	border-bottom: solid 2px #FFFFFF;
+	border-bottom: solid 2px white;
 	transition: 0.35s ease-in-out;
 	padding-bottom: 6px;
 }
@@ -237,9 +142,8 @@ main img {
 #container-topbar .navigation .icon a img {
 	width: 24px;
 	height: 24px;
-	color: rgba(161, 92, 56, 1);
+	color: white;
 }
-
 /*主頁共用區*/
 .sakura {
 	margin-top: 70px;
@@ -275,6 +179,7 @@ h1 {
 	font-weight: 500;
 	font-size: 2rem;
 	letter-spacing: .3rem;
+	font-family: 'Noto Sans TC';
 }
 
 .btn-s {
@@ -640,45 +545,54 @@ h1 {
 	padding-bottom: 30px;
 }
 
-/* container-footer */
-footer {
-	background-color: #A62014;
-	color: white;
-	font-size: 12px;
+   /* 頁尾區 */
+   footer {
+	background-color: var(--primary-2);
+	color: var(--primary-4);
+	padding: 20px;
+	/* 添加 padding 以確保内容可建 */
+	margin-top: auto;
+	/* 確保 footer 在頁面底部 */
 }
 
 footer div {
 	display: flex;
 	justify-content: center;
-	gap: 450px;
-	/* max-width: 1650px;
-	width: 100%; */
+	align-items: center;
+	flex-wrap: wrap;
+	/* 保持所有元素在一行，并允许必要时换行 */
 }
 
-footer nav {
+footer .navigation {
 	padding: 0 70px 0 0;
+	font-family: 'Noto Sans TC', sans-serif;
+	font-optical-sizing: auto;
+	font-size: 12px;
+	/* 調整字體大小 */
 }
 
-footer .menu-list {
+footer .navigation .menu-list {
 	display: flex;
 	justify-content: center;
 }
 
 footer .menu {
 	padding: 10px 50px;
-	opacity: 0.9;
+	opacity: 0.8rem;
 }
 
 footer .navigation h2 {
-	border-bottom: solid 1px white;
+	border-bottom: solid 1px var(--primary-4);
+	font-size: 12px;
 }
+
 
 footer .menu .submenu {
 	padding: 10px 0;
 }
 
 footer .menu .submenu a {
-	color: white;
+	color: var(--primary-4);
 }
 
 footer .submenu-icon {
@@ -687,18 +601,149 @@ footer .submenu-icon {
 	padding-top: 10px;
 }
 
-footer .submenu-icon .line:hover{
-	transform:  scale(1.2);
-}
-
-footer .submenu-icon .facebook:hover{
-	transform:  scale(1.2);
-}
-
-
 footer .small {
 	margin: 0;
 	padding: 0;
 	justify-content: center;
 	opacity: 0.9;
+}
+
+
+/* 1440px以下解析度的布局调整 */
+@media screen and (max-width: 1300px) {
+	footer .navigation .menu-list {
+		flex-wrap: wrap;
+		/* 允许子元素换行，但不会缩排 */
+		justify-content: center;
+		/* 居中对齐内容 */
+	}
+
+	footer .menu {
+		flex-basis: calc(50% - 40px);
+		/* 每个菜单项占据一半宽度，并留出间距 */
+		margin-bottom: 20px;
+		text-align: center;
+		padding: 0;
+	}
+
+	footer .menu-list li {
+		margin: 10px 20px;
+		/* 控制子元素之间的间距，避免缩排 */
+	}
+
+	footer .menu h2 {
+		font-size: 1rem;
+		/* 调整标题的字体大小 */
+	}
+
+	footer .submenu li,
+	footer .submenu a {
+		font-size: 0.9rem;
+		/* 调整子菜单项的字体大小 */
+	}
+
+	footer .navigation {
+		padding: 0 20px;
+		/* 减少导航栏的内边距，增加空间 */
+	}
+}
+
+/* 1024px以下解析度的布局调整 */
+@media screen and (max-width: 1024px) {
+	footer .navigation .menu-list {
+		flex-direction: column;
+		/* 将所有菜单项垂直排列 */
+		align-items: center;
+		/* 将所有内容垂直排列，并居中对齐 */
+	}
+
+	footer .menu {
+		width: 100%;
+		/* 使菜单项占据整个父容器的宽度 */
+		margin-bottom: 15px;
+		text-align: center;
+		padding: 0;
+	}
+
+	footer .logo {
+		margin-bottom: 20px;
+		/* 为Logo添加底部外边距，避免与内容过于紧密 */
+	}
+
+	footer .navigation {
+		padding: 0;
+		text-align: center;
+	}
+
+
+
+	footer .menu h2 {
+		font-size: 0.9rem;
+		/* 调整标题的字体大小 */
+	}
+
+	footer .submenu li,
+	footer .submenu a {
+		font-size: 0.8rem;
+		/* 调整子菜单项的字体大小 */
+	}
+
+	footer .submenu-icon {
+		justify-content: center;
+		/* 确保icon居中显示 */
+	}
+
+	footer .small {
+		text-align: center;
+		padding-top: 10px;
+	}
+
+}
+
+/* 768px以下解析度的布局调整 */
+@media screen and (max-width: 768px) {
+	footer div {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	footer .logo {
+		margin-bottom: 15px;
+		/* 进一步调整Logo与内容之间的间距 */
+	}
+
+	footer .menu h2 {
+		font-size: 0.85rem;
+		/* 进一步缩小标题的字体大小 */
+	}
+
+	footer .submenu li,
+	footer .submenu a {
+		font-size: 0.75rem;
+		/* 进一步缩小子菜单项的字体大小 */
+	}
+
+	footer .menu {
+		padding: 5px 10px;
+		/* 减少内边距，提供更多空间 */
+	}
+
+	footer .navigation {
+		text-align: center;
+		padding: 0;
+	}
+
+	footer .navigation .menu-list {
+		align-items: center;
+		/* 确保菜单列表居中 */
+	}
+
+	footer .submenu-icon {
+		justify-content: center;
+	}
+
+	footer .small {
+		text-align: center;
+		padding-top: 10px;
+	}
 }
