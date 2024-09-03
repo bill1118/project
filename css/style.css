@@ -167,6 +167,8 @@ table {
 	display: flex;
 	align-items: center;
 	gap: 20px;
+	font-weight: 550;
+	
 }
 
 #container-topbar .navigation .menu li {
@@ -668,6 +670,10 @@ footer div {
 	width: 100%; */
 }
 
+footer .logo{
+	padding: 20px;
+}
+
 footer nav {
 	padding: 0 70px 0 0;
 }
@@ -678,7 +684,7 @@ footer .menu-list {
 }
 
 footer .menu {
-	padding: 10px 50px;
+	padding: 20px 50px;
 	opacity: 0.9;
 }
 
