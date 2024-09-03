@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .box{
+      width: 100%;
+      
+      background-image: url(./images-id-free-4.jpg);
+    }
+    .fan {
+      height: 1200px;
+      width: 1200px;
+      display: inline-block;
+      margin: 20px;
+      border-radius: 100%;
+      animation: fan 4s linear both infinite;
+      transform: rotate(-25deg);
+      background-repeat: no-repeat;
+      animation-iteration-count: 1;
+      overflow: hidden;
+    }
+
+    @keyframes fan {
+      from {
+        clip-path: polygon(50% 50%, 0% 0%, 0% 0%);
+      }
+
+      25% {
+        clip-path: polygon(50% 50%, 0% 0%, 100% 0%);
+      }
+
+      25.000001% {
+        clip-path: polygon(50% 50%, 0% 0%, 100% 0%, 100% 0%);
+      }
+
+      37.5% {
+        clip-path: polygon(50% 50%, 0% 0%, 100% 0%, 100% 50%);
+      }
+
+      37.500001% {
+        clip-path: polygon(50% 50%, 0% 0%, 100% 0%, 100% 50%, 100% 50%);
+      }
+
+      100% {
+        clip-path: polygon(50% 50%, 0% 0%, 100% 0%, 100% 50%);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div class="fan">
+
+    </div>
+  </div>
+</body>
+
+</html>
