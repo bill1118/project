@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:
+        "Noto Sans TC", sans-serif;
+    font-size: 100%;
+    letter-spacing: .2em;
+	line-height: 1.2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+img {
+	display: block;
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+}
+
+h2{
+    font-size: 20px;
+    letter-spacing: .32em;
+}
+p{
+    font-size: 16px;
+    letter-spacing: .2em;
+}
+.modal-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    margin: 15% auto;
+    border: 1px solid #888;
+    width: 45%;
+    height: 70%;
+    border-radius: 15px;
+}
+
+.modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.img_L{
+    width: 55%;
+    height: 70%;
+    overflow: hidden;
+    margin: auto;
+}
+.img_L img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.write .icon p{
+    font-size: 12px;
+}
+.write .icon{
+    display: inline-flex;
+    white-space: nowrap;
+}
+
+.inf_R{
+    background-color: #F7F1F0;
+    width: 35%;
+    height: 80%;
+    align-items: center;
+}
+.inf_R .write {
+    margin-top: 8px;
+    padding: 25px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.close:hover{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
