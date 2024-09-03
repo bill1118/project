@@ -1,5 +1,3 @@
-const { useState } = React;
-
 function Topbar() {
     const [isPopupVisible, setPopupVisible] = useState(false);
     const [isLoginActive, setLoginActive] = useState(true);
