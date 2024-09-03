@@ -186,6 +186,7 @@ main img {
 	width: 100%;
 	z-index: 999;
 	background-color: transparent;
+	padding:16px 24px 20px;
 }
 
 .logo {
@@ -202,6 +203,7 @@ main img {
 	display: flex;
 	align-items: center;
 	gap: 20px;
+	letter-spacing: .2rem;
 }
 
 #container-topbar .navigation .menu li {
