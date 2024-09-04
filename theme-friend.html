@@ -15,13 +15,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/MotionPathPlugin.min.js"></script>
 
     <link rel="stylesheet" href="./css/style-friend.css">
-    <link rel="stylesheet" href="./css/logoin.css
-    ">
+    <link rel="stylesheet" href="./css/logoin.css">
     <script type="text/babel" src="./jsx/Topbar2.jsx"></script>
     <script type="text/babel" src="./jsx/Footer.jsx"></script>
     <script type="text/babel" src="./jsx/TrainAnimation.jsx"></script>
     <script type="text/babel" src="./jsx/ContainerJourney.jsx"></script>
     <script type="text/babel" src="./jsx/ContainerJourneyTwo.jsx"></script>
+    <script type="text/babel" src="./jsx/ContainerJourneyThree.jsx"></script>
+
+
+
 </head>
 
 <body>
@@ -29,7 +32,7 @@
     <script type="text/babel">
         const { useEffect } = React;
         function App() {
-        
+
             const products = [
                 {
                     id: 1,
@@ -42,18 +45,8 @@
                     h4: '加賀流',
                     h5: '第一天',
                 },
-                {
-                    id: 2,
-                    img: <img src="./images/4-theme-friend/noppon-meenuch-z--KEW2ZVrw-unsplash.jpg" alt="大阪" />,
-                    imgb: <img src="./images/4-theme-friend/pexels-geepro-20036092.jpg" alt="大阪" />,
-                    imgs: <img src="./images/4-theme-friend/tsubasa-takifuji-h5N5krCK4Rk-unsplash.jpg" alt="大阪" />,
-                    h1: '京都',
-                    h2: '伏見稻荷',
-                    h3: '二條城',
-                    h4: '鮮魚刺身',
-                    h5: '第三天',
-                },
-            ];
+            ]
+
             const products2 = [
                 {
                     id: 1,
@@ -65,6 +58,20 @@
                     h3: '神戶港',
                     h4: '神戶和牛',
                     h5: '第二天',
+                },
+            ];
+
+            const products3 = [
+                {
+                    id: 1,
+                    img: <img src="./images/4-theme-friend/noppon-meenuch-z--KEW2ZVrw-unsplash.jpg" alt="大阪" />,
+                    imgb: <img src="./images/4-theme-friend/pexels-geepro-20036092.jpg" alt="大阪" />,
+                    imgs: <img src="./images/4-theme-friend/tsubasa-takifuji-h5N5krCK4Rk-unsplash.jpg" alt="大阪" />,
+                    h1: '京都',
+                    h2: '伏見稻荷',
+                    h3: '二條城',
+                    h4: '鮮魚刺身',
+                    h5: '第三天',
                 },
             ];
             return (
@@ -125,13 +132,13 @@
                             </div>
                             <div className="btn">
                                 <figure></figure>
-                                <div><a href="">報名行程</a></div>
+                                <div><a href="./join.html" target="_blank">報名行程</a></div>
                             </div>
                         </section>
 
                         {products.map((item, index) => (
                             <React.Fragment key={item.id}>
-                                <ContainerJourney 
+                                <ContainerJourney
                                     img={item.img}
                                     imgb={item.imgb}
                                     imgs={item.imgs}
@@ -141,30 +148,41 @@
                                     h4={item.h4}
                                     h5={item.h5}
                                 />
-
-                                {/* 在第一個產品和第二個產品之間插入新的 <section> */}
-                                {index === 0 && (
-                                    <>
-                                        {products2.map((item2) => (
-
-                                            <ContainerJourneyTwo 
-                                                key={item2.id}
-                                                img={item2.img}
-                                                imgb={item2.imgb}
-                                                imgs={item2.imgs}
-                                                h1={item2.h1}
-                                                h2={item2.h2}
-                                                h3={item2.h3}
-                                                h4={item2.h4}
-                                                h5={item2.h5}
-
-                                            />
-                                        ))}
-                                    </>
-                                )}
                             </React.Fragment>
-                        ))
-                        }
+                        ))}
+
+                        {products2.map((item2, index) => (
+                            <React.Fragment key={item2.id}>
+                                <ContainerJourneyTwo
+                                    key={item2.id}
+                                    img={item2.img}
+                                    imgb={item2.imgb}
+                                    imgs={item2.imgs}
+                                    h1={item2.h1}
+                                    h2={item2.h2}
+                                    h3={item2.h3}
+                                    h4={item2.h4}
+                                    h5={item2.h5}
+                                />
+                            </React.Fragment>
+                        ))}
+
+                        {products3.map((item3, index) => (
+                            <React.Fragment key={item3.id}>
+                                <ContainerJourneyThree
+                                    key={item3.id}
+                                    img={item3.img}
+                                    imgb={item3.imgb}
+                                    imgs={item3.imgs}
+                                    h1={item3.h1}
+                                    h2={item3.h2}
+                                    h3={item3.h3}
+                                    h4={item3.h4}
+                                    h5={item3.h5}
+                                />
+                            </React.Fragment>
+                        ))}
+
                     </main>
                     <Footer />
                 </>
@@ -180,5 +198,3 @@
 </body>
 
 </html>
-
-

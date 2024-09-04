@@ -25,8 +25,10 @@
 <body>
     <div id="root"></div>
     <script type="text/babel">
-        function App() {
 
+        const { useState } = React;
+        
+        function App() {
             return (
                 <React.Fragment>
 
@@ -63,7 +65,7 @@
                             <div className="more-info">
                                 <a href="ninetheme.html">了解行程</a>
                             </div>
-                            
+
                             <div className="box-list">
                                 <div className="item">
                                     <a href="">
@@ -157,7 +159,7 @@
                                 <div className="card">
                                     <div className="content">
                                         <h2 className="title">黑門市場</h2>
-                                        <p className="copy">位於淺草雷門，是東京著名的傳統購物街。</p>
+                                        <p className="copy">是大阪一個非常受歡迎的市場，以新鮮的海鮮和美食聞名。</p>
                                         <button className="btn">View Trips</button>
                                     </div>
                                 </div>
@@ -165,7 +167,7 @@
                                 <div className="card">
                                     <div className="content">
                                         <h2 className="title">清水寺</h2>
-                                        <p className="copy">是京都最著名的寺廟之一。</p>
+                                        <p className="copy">是京都最著名的寺廟之一，寺廟內還有著名的音羽之瀑。</p>
                                         <button className="btn">View Trips</button>
                                     </div>
                                 </div>
@@ -173,7 +175,7 @@
                                 <div className="card">
                                     <div className="content">
                                         <h2 className="title">通天閣</h2>
-                                        <p className="copy">是大阪的標誌性塔樓之一。</p>
+                                        <p className="copy">觀賞大阪全景的理想地點，外觀融合西洋和東方的設計元素。</p>
                                         <button className="btn">View Trips</button>
                                     </div>
                                 </div>
@@ -189,7 +191,8 @@
                                 <div className="card">
                                     <div className="content">
                                         <h2 className="title">伏見稻荷社</h2>
-                                        <p className="copy">以其壯觀的千本鳥居聞名。</p>
+                                        <p className="copy">以其壯觀的千本鳥居聞名，主要奉祀保護農物和商業的神祇。
+                                        </p>
                                         <button className="btn">View Trips</button>
                                     </div>
                                 </div>

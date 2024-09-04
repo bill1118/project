@@ -1,24 +1,10 @@
 function ContainerJourneyTwo(props) {
-    React.useEffect(() => {
-        // 動畫的 JavaScript 代碼
-        gsap.registerPlugin(MotionPathPlugin);
-        gsap.to("#bee", {
-            duration: 10,
-            ease: "power1.inOut",
-            repeat: -1,
-            yoyo: true,
-            motionPath: {
-                path: "#motionPath",
-                align: "#motionPath",
-                alignOrigin: [0.5, 0.5]
-            }
-        });
-    }, []);
     return (
         <>
-            {/* <section className="bee-animation" style={{ transform: 'scaleX(-1) translateX(-780px)'}}>
-                <TrainAnimation  uniqueId="2"/>
-            </section> */}
+            <section className="bee-animation" style={{ width: '500px', transform: 'scaleX(-1) translateY(-90px)' }}>
+                <TrainAnimation uniqueId="2" />
+            </section>
+
             <section id="container-journey2">
                 <div className="box-title">
                     <div className="title-list">

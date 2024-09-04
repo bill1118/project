@@ -263,7 +263,7 @@ section {
 }
 
 .box-list .item img {
-	border-radius: 20px;
+	border-radius: 30px;
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
@@ -293,7 +293,7 @@ section {
 }
 
 .box-list .itemt img {
-	border-radius: 20px;
+	border-radius: 30px;
 	height: 100%;
 	width: 100%;
 	object-fit: cover;

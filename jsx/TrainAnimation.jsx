@@ -17,7 +17,9 @@ const TrainAnimation = ({ uniqueId }) => {
 
     return (
         <>
-            <div style={{ width: '200px', height: '200px' }}></div>
+            <div style={{ width: '200px', height: '200px' }}>
+
+            </div>
             <svg
                 id={`bee-scroll-${uniqueId}`}
                 xmlns="http://www.w3.org/2000/svg"

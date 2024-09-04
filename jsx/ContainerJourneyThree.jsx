@@ -1,10 +1,10 @@
-function ContainerJourneyTwo(props) {
+function ContainerJourneyThree(props) {
     return (
         <>
-            <section className="bee-animation" style={{ transform: 'scaleX(-1) translateX(-780px)'}}>
-                <TrainAnimation  uniqueId="2"/>
+            <section className="bee-animation">
+                <TrainAnimation uniqueId="3"  />
             </section>
-            <section id="container-journey2">
+            <section id="container-journey">
                 <div className="box-title">
                     <div className="title-list">
                         <div className="title">
@@ -22,6 +22,10 @@ function ContainerJourneyTwo(props) {
                     </div>
                 </div>
                 <div className="box-primary">
+                    <figure>{props.img}</figure>
+                    <div className="title">
+                        <h1>{props.h1}</h1>
+                    </div>
                     <div className="content">
                         <h2>{props.h2}</h2>
                         <p>日本著名的歷史城堡，<br />
@@ -33,12 +37,10 @@ function ContainerJourneyTwo(props) {
                             很適合與朋友散步和拍照。<br />
                         </p>
                     </div>
-                    <div className="title">
-                        <h1>{props.h1}</h1>
-                    </div>
-                    <figure>{props.img}</figure>
                 </div>
                 <div className="box-second">
+                    <figure className="big">{props.imgb}</figure>
+                    <figure className="small">{props.imgs}</figure>
                     <div className="content">
                         <h3>{props.h3}</h3>
                         <p>大阪著名的美食街，<br />
@@ -46,10 +48,11 @@ function ContainerJourneyTwo(props) {
                             如章魚燒、大阪燒和串燒。<br />
                         </p>
                     </div>
-                    <figure className="small">{props.imgs}</figure>
-                    <figure className="big">{props.imgb}</figure>
                 </div>
             </section>
         </>
     )
 }
+
+
+
