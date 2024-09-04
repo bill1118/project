@@ -17,11 +17,11 @@ $(window).scroll(function () {
 window.addEventListener('scroll', function() {
     const scrollPosition = window.scrollY || document.documentElement.scrollTop;
     const windowHeight = document.documentElement.scrollHeight - window.innerHeight;
-    const scrollPercentage = (scrollPosition / windowHeight) * 100;
+    const scrollP = (scrollPosition / windowHeight) * 100;
 
     const textElement = $('.menu a'); 
 
-    if (scrollPercentage > 20) {
+    if (scrollP> 20) {
         textElement.addClass('changeColor'); 
     } else {
         textElement.removeClass('changeColor'); 
