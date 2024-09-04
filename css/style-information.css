@@ -715,7 +715,7 @@ main {
             flex-wrap: wrap;
             /* 允许子元素换行，但不会缩排 */
             justify-content: center;
-            /* 居中对齐内容 */
+            /* 居中對齊内容 */
         }
 
         footer .menu {
