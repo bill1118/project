@@ -702,6 +702,7 @@ main {
     }
 
     footer .small {
+        font-family: "Noto Sans TC", sans-serif;
         margin: 0;
         padding: 0;
         justify-content: center;

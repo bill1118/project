@@ -287,11 +287,13 @@ main h2 {
 }
 
 h3 {
+	font-family: "Noto Sans TC";
 	font-size: 20px;
 	letter-spacing: .32rem;
 }
 
 h4 {
+	font-family: "Noto Sans TC";
 	font-size: 16px;
 	letter-spacing: .2rem;
 }
@@ -382,6 +384,7 @@ h4 {
 }
 
 .option1 .item .detail .date {
+	font-family: "Noto Sans TC";
 	color: #687477;
 	font-size: 12px;
 	letter-spacing: .24rem;
@@ -609,6 +612,7 @@ footer .submenu-icon {
 }
 
 footer .small {
+	font-family: "Noto Sans TC", sans-serif;
 	margin: 0;
 	padding: 0;
 	justify-content: center;
