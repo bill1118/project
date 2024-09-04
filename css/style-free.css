@@ -290,19 +290,30 @@ p{
 	padding-bottom: 10px;
 }
 
-.list a {
-	text-decoration: none;
-	color: black;
-	font-weight: 550;
+.box-left .list button{
+	cursor: pointer;
+	border: 1px solid var(--secend);
+	border-radius: 20px;
+	font-size: 16px;
+	padding: 5px 20px;
+}
+
+.box-left .list button:hover{
+	color: white;
+	background-color: var(--primary);
 }
 
 #box-list {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
 	align-items: center;
 	width: 100%;
+	gap: 68px;
+}
 
+#box-list > div {
+    /* 每個元素占據三分之一的寬度，並留出間距 */
+    box-sizing: border-box; 
 }
 
 #box-list .list-item {
@@ -313,6 +324,7 @@ p{
 	margin: 0 0 35px 0;	
 	gap: 5px;
 }
+
 
 .list-item figure {
 	height: 20vh;
