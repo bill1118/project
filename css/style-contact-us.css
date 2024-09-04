@@ -56,12 +56,12 @@ ol {
 }
 
 /* 重置圖片 */
-img {
+/* img {
     display: block;
     width: 100%;
     max-width: 100%;
     height: auto;
-}
+} */
 
 /* 重置連接 */
 a {
@@ -617,6 +617,7 @@ footer .submenu-icon {
 }
 
 footer .small {
+    font-family: "Noto Sans TC", sans-serif;
     margin: 0;
     padding: 0;
     justify-content: center;
