@@ -1,6 +1,8 @@
 function Topbar() {
+    /* 會員 */
     const [isPopupVisible, setPopupVisible] = useState(false);
     const [isLoginActive, setLoginActive] = useState(true);
+    const [scrolled, setScrolled] = useState(false);
 
     const togglePopup = () => {
         setPopupVisible(!isPopupVisible);
@@ -14,12 +16,34 @@ function Topbar() {
         setLoginActive(false);
     };
 
+    /* 滾軸 */
+    
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > window.innerHeight * 1.3) {
+                setScrolled(true);
+            } else {
+                setScrolled(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        // 清除事件監聽器
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+
+
     return (
         <header id="container-topbar">
             <h1 className="logo">
                 <a href="./index.html"><img src="./images/logo/logo-union-white.svg" alt="神火旅遊logo" /></a>
             </h1>
-            <nav className="navigation">
+            <nav className={`navigation ${scrolled ? 'scrolled' : ''}`}>
                 <ul className="menu">
                     <li><a href="#container-topics">主題行程</a></li>
                     <li><a href="#container-free">自由編輯</a></li>
@@ -31,7 +55,7 @@ function Topbar() {
                     <li><a className="member" href="#" onClick={togglePopup}><img src="./images/icon/User-white.svg" alt="會員" /></a></li>
                 </ul>
             </nav>
-            
+
             {/* logoin */}
             {isPopupVisible && (
                 <div id="loginPopup" className="popup" style={{ display: 'flex' }}>

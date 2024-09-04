@@ -90,6 +90,7 @@ a {
 #container-topbar .navigation .menu li {
 	border-right: solid 1px white;
 	padding: 0 20px 0 0;
+	transition: border-right 2s ease;
 }
 
 #container-topbar .navigation .menu li:last-child {
@@ -101,17 +102,34 @@ a {
 	text-decoration: none;
 	font-size: 1.2rem;
 	border-bottom: solid 2px transparent;
+	transition: color 2s ease;
+}
+/* 滾軸 */
+.navigation.scrolled .menu a {
+    color: var(--primary-2) !important; /* 滾動超過 20% 時的字體顏色 */
 }
 
-.changeColor{
-	color: var(--primary-3);
-	border-bottom: solid 2px transparent;
+.navigation.scrolled .menu li {
+	border-right: solid 1px var(--primary-2)!important;
 }
+
+.navigation.scrolled .menu a:hover {
+	border-bottom: solid 2px var(--primary-2) !important;
+}
+
+.navigation.scrolled .menu li:last-child {
+	border-right: none !important;
+}
+
+
+
+
 
 #container-topbar .navigation .menu a:hover {
 	border-bottom: solid 2px white;
 	transition: 0.35s ease-in-out;
 	padding-bottom: 6px;
+	
 }
 
 #container-topbar .navigation .icon {
@@ -123,7 +141,6 @@ a {
 #container-topbar .navigation .icon a img {
 	width: 24px;
 	height: 24px;
-	color: white;
 }
 
 /* 主要內容共用區 */

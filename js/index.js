@@ -15,41 +15,6 @@ $(window).scroll(function () {
 });
 
 
-// function scroll(){
-//     const scrollPosition = window.scrollY || document.documentElement.scrollTop;
-//     const windowHeight = document.documentElement.scrollHeight - window.innerHeight;
-//     const scrollP = (scrollPosition / windowHeight) * 100;
-    
-//     if (scrollP> 20) {        
-//         console.log('y');
-//         textElement.classList.add('changeColor'); 
-//     } else {
-//         console.log('n');
-//         textElement.classList.remove('changeColor'); 
-//     }
-    // handleScroll = (event) =>{
-    //     console.log('Scrolled!', event.target.scrollTop);
-    // }
-// }
-
-
-
-// window.addEventListener('scroll', function() {
-//     const scrollPosition = window.scrollY || document.documentElement.scrollTop;
-//     const windowHeight = document.documentElement.scrollHeight - window.innerHeight;
-//     const scrollP = (scrollPosition / windowHeight) * 100;
-    
-
-//     if (scrollP> 20) {        
-//         console.log('y');
-//         textElement.classList.add('changeColor'); 
-//     } else {
-//         console.log('n');
-//         textElement.classList.remove('changeColor'); 
-//     }
-// });
-
-
 /* 彈跳視窗 */
 // var modal = document.getElementById("myModal");
 // var btn = document.getElementById("btn");
