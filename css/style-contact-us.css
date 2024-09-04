@@ -87,8 +87,10 @@ a {
 
 /* logo區 */
 .logo {
-    width: 11rem; /* 将 logo 设置为相对于根元素字体大小的宽度 */
-    height: auto; /* 自动调整高度，保持宽高比 */
+    width: 11rem;
+    /* 将 logo 设置为相对于根元素字体大小的宽度 */
+    height: auto;
+    /* 自动调整高度，保持宽高比 */
 }
 
 
@@ -151,6 +153,7 @@ a {
 /* 在解析度低於907px時顯示折疊菜單圖標 */
 
 @media screen and (max-width: 907px) {
+
     /* container-topbar的基础布局 */
     #container-topbar {
         display: flex;
@@ -174,9 +177,11 @@ a {
     #container-topbar .navigation .icon {
         display: flex;
         flex-direction: row;
-        justify-content: flex-end; /* 调整为靠右对齐 */
+        justify-content: flex-end;
+        /* 调整为靠右对齐 */
         align-items: center;
-        margin-left: 10px; /* 减小margin以适应小屏幕 */
+        margin-left: 10px;
+        /* 减小margin以适应小屏幕 */
     }
 
     /* 隐藏菜单内容，初始状态 */
@@ -194,7 +199,8 @@ a {
         flex-direction: column;
         align-items: center;
         position: absolute;
-        top: 100%; /* 从按钮下方展开 */
+        top: 100%;
+        /* 从按钮下方展开 */
         left: 0;
         width: 100%;
         padding: 10px 0;
@@ -206,7 +212,8 @@ a {
     #container-topbar .navigation .menu li {
         padding: 12px 0;
         width: 100%;
-        white-space: nowrap; /* 确保文字不会换行 */
+        white-space: nowrap;
+        /* 确保文字不会换行 */
     }
 
     /* 图标的水平排列 */
@@ -217,23 +224,30 @@ a {
 
 /* 确保图标在更小的屏幕上也能显示 */
 @media screen and (max-width: 400px) {
+
     /* 调整图标的显示样式 */
     #container-topbar .navigation .icon {
         display: flex;
-        justify-content: flex-end; /* 确保图标在小屏幕上靠右显示 */
-        margin-left: 5px; /* 减小左边距以节省空间 */
-        width: auto; /* 防止图标容器在小屏幕上被压缩 */
-        overflow: visible; /* 确保内容不会被裁剪 */
+        justify-content: flex-end;
+        /* 确保图标在小屏幕上靠右显示 */
+        margin-left: 5px;
+        /* 减小左边距以节省空间 */
+        width: auto;
+        /* 防止图标容器在小屏幕上被压缩 */
+        overflow: visible;
+        /* 确保内容不会被裁剪 */
     }
 
     /* 调整图标内部的间距，防止在小屏幕上消失 */
     #container-topbar .navigation .icon li {
-        margin: 0 5px; /* 减少图标之间的间距，以适应小屏幕 */
+        margin: 0 5px;
+        /* 减少图标之间的间距，以适应小屏幕 */
     }
 
     /* 调整菜单项的字体大小和间距 */
     #container-topbar .navigation .menu li {
-        font-size: 14px; /* 缩小字体大小以适应小屏幕 */
+        font-size: 14px;
+        /* 缩小字体大小以适应小屏幕 */
         padding: 10px 0;
     }
 }
@@ -427,7 +441,7 @@ a {
     line-height: 2rem;
     /* 調整字高 */
     margin: 28px;
-    padding: 10px 30px;
+    padding: 8px 30px;
     font-size: 1rem;
     color: var(--primary-2);
     background-color: transparent;
@@ -548,67 +562,65 @@ a {
 
 /* 頁尾區 */
 footer {
-	background-color: #A62014;
-	color: white;
-	font-size: 12px;
-	line-height:1.5;
-	letter-spacing: 3px;
+    background-color: var(--primary-2);
+    color: var(--primary-4);
+    padding: 20px;
+    /* 添加 padding 以確保内容可建 */
+    margin-top: auto;
+    /* 確保 footer 在頁面底部 */
 }
 
 footer div {
-	display: flex;
-	justify-content: center;
-	gap: 450px;
-	/* max-width: 1650px;
-	width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* 保持所有元素在一行，并允许必要时换行 */
 }
 
-footer nav {
-	padding: 0 70px 0 0;
+footer .navigation {
+    padding: 0 70px 0 0;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-optical-sizing: auto;
+    font-size: 12px;
+    /* 調整字體大小 */
 }
 
-footer .menu-list {
-	display: flex;
-	justify-content: center;
+footer .navigation .menu-list {
+    display: flex;
+    justify-content: center;
 }
 
 footer .menu {
-	padding: 10px 50px;
-	opacity: 0.9;
+    padding: 10px 50px;
+    opacity: 0.8rem;
 }
 
 footer .navigation h2 {
-	border-bottom: solid 1px white;
+    border-bottom: solid 1px var(--primary-4);
+    font-size: 12px;
 }
 
+
 footer .menu .submenu {
-	padding: 10px 0;
+    padding: 10px 0;
 }
 
 footer .menu .submenu a {
-	color: white;
+    color: var(--primary-4);
 }
 
 footer .submenu-icon {
-	display: flex;
-	justify-content: space-between;
-	padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
 }
-
-footer .submenu-icon .line:hover{
-	transform:  scale(1.2);
-}
-
-footer .submenu-icon .facebook:hover{
-	transform:  scale(1.2);
-}
-
 
 footer .small {
-	margin: 0;
-	padding: 0;
-	justify-content: center;
-	opacity: 0.9;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    opacity: 0.9;
 }
 
 
