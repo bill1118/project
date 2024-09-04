@@ -9,7 +9,7 @@
 
 
 /* 重置字體 */
-body {
+html,body {
     font-family:
         /*西文*/
         -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial,
@@ -18,6 +18,7 @@ body {
     font-size: 100%;
     line-height: 1.5;
     letter-spacing: .2em;
+	scroll-behavior: smooth;
 }
 
 /* 重置標題 */
@@ -100,7 +101,11 @@ a {
 	text-decoration: none;
 	font-size: 1.2rem;
 	border-bottom: solid 2px transparent;
+}
 
+.changeColor{
+	color: var(--primary-3);
+	border-bottom: solid 2px transparent;
 }
 
 #container-topbar .navigation .menu a:hover {

@@ -1,7 +1,7 @@
 function FreeEdit(props) {
     return (
         <>
-                <div id="box-list">
+                
                     <div className="list-item">
                         <figure>{props.img}
                         </figure>
@@ -18,7 +18,7 @@ function FreeEdit(props) {
                             <div className="icon"><a href="">{props.img2}</a></div>
                         </div>
                     </div>
-                </div>
+                
         </>
     )
 }

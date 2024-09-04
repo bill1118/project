@@ -357,13 +357,12 @@ p{
 /* box-right  */
 .box-right {
 	width: 35%;
-	height: auto;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	background-color: #F7F1F0;
-	gap: 80px;
+	gap: 90px;
 	padding-top: 80px;
 }
 
@@ -458,6 +457,7 @@ p{
 	cursor: pointer;
 	color: var(--primary);
 	margin-bottom: 20px;
+	margin-right: 50px;
 }
 /* footer */
 footer {
