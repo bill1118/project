@@ -228,21 +228,9 @@ h1 {
 	clip-path: url(#fanMask);
 	animation: Fan 3s linear both ;
 }
-/* 
-@keyframes Fan {
-	0% {
-        clip-path: polygon(50% 85%, 50% 85%, 50% 85%); 
-    }
-    33% {
-        clip-path: polygon(50% 85%, 50% 60%, 50% 85%); 
-    }
-    66% {
-        clip-path: polygon(50% 85%, 5% 60%, 50% 85%); 
-    }
-    100% {
-        clip-path: polygon(50% 85%, 5% 60%, 95% 60%); 
-    }
-} */
+
+
+
 
 #banner .title {
 	writing-mode: vertical-rl;

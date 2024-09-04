@@ -1,7 +1,8 @@
 $('.menu a').click(function () {
     let btn = $(this).attr('href');/* 返回取得屬性與值 */
     let pos = $(btn).offset();/* 抓與相對的座標位置 */
-    $('html,body').animate({ scrollTop: pos.top -80 }, 3000);
+    $('html,body').animate({ scrollTop: pos.top}, 3000);
+    
 });
 
 
@@ -13,21 +14,37 @@ $(window).scroll(function () {
     }
 });
 
-/* 彈跳視窗 */
-var modal = document.getElementById("myModal");
-var btn = document.getElementById("btn");
-var span = document.getElementsByClassName("close")[0];
+window.addEventListener('scroll', function() {
+    const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+    const windowHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const scrollPercentage = (scrollPosition / windowHeight) * 100;
 
-btn.onclick = function() {
-    modal.style.display = "block";
-}
+    const textElement = $('.menu a'); 
 
-span.onclick = function() {
-    modal.style.display = "none";
-}
-
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
+    if (scrollPercentage > 20) {
+        textElement.addClass('changeColor'); 
+    } else {
+        textElement.removeClass('changeColor'); 
     }
-}
+});
+
+
+/* 彈跳視窗 */
+// var modal = document.getElementById("myModal");
+// var btn = document.getElementById("btn");
+// var span = document.getElementsByClassName("close")[0];
+
+// btn.onclick = function() {
+//     modal.style.display = "block";
+// }
+
+// span.onclick = function() {
+//     modal.style.display = "none";
+// }
+
+// window.onclick = function(event) {
+//     if (event.target == modal) {
+//         modal.style.display = "none";
+//     }
+// }
+
