@@ -1,9 +1,12 @@
 function Topbar() {
-    /* 會員 */
+
     const [isPopupVisible, setPopupVisible] = useState(false);
     const [isLoginActive, setLoginActive] = useState(true);
     const [scrolled, setScrolled] = useState(false);
+    
+    
 
+    /* 會員 */
     const togglePopup = () => {
         setPopupVisible(!isPopupVisible);
     };
@@ -17,8 +20,6 @@ function Topbar() {
     };
 
     /* 滾軸 */
-    
-
     useEffect(() => {
         const handleScroll = () => {
             if (window.scrollY > window.innerHeight * 1.3) {
@@ -35,6 +36,13 @@ function Topbar() {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+
+    // /* 會員畫面 */
+    // const handleLogin = (e) => {
+    //     e.preventDefault();
+    //     // 假設登入成功後跳轉到會員頁面
+    //     navigate('/member');
+    // };
 
 
 
