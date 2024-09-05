@@ -114,6 +114,7 @@ main img {
 	display: flex;
 	align-items: center;
 	gap: 20px;
+	padding: 0 1.5vw;
 }
 
 #container-topbar .navigation .menu li {
