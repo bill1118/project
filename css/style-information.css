@@ -185,6 +185,7 @@ a {
 
 #container-topbar .navigation .icon a img {
     padding: 0 24px 0 0;
+    height: 24px;
 }
 
 /* 在解析度低於907px時顯示折疊菜單圖標 */
