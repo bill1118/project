@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./css/carousel.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/logoin.css">
+    <link rel="stylesheet" href="./css/introduce-simple.css">
 
 
 
@@ -30,11 +31,16 @@
     <script type="text/babel">
 
         const { useState, useEffect, } = React;
-        // const navigate = useNavigate();
-        // const { BrowserRouter, Routes, Route, } = ReactRouterDOM;
 
 
         function App() {
+
+            const [isFreePopup, setIsFreePopup] = useState(false);
+            const freePopup = () => {
+                setIsFreePopup(!isFreePopup);
+            }
+
+
             return (
                 <React.Fragment>
 
@@ -166,7 +172,7 @@
                                     <div className="content">
                                         <h2 className="title">黑門市場</h2>
                                         <p className="copy">是大阪一個非常受歡迎的市場，以新鮮的海鮮和美食聞名。</p>
-                                        <button className="btn">View Trips</button>
+                                        <button className="btn" onClick={freePopup}>View Trips</button>
                                     </div>
                                 </div>
 
@@ -174,7 +180,7 @@
                                     <div className="content">
                                         <h2 className="title">清水寺</h2>
                                         <p className="copy">是京都最著名的寺廟之一，寺廟內還有著名的音羽之瀑。</p>
-                                        <button className="btn">View Trips</button>
+                                        <button className="btn" onClick={freePopup}>View Trips</button>
                                     </div>
                                 </div>
 
@@ -182,7 +188,7 @@
                                     <div className="content">
                                         <h2 className="title">通天閣</h2>
                                         <p className="copy">觀賞大阪全景的理想地點，外觀融合西洋和東方的設計元素。</p>
-                                        <button className="btn">View Trips</button>
+                                        <button className="btn" onClick={freePopup}>View Trips</button>
                                     </div>
                                 </div>
 
@@ -190,7 +196,7 @@
                                     <div className="content">
                                         <h2 className="title">東京鐵塔</h2>
                                         <p className="copy">以其紅白相間的外觀和模仿巴黎艾菲爾鐵塔的設計而聞名。</p>
-                                        <button className="btn">View Trips</button>
+                                        <button className="btn" onClick={freePopup}>View Trips</button>
                                     </div>
                                 </div>
 
@@ -199,13 +205,47 @@
                                         <h2 className="title">伏見稻荷社</h2>
                                         <p className="copy">以其壯觀的千本鳥居聞名，主要奉祀保護農物和商業的神祇。
                                         </p>
-                                        <button className="btn" >View Trips</button>
+                                        <button className="btn" onClick={freePopup}>View Trips</button>
                                     </div>
                                 </div>
                             </div>
                             <div className="more-info">
                                 <a href="./free.html">查看更多</a>
                             </div>
+
+                            {/*介紹視窗*/}
+                            {isFreePopup && (
+                                <div id="myModal" className="modal">
+                                    <div className="modal-content">
+                                        <div className="img_L">
+                                            <img src="./images/introduce/usj-1914942_1000.jpg" alt="" />
+                                        </div>
+                                        <div className="inf_R">
+                                            <span className="close" onClick={freePopup}>×</span>
+                                            <div className="write">
+                                                <h3>環球影城</h3>
+                                                <hr />
+                                                <div className="icon">
+                                                    <img src="./images/introduce/map-marker.png" />
+                                                    <p>&nbsp;大阪</p>
+                                                </div>
+                                                <p>簡介:</p>
+                                                <p>是一座大型主題樂園，於2001年開幕，擁有多個受歡迎的主題區和遊樂設施。</p>
+                                                <br />
+                                                <p>營業時間:08:00-22:00</p>
+                                                <br />
+                                                <p>地址:</p>
+                                                <p>大阪府大阪市此花區櫻島二丁目1番33號</p>
+                                                <br />
+                                                <p>電話：0570+123+123</p>
+                                                <br />
+                                                <p>門票：NT$1,500元</p>
+                                                <br />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            )}
 
 
 

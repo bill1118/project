@@ -28,14 +28,11 @@ img {
 	height: auto;
 }
 
-h2{
+.write h3{
     font-size: 20px;
     letter-spacing: .32em;
 }
-p{
-    font-size: 16px;
-    letter-spacing: .2em;
-}
+
 .modal-content {
     display: flex;
     justify-content: center;
@@ -45,7 +42,8 @@ p{
     border: 1px solid #888;
     width: 45%;
     height: 70%;
-    border-radius: 15px;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 .modal {
@@ -80,12 +78,16 @@ p{
 .inf_R{
     background-color: #F7F1F0;
     width: 35%;
-    height: 80%;
-    align-items: center;
+    height: 100%;
 }
+
 .inf_R .write {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 8px;
     padding: 25px;
+    width: 100%;
 }
 
 .close {
