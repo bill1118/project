@@ -226,10 +226,14 @@
                                         </form>
                                     </div>
                                     <div className="list">
-                                        <button onClick={() => setSelectedCategory('景點')} className={selectedCategory === '景點' ? 'active' : ''}>景點</button>
+                                        <button
+                                            onClick={() => setSelectedCategory(selectedCategory === '景點' ? '' : '景點')}
+                                            className={selectedCategory === '景點' ? 'active' : ''}>景點</button>
                                     </div>
                                     <div className="list">
-                                        <button onClick={() => setSelectedCategory('美食')} className={selectedCategory === '美食' ? 'active' : ''}>美食</button>
+                                        <button
+                                            onClick={() => setSelectedCategory(selectedCategory === '美食' ? '' : '美食')}
+                                            className={selectedCategory === '美食' ? 'active' : ''}>美食</button>
                                     </div>
                                 </div>
                                 <div id="box-list">
