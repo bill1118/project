@@ -9,6 +9,7 @@
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link rel="stylesheet" href="./css/introduce.css">
     <link rel="stylesheet" href="./css/style-free.css">
     <script type="text/babel" src="./jsx/Topbar2.jsx"></script>
     <script type="text/babel" src="./jsx/Footer.jsx"></script>
@@ -20,6 +21,7 @@
     <script type="text/babel">
 
         const { useState, useEffect } = React;
+
         function App() {
 
             const [selectedRegion, setSelectedRegion] = useState('');
@@ -259,17 +261,26 @@
                                     <p>行程列表</p>
                                     <a href=""><img src="./images/icon/Vector.svg" alt="download" /></a>
                                 </div>
-                                <img src="./images/free/section.day1.png" alt="day1" />
+                                <div className="box-list">
+                                    <div className="content">
+                                        <h2>第一天</h2>
+                                    </div>
+                                </div>
+                                <div className="box-list">
+                                    <div className="content">
+                                        <h2>第二天</h2>
+                                    </div>
+                                </div>
                                 <div className="box-list">
                                     <div className="content">
                                         <h2>第三天</h2>
                                     </div>
                                 </div>
                                 <div className="btn">
-                                    <button>進入購物車<img src="./images/icon/Shopping cart.svg" alt="" /></button>
+                                    <button>加入行程</button>
                                 </div>
                                 <div className="btn2">
-                                    <button>加入行程</button>
+                                    <button>進入購物車<img src="./images/icon/Shopping cart.svg" alt="" /></button>
                                 </div>
                             </div>
                         </section>

@@ -37,14 +37,6 @@ function Topbar() {
         };
     }, []);
 
-    // /* 會員畫面 */
-    // const handleLogin = (e) => {
-    //     e.preventDefault();
-    //     // 假設登入成功後跳轉到會員頁面
-    //     navigate('/member');
-    // };
-
-
 
     return (
         <header id="container-topbar">
