@@ -18,7 +18,15 @@
 <body>
     <div id="root"></div>
     <script type="text/babel">
+
+        const { useState, useEffect } = React;
         function App() {
+            const [selectedRegion, setSelectedRegion] = useState('');
+            const [selectedCategory, setSelectedCategory] = useState('');
+
+
+
+
             const products = [{
                 id: 1,
                 img: <img src="./images/free/freecompress-pexels-eko-cahyono-102048560-9831406.jpg" alt="黑門市場" />,
@@ -26,6 +34,8 @@
                 img2: <img src="./images/icon/circle btn (1).svg" alt="大阪" />,
                 p: '大阪',
                 h2: '黑門市場',
+                region: '北海道',
+                category: '景點',
             },
             {
                 id: 2,
@@ -34,6 +44,8 @@
                 img2: <img src="./images/icon/circle btn (1).svg" alt="大阪" />,
                 p: '大阪',
                 h2: '黑門市場',
+                region: '北海道',
+                category: '美食',
             },
             {
                 id: 3,
@@ -42,6 +54,8 @@
                 img2: <img src="./images/icon/circle btn (1).svg" alt="大阪" />,
                 p: '大阪',
                 h2: '黑門市場',
+                region: '東北地區',
+                category: '景點',
             },
             {
                 id: 5,
@@ -50,6 +64,8 @@
                 img2: <img src="./images/icon/circle btn (1).svg" alt="大阪" />,
                 p: '大阪',
                 h2: '黑門市場',
+                region: '東北地區',
+                category: '美食',
             },
             {
                 id: 6,
@@ -58,6 +74,8 @@
                 img2: <img src="./images/icon/circle btn (1).svg" alt="大阪" />,
                 p: '大阪',
                 h2: '黑門市場',
+                region: '中部地區',
+                category: '景點',
             },
             {
                 id: 7,
@@ -66,6 +84,8 @@
                 img2: <img src="./images/icon/circle btn (1).svg" alt="大阪" />,
                 p: '大阪',
                 h2: '黑門市場',
+                region: '中部地區',
+                category: '美食',
             },
             {
                 id: 8,
@@ -74,6 +94,8 @@
                 img2: <img src="./images/icon/circle btn (1).svg" alt="大阪" />,
                 p: '大阪',
                 h2: '黑門市場',
+                region: '關東地區',
+                category: '景顛',
             },
             {
                 id: 9,
@@ -82,6 +104,8 @@
                 img2: <img src="./images/icon/circle btn (1).svg" alt="大阪" />,
                 p: '大阪',
                 h2: '黑門市場',
+                region: '關東地區',
+                category: '美食',
             },
             {
                 id: 10,
@@ -90,6 +114,8 @@
                 img2: <img src="./images/icon/circle btn (1).svg" alt="大阪" />,
                 p: '大阪',
                 h2: '黑門市場',
+                region: '關西地區',
+                category: '美食',
             },
             {
                 id: 11,
@@ -98,6 +124,8 @@
                 img2: <img src="./images/icon/circle btn (1).svg" alt="大阪" />,
                 p: '大阪',
                 h2: '黑門市場',
+                region: '關西地區',
+                category: '景點',
             },
             {
                 id: 12,
@@ -106,6 +134,8 @@
                 img2: <img src="./images/icon/circle btn (1).svg" alt="大阪" />,
                 p: '大阪',
                 h2: '黑門市場',
+                region: '中國地區',
+                category: '美食',
             },
             {
                 id: 13,
@@ -114,6 +144,8 @@
                 img2: <img src="./images/icon/circle btn (1).svg" alt="大阪" />,
                 p: '大阪',
                 h2: '黑門市場',
+                region: '中國地區',
+                category: '景點',
             },
             {
                 id: 14,
@@ -122,6 +154,8 @@
                 img2: <img src="./images/icon/circle btn (1).svg" alt="大阪" />,
                 p: '大阪',
                 h2: '黑門市場',
+                region: '四國地區',
+                category: '景點',
             },
             {
                 id: 15,
@@ -130,6 +164,8 @@
                 img2: <img src="./images/icon/circle btn (1).svg" alt="大阪" />,
                 p: '大阪',
                 h2: '黑門市場',
+                region: '四國地區',
+                category: '美食',
             },
             {
                 id: 16,
@@ -138,6 +174,8 @@
                 img2: <img src="./images/icon/circle btn (1).svg" alt="大阪" />,
                 p: '大阪',
                 h2: '黑門市場',
+                region: '九州',
+                category: '景點',
             },
             {
                 id: 17,
@@ -146,6 +184,8 @@
                 img2: <img src="./images/icon/circle btn (1).svg" alt="大阪" />,
                 p: '大阪',
                 h2: '黑門市場',
+                region: '九州',
+                category: '美食',
             },
 
             ];
@@ -169,7 +209,9 @@
                                 <div className="select-bar">
                                     <div className="list">
                                         <form action="">
-                                            <select name="" id="">
+                                            <select name="" id=""
+                                                value={selectedRegion}
+                                                onChange={(e) => setSelectedRegion(e.target.value)}>
                                                 <option value="">所有地區</option>
                                                 <option value="北海道">北海道</option>
                                                 <option value="東北地區">東北地區</option>
@@ -184,24 +226,28 @@
                                         </form>
                                     </div>
                                     <div className="list">
-                                        <a href="">景點</a>
+                                        <button onClick={() => setSelectedCategory('景點')} className={selectedCategory === '景點' ? 'active' : ''}>景點</button>
                                     </div>
                                     <div className="list">
-                                        <a href="">美食</a>
+                                        <button onClick={() => setSelectedCategory('美食')} className={selectedCategory === '美食' ? 'active' : ''}>美食</button>
                                     </div>
                                 </div>
                                 <div id="box-list">
-                                    {products.map((item, index) => (
-                                        <React.Fragment key={item.id}>
-                                            <FreeEdit
-                                                img={item.img}
-                                                img1={item.img1}
-                                                img2={item.img2}
-                                                p={item.p}
-                                                h2={item.h2}
-                                            />
-                                        </React.Fragment>
-                                    ))
+                                    {products
+                                        .filter(item =>
+                                            (!selectedRegion || item.region === selectedRegion) &&
+                                            (!selectedCategory || item.category === selectedCategory)
+                                        ).map((item, index) => (
+                                            <React.Fragment key={item.id}>
+                                                <FreeEdit
+                                                    img={item.img}
+                                                    img1={item.img1}
+                                                    img2={item.img2}
+                                                    p={item.p}
+                                                    h2={item.h2}
+                                                />
+                                            </React.Fragment>
+                                        ))
                                     }
                                 </div>
                             </div>

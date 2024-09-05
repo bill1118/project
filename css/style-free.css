@@ -312,7 +312,6 @@ p{
 }
 
 #box-list > div {
-    /* 每個元素占據三分之一的寬度，並留出間距 */
     box-sizing: border-box; 
 }
 
