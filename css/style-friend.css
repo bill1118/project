@@ -261,7 +261,9 @@ tr{
 	width: 100%;
 	height: 50px;
 }
-
+.tableTop th{
+	color: #ffffff;
+}
 th:first-child {
 	border-top-left-radius: 30px;
 }
