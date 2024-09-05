@@ -9,7 +9,9 @@
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/react-router-dom@6/umd/react-router-dom.min.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://unpkg.com/react-router-dom/umd/react-router-dom.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <link rel="stylesheet" href="./css/carousel.css">
@@ -27,7 +29,10 @@
     <div id="root"></div>
     <script type="text/babel">
 
-        const { useState, useEffect } = React;
+        const { useState, useEffect, } = React;
+        // const navigate = useNavigate();
+        // const { BrowserRouter, Routes, Route, } = ReactRouterDOM;
+
 
         function App() {
             return (
@@ -202,7 +207,7 @@
                                 <a href="./free.html">查看更多</a>
                             </div>
 
-                           
+
 
                         </section>
                         <section id="container-partner">
