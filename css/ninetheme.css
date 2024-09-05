@@ -97,6 +97,7 @@ main img {
 	z-index: 999;
 	background-color: transparent;
 	padding: 16px 24px 20px;
+	height: 5rem;
 }
 
 .logo {
@@ -113,6 +114,7 @@ main img {
 	display: flex;
 	align-items: center;
 	gap: 20px;
+	padding: 0 1.5vw;
 }
 
 #container-topbar .navigation .menu li {
@@ -140,7 +142,7 @@ main img {
 
 #container-topbar .navigation .icon {
 	display: flex;
-	padding: 0 0 0 100px;
+	/* padding: 0 0 0 100px; */
 	gap: 20px;
 }
 
