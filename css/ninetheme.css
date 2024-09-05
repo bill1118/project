@@ -97,6 +97,7 @@ main img {
 	z-index: 999;
 	background-color: transparent;
 	padding: 16px 24px 20px;
+	height: 5rem;
 }
 
 .logo {
