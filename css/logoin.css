@@ -62,6 +62,10 @@
     border-bottom: 3px solid var(--primary-2);
 }
 
+#loginFor{
+    width: 100%;
+}
+
 .form {
     display: none;
 }
@@ -134,8 +138,8 @@ form input {
 #loginForm .icon {
     display: flex;
     justify-content: center;
-    gap:50%;
-    transform: scale(0.3);
+    gap:100px;
+    transform: scale(0.35);
 }
 
 #loginForm span{
@@ -181,8 +185,8 @@ form input {
 #registerForm .icon{
     display: flex;
     justify-content: center;
-    gap:50%;
-    transform: scale(0.3);
+    gap:100px;
+    transform: scale(0.35);
 }
 
 #registerForm span{

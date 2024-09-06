@@ -70,6 +70,7 @@ a {
 	z-index: 999;
 	padding: 16px 24px 20px;
 	height: 5rem;
+	transition: background-color 1.5s ease;
 }
 
 .logo {
@@ -91,7 +92,6 @@ a {
 #container-topbar .navigation .menu li {
 	border-right: solid 1px white;
 	padding: 0 20px 0 0;
-	transition: border-right 2s ease;
 }
 
 #container-topbar .navigation .menu li:last-child {
@@ -103,11 +103,14 @@ a {
 	text-decoration: none;
 	font-size: 1.2rem;
 	border-bottom: solid 2px transparent;
-	transition: color 2s ease;
 }
-/* 滾軸 */
-.navigation.scrolled .menu a {
-    color: var(--primary-2) !important; /* 滾動超過 20% 時的字體顏色 */
+/* 滾軸事件 */
+.container-topbar.scrolled {
+	background-color: var(--primary-2) !important;
+	opacity: 0.9;
+}
+/* .navigation.scrolled .menu a {
+    color: var(--primary-2) !important;
 }
 
 .navigation.scrolled .menu li {
@@ -120,7 +123,7 @@ a {
 
 .navigation.scrolled .menu li:last-child {
 	border-right: none !important;
-}
+} */
 
 
 

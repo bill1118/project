@@ -22,7 +22,7 @@ function Topbar() {
     /* 滾軸 */
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY > window.innerHeight * 1.3) {
+            if (window.scrollY > window.innerHeight * 1.2) {
                 setScrolled(true);
             } else {
                 setScrolled(false);
@@ -39,7 +39,7 @@ function Topbar() {
 
 
     return (
-        <header id="container-topbar">
+        <header id="container-topbar" className={`container-topbar ${scrolled ? 'scrolled' : '' }`}>
             <h1 className="logo">
                 <a href="./index.html"><img src="./images/logo/logo-union-white.svg" alt="神火旅遊logo" /></a>
             </h1>

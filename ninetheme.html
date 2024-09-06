@@ -7,10 +7,12 @@
     <title>神火旅遊網</title>
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/ninetheme.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
 
 <body>
-    <header id="container-topbar">
+    <header id="container-topbar" class="container-topbar">
         <h1 class="logo">
             <a href="./index.html"><img src="./images/logo/logo-union-white.svg" alt="神火旅遊網logo"></a>
         </h1>
@@ -283,8 +285,12 @@
         <div class="small">
             <small>版權所有 © 2024 神火旅遊</small>
         </div>
+        <div id="gotop" onclick="scrollToTop()">
+            <img src="./images/icon/top.btn.svg" alt="Go to top" />
+        </div>
 
     </footer>
+    <script src="./js/index.js"></script>
 
 </body>
 
