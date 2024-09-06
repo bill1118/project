@@ -412,7 +412,13 @@ p{
 	background-color: white;
 	width: 57%;
 	border-radius: 10px;
-	height:100px;
+	height:auto;
+}
+
+.box-right .box-list .content{
+	display: flex;
+	flex-wrap: wrap;
+	height: auto;
 }
 
 .box-right .box-list h2{
