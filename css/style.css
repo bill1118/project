@@ -281,11 +281,17 @@ section {
 
 .box-list .item {
 	width: 100%;
+	height: 60vh;
+	padding: 5px;
 }
 
 .box-list .item figure {
 	height: 50vh;
 	width: 20vw;
+}
+
+.box-list .item figure:hover{
+	transform: scale(1.02);
 }
 
 .box-list .item img {
@@ -303,36 +309,6 @@ section {
 }
 
 .item p {
-	font-size: 16px;
-	margin: 15px 0 10px;
-	color: black;
-	margin-bottom: 40px;
-}
-
-.box-list .itemt {
-	width: 100%;
-}
-
-.box-list .itemt figure {
-	height: 50vh;
-	width: 20vw;
-}
-
-.box-list .itemt img {
-	border-radius: 30px;
-	height: 100%;
-	width: 100%;
-	object-fit: cover;
-}
-
-.box-list .itemt h3 {
-	font-size: 24px;
-	margin: 15px 0 10px;
-	color: black;
-	font-weight: 550;
-}
-
-.itemt p {
 	font-size: 16px;
 	margin: 15px 0 10px;
 	color: black;

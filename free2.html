@@ -27,7 +27,7 @@
 
             const [selectedRegion, setSelectedRegion] = useState('');
             const [selectedCategory, setSelectedCategory] = useState('');
-            const [itinerary, setItinerary] = useState([[], [], []]);
+
 
             const products = [{
                 id: 1,
@@ -189,28 +189,8 @@
                 region: '九州',
                 category: '美食',
             },
+
             ];
-
-            // 處拖動開始的的函数
-            const handleDragStart = (event, productId) => {
-                event.dataTransfer.setData("productId", productId); // 儲存產品 ID 作為字符串
-            };
-            
-            // 處理拖放事件
-            const handleDrop = (event, dayIndex) => {
-                event.preventDefault(); // 防止默認行為
-                const productId = event.dataTransfer.getData("productId"); // 獲取產品 ID
-                const product = products.find(p => p.id === parseInt(productId)); // 根據 ID 查找產品
-                if (product) {
-                    const updatedItinerary = [...itinerary];
-                    updatedItinerary[dayIndex].push(product); // 將產品加入對應天數的行程
-                    setItinerary(updatedItinerary);
-                }
-            };
-            const handleDragOver = (event) => {
-                event.preventDefault(); // 防止默認事件，以允許放置
-            };
-
             return (
                 <>
                     <Topbar2 />
@@ -264,10 +244,7 @@
                                             (!selectedRegion || item.region === selectedRegion) &&
                                             (!selectedCategory || item.category === selectedCategory)
                                         ).map((item) => (
-
-                                            <div key={item.id}
-                                                draggable
-                                                onDragStart={(event) => handleDragStart(event, item.id)}>
+                                            <React.Fragment key={item.id}>
                                                 <FreeEdit
                                                     img={item.img}
                                                     img1={item.img1}
@@ -275,8 +252,7 @@
                                                     p={item.p}
                                                     h2={item.h2}
                                                 />
-                                            </div>
-
+                                            </React.Fragment>
                                         ))
                                     }
                                 </div>
@@ -286,25 +262,24 @@
                                     <p>行程列表</p>
                                     <a href=""><img src="./images/icon/Vector.svg" alt="download" /></a>
                                 </div>
-                                {['第一天', '第二天', '第三天'].map((day, index) => (
-                                    <div className="box-list" key={index}
-                                        onDrop={(event) => handleDrop(event, index)}
-                                        onDragOver={handleDragOver}>
-                                        <h2>{day}</h2>
-                                        <div className="content">
-                                            {itinerary[index].map((product, i) => (
-                                                <FreeEdit
-                                                    key={i}
-                                                    img={product.img}
-                                                    img1={product.img1}
-                                                    img2={product.img2}
-                                                    p={product.p}
-                                                    h2={product.h2}
-                                                />
-                                            ))}
-                                        </div>
+                                <div className="box-list">
+                                    <h2>第一天</h2>
+                                    <div className="content">
+
                                     </div>
-                                ))}
+                                </div>
+                                <div className="box-list">
+                                    <h2>第二天</h2>
+                                    <div className="content">
+
+                                    </div>
+                                </div>
+                                <div className="box-list">
+                                    <h2>第三天</h2>
+                                    <div className="content">
+
+                                    </div>
+                                </div>
                                 <div className="btn">
                                     <button>加入行程</button>
                                 </div>
