@@ -92,6 +92,9 @@ a {
     /* 自动调整高度，保持宽高比 */
 }
 
+#container-topbar{
+	z-index: 999;
+}
 
 #container-topbar .navigation {
     display: flex;
