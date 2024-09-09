@@ -74,7 +74,7 @@ p {
 #family p,
 #stuff p,
 #insideoutside p {
-	font-family:  "Noto Sans TC";
+	font-family: "Noto Sans TC";
 	letter-spacing: .2em;
 }
 
@@ -100,6 +100,7 @@ main img {
 	height: 5rem;
 	transition: background-color 1.5s ease;
 }
+
 /* 滾軸事件 */
 .container-topbar.scrolled {
 	background-color: var(--primary-2) !important;
@@ -195,7 +196,7 @@ h1 {
 	font-weight: 500;
 	font-size: 2rem;
 	letter-spacing: .3rem;
-	
+
 }
 
 .btn-s {
@@ -243,11 +244,7 @@ h1 {
 	width: 100%;
 	height: 100%;
 	clip-path: url(#fanMask);
-	animation: Fan 3s linear both;
 }
-
-
-
 
 #banner .title {
 	writing-mode: vertical-rl;
@@ -372,7 +369,7 @@ h1 {
 }
 
 #popular .item p {
-	
+
 	letter-spacing: 0.32rem
 }
 

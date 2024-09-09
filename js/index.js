@@ -1,7 +1,7 @@
 let scrolled = false;
 
 const handleScroll = () => {
-    const topbar = document.getElementById('container-topbar'); 
+    const topbar = document.getElementById('container-topbar');
     if (window.scrollY > window.innerHeight * 1) {
         if (!scrolled) {
             scrolled = true;
