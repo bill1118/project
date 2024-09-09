@@ -3,8 +3,8 @@ function Topbar() {
     const [isPopupVisible, setPopupVisible] = useState(false);
     const [isLoginActive, setLoginActive] = useState(true);
     const [scrolled, setScrolled] = useState(false);
-    
-    
+
+
 
     /* 會員 */
     const togglePopup = () => {
@@ -38,8 +38,11 @@ function Topbar() {
     }, []);
 
 
+
+
+
     return (
-        <header id="container-topbar" className={`container-topbar ${scrolled ? 'scrolled' : '' }`}>
+        <header id="container-topbar" className={`container-topbar ${scrolled ? 'scrolled' : ''}`}>
             <h1 className="logo">
                 <a href="./index.html"><img src="./images/logo/logo-union-white.svg" alt="神火旅遊logo" /></a>
             </h1>
@@ -76,7 +79,7 @@ function Topbar() {
                                     </div>
                                     <a href="#">忘記密碼/修改密碼</a>
                                 </div>
-                                <button type="submit" className="confirm">登入</button>
+                                <button type="submit" className="confirm" >登入</button>
                                 <span>或快速登入</span>
                                 <div className="icon">
                                     <a href=""><img src="./images/icon/facebook.png" alt="facebook" /></a>
