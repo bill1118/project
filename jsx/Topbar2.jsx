@@ -54,7 +54,7 @@ function Topbar2() {
                                     </div>
                                     <a href="#">忘記密碼/修改密碼</a>
                                 </div>
-                                <button type="submit" className="confirm">登入</button>
+                                <button type="submit" className="confirm" ><a href="./member-personal-information.html">登入</a></button>
                                 <span>或快速登入</span>
                                 <div className="icon">
                                     <a href=""><img src="./images/icon/facebook.png" alt="facebook" /></a>

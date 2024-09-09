@@ -135,6 +135,16 @@ form input {
     background-color: var(--primary-2);
 }
 
+#loginForm a{
+    color: var(--primary-2);
+}
+
+#loginForm form .confirm:hover a {
+    color: white;
+}
+    
+
+
 #loginForm .icon {
     display: flex;
     justify-content: center;
