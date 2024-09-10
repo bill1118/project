@@ -362,26 +362,15 @@ p{
 
 .box-left .list button{
 	cursor: pointer;
-<<<<<<< HEAD
 	border: none;
-=======
-	border: 1px solid var(--primary-3);
-	border-radius: 20px;
->>>>>>> 6548dc6c4199a191ecd121067e8c8e591c5be16d
 	font-size: 16px;
 	background-color: white;
 	width: 100%;
 	text-align: left;
 }
 
-<<<<<<< HEAD
 .box-left .list:hover{
 	background-color: #ECECEC;
-=======
-.box-left .list button:hover{
-	color: white;
-	background-color: var(--primary-2);
->>>>>>> 6548dc6c4199a191ecd121067e8c8e591c5be16d
 }
 
 .box-left .list:hover button{
