@@ -66,6 +66,39 @@ ol {
 a {
     text-decoration: none;
 }
+#gotop {
+    position: fixed;
+    right: 50px;
+    bottom: 20px;
+    z-index: 999;
+
+    width: 50px;
+    height: 50px;
+    /* 新增 */
+    /* display: none; */
+    background-color: var(--primary-4);
+    border-radius: 50%;
+
+    cursor: pointer;
+    /* 游標樣式:手指 */
+}
+
+#butler {
+    position: fixed;
+    right: 50px;
+    bottom: 80px;
+    z-index: 998;
+
+    width: 50px;
+    height: 50px;
+    /* 新增 */
+    /* display: none; */
+    background-color: var(--primary-4);
+    border-radius: 50%;
+    cursor: pointer;
+    /* 游標樣式:手指 */
+}
+
 /* 頁首區 */
 #container-topbar {
     z-index: 2;
