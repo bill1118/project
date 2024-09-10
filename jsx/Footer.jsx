@@ -24,8 +24,8 @@ function Footer() {
                                 <ul className="submenu">
                                     <li>電話:02-3322-2777</li>
                                     <li>傳真:02-3322-2778</li>
-                                    <li>信箱:kansaitravel68@kstravel.com.tw</li>
                                     <li>地址:台北市中正區一段條條大路68號</li>
+                                    <li>信箱:kansaitravel68@kstravel.com.tw</li>
                                 </ul>
                             </li>
                             <li className="menu">

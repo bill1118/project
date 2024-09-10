@@ -87,6 +87,7 @@ a {
 	display: flex;
 	align-items: center;
 	gap: 20px;
+	padding: 0 1.5vw;
 }
 
 #container-topbar .navigation .menu li {
@@ -138,7 +139,7 @@ a {
 
 #container-topbar .navigation .icon {
 	display: flex;
-	padding: 0 0 0 100px;
+	/* padding: 0 0 0 100px; */
 	gap: 20px;
 }
 
