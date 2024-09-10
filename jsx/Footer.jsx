@@ -40,11 +40,11 @@ function Footer() {
                             <li className="menu">
                                 <h2>Follow us</h2>
                                 <ul className="submenu-icon">
-                                    <li className="line">
-                                        <a href=""><img src="./images/icon/line.png" alt="line" /></a>
-                                    </li>
                                     <li className="facebook">
                                         <a href=""><img src="./images/icon/fb.png" alt="fb" /></a>
+                                    </li>
+                                    <li className="line">
+                                        <a href=""><img src="./images/icon/line.png" alt="line" /></a>
                                     </li>
                                 </ul>
                             </li>
