@@ -278,30 +278,43 @@ p{
 	font-size: 16px;
 	border: none;
 	outline: none;
-	width: 250px;
-	font-weight: 550;
 }
 
 .box-left .list {
-	margin-right: 10px;
+	display: flex;
+	justify-content: flex-start;
 	position: relative;
-	width: 250px;
+	width: 25%;
 	border-bottom: 1px solid black;
-	padding-bottom: 10px;
+	padding: 5px;
+}
+
+.box-left .list form{
+	display: flex;
+	align-items: normal;
 }
 
 .box-left .list button{
 	cursor: pointer;
-	border: 1px solid var(--secend);
-	border-radius: 20px;
+	border: none;
 	font-size: 16px;
-	padding: 5px 20px;
+	background-color: white;
+	width: 100%;
+	text-align: left;
 }
 
-.box-left .list button:hover{
-	color: white;
-	background-color: var(--primary);
+.box-left .list:hover{
+	background-color: #ECECEC;
 }
+
+.box-left .list:hover button{
+	background-color: #ECECEC;
+}
+
+.box-left .list:hover select{
+	background-color: #ECECEC;
+}
+
 
 #box-list {
 	display: flex;

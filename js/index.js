@@ -19,13 +19,6 @@ function scrollToTop() {
     $('html, body').animate({ scrollTop: 0 }, 1000);  // 平滑滾動到頂部
 }
 
-// 添加滾動事件監聽
-window.addEventListener('scroll', handleScroll);
-
-// 在頁面卸載時移除滾動事件監聽
-window.addEventListener('beforeunload', () => {
-    window.removeEventListener('scroll', handleScroll);
-});
 
 
 $('.menu a').click(function () {

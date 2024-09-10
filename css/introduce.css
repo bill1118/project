@@ -88,10 +88,6 @@ p{
     text-align: left;
 }
 
-#form-date .quantity button{
-    width: 10%;
-}
-
 .quantity {
     align-items: center;
     padding-bottom: 20px;
@@ -117,6 +113,7 @@ p{
     text-align: center;
     border: 1px solid #ccc;
     background-color: #ffffff;
+    margin: 0 10px;
 }
 
 .close {
@@ -134,6 +131,7 @@ p{
 }
 
 #btn__contact--submit{
+    border: 1px solid #A62014;
 	justify-content: center;
     align-items: center;
     height: 40px;
@@ -141,7 +139,6 @@ p{
 	border-radius: 99px;
 	background-color: transparent;
 	color: #A62014;
-	border-color: #A62014;
 	border-width: .3px;
     cursor: pointer;
 }

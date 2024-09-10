@@ -24,7 +24,7 @@ function FreeEdit(props) {
                             <h2>{props.h2}</h2>
                         </div>
                     </div>
-                    <div className="icon"><a href="">{props.img2}</a></div>
+                    <div className="icon"><a href="#" onClick={introduse}>{props.img2}</a></div>
                 </div>
             </div>
 
