@@ -49,7 +49,7 @@ function Topbar() {
             <nav className={`navigation ${scrolled ? 'scrolled' : ''}`}>
                 <ul className="menu">
                     <li><a href="#container-topics">主題行程</a></li>
-                    <li><a href="#container-free">自由編輯</a></li>
+                    <li><a href="#container-free">自由規劃</a></li>
                     <li><a href="./information.html">旅遊資訊</a></li>
                     <li><a href="./contact-us.html">聯絡我們</a></li>
                 </ul>
