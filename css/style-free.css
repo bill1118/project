@@ -390,7 +390,7 @@ p{
 	align-items: center;
 	width: 100%;
 	gap: 68px;
-    height: 80vh;
+    height: 100vh;
     overflow-y: auto;
 }
 
@@ -410,7 +410,7 @@ p{
 
 .list-item figure {
 	height: 20vh;
-	width: 12vw;
+	width: 11vw;
 }
 
 .list-item img{
@@ -419,6 +419,7 @@ p{
 	height: 100%;
 	object-fit: cover;
 }
+
 .list-text {
 	width: 100%;
 	display: flex;
@@ -495,7 +496,6 @@ p{
 	background-color: white;
 	width: 57%;
 	border-radius: 10px;
-	height:auto;
 }
 
 .box-right .box-list .content{

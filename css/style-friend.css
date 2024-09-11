@@ -406,11 +406,11 @@ th {
 }
 
 #container-banner .btn div {
-	width: 5%;
+	width: 8%;
 	border: 1px solid var(--secend);
 	border-radius: 99px;
 	color: var(--secend);
-	padding: 10px;
+	padding: 10px 30px;
 	cursor: pointer;
 	box-shadow: 0 4px 1px var(--secend);
 	position: absolute;
