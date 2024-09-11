@@ -233,15 +233,15 @@ h1 {
 
 .fanMask {
 	position: relative;
-	width: 1300px;
-	height: 775px;
+	width: 70%;
+	height: auto;
 	overflow: hidden;
 	top: 50px;
 }
 
 .fanMask img {
 	width: 100%;
-	height: 100%;
+	height: auto;
 	clip-path: url(#fanMask);
 }
 
