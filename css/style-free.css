@@ -290,6 +290,7 @@ p{
 	justify-content: center;
 	align-items: center;
 	position: relative;
+
 }
 
 #container-banner .banner-content {
@@ -329,7 +330,7 @@ p{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: 65%;
+	width: 70%;
 	gap: 60px;
 	margin: 80px;
 }
@@ -353,6 +354,7 @@ p{
 	width: 25%;
 	border-bottom: 1px solid black;
 	padding: 5px;
+    height: 10%;
 }
 
 .box-left .list form{
@@ -388,6 +390,8 @@ p{
 	align-items: center;
 	width: 100%;
 	gap: 68px;
+    height: 80vh;
+    overflow-y: auto;
 }
 
 #box-list > div {
@@ -446,7 +450,7 @@ p{
 
 /* box-right  */
 .box-right {
-	width: 35%;
+	width: 30%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
