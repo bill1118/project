@@ -15,7 +15,7 @@
 
 /* banner */
 #container-banner .slide {
-    position:absolute;
+    position: absolute;
     width: var(--width);
     height: var(--height);
     max-width: 100%;
@@ -24,18 +24,22 @@
 
 li.item:nth-child(1) {
     background-image: url(../images/banner/image-bn-spring.jpg);
+    mask-image: linear-gradient(to right,rgba(0, 0, 0, 0.5), black 1%, black 99%,rgba(0, 0, 0, 0.5));
 }
 
 li.item:nth-child(2) {
     background-image: url(../images/banner/image-bn-summer.jpg);
+    mask-image: linear-gradient(to right,rgba(0, 0, 0, 0.5), black 1%, black 99%,rgba(0, 0, 0, 0.5));
 }
 
 li.item:nth-child(3) {
     background-image: url(../images/banner/image-bn-autumn.jpg);
+    mask-image: linear-gradient(to right,rgba(0, 0, 0, 0.5), black 1%, black 99%,rgba(0, 0, 0, 0.5));
 }
 
 li.item:nth-child(4) {
     background-image: url(../images/banner/image-bn-winter.jpg);
+    mask-image: linear-gradient(to right,rgba(0, 0, 0, 0.5), black 1%, black 99%,rgba(0, 0, 0, 0.8));
 }
 
 li.item {
@@ -64,7 +68,7 @@ li.item {
 
 /* text */
 #container-banner .slide-text {
-    position:absolute;
+    position: absolute;
     width: var(--height2);
     height: var(--height2);
     max-width: 100%;
