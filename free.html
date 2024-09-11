@@ -9,12 +9,12 @@
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    
+
     <link rel="stylesheet" href="./css/style-free.css">
     <link rel="stylesheet" href="./css/logoin.css">
     <link rel="stylesheet" href="./css/introduce.css">
-    
-    
+
+
     <script type="text/babel" src="./jsx/Topbar2.jsx"></script>
     <script type="text/babel" src="./jsx/Footer.jsx"></script>
     <script type="text/babel" src="./jsx/FreeEdit.jsx"></script>
@@ -24,10 +24,8 @@
     <div id="root"></div>
     <script type="text/babel">
 
-        const { useState, useEffect } = React;
-
         function App() {
-
+            const { useState, useEffect } = React;
             const [selectedRegion, setSelectedRegion] = useState('');
             const [selectedCategory, setSelectedCategory] = useState('');
             const [itinerary, setItinerary] = useState([[], [], []]);
@@ -198,7 +196,7 @@
             const handleDragStart = (event, productId) => {
                 event.dataTransfer.setData("productId", productId); // 儲存產品 ID 作為字符串
             };
-            
+
             // 處理拖放事件
             const handleDrop = (event, dayIndex) => {
                 event.preventDefault(); // 防止默認行為
@@ -213,6 +211,7 @@
             const handleDragOver = (event) => {
                 event.preventDefault(); // 防止默認事件，以允許放置
             };
+
 
             return (
                 <>

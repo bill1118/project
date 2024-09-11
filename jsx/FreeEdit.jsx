@@ -7,6 +7,7 @@ function FreeEdit(props) {
         setIsIntroducePopup(!isIntroducePopup);
     }
 
+
     return (
         <>
             <div className="list-item">
@@ -59,23 +60,23 @@ function FreeEdit(props) {
                                 <label for="date">選擇日期&人數:</label>
                             </div>
                             <form action="" name="form-date" id="form-date" title="選人數">
-                                <input type="date" name="date" id="date" title="date" placeholder="請選擇日期"/>
-                                    <div className="quantity">
-                                        <button className="minus">-</button>
-                                        <input type="text" value="1" min="1"/>
-                                        <button className="plus">+</button>
-                                    </div>
-                                    <div className="btn">
-                                        <button type="submit" name="btn__contact--submit" id="btn__contact--submit"
-                                            title="送出按鈕"><span>加入行程</span></button>
-                                    </div>
+                                <input type="date" name="date" id="date" title="date" placeholder="請選擇日期" />
+                                <div className="quantity">
+                                    <button className="minus">-</button>
+                                    <input type="text" value="1" min="1" />
+                                    <button className="plus">+</button>
+                                </div>
+                                <div className="btn">
+                                    <button type="submit" name="btn__contact--submit" id="btn__contact--submit"
+                                        title="送出按鈕"><span>加入行程</span></button>
+                                </div>
                             </form>
                         </div>
                     </div>
                 </div>
-                
+
             )
-}
+            }
         </>
     );
 };
