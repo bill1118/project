@@ -237,12 +237,31 @@ h1 {
 	height: auto;
 	overflow: hidden;
 	top: 50px;
+	animation: fan 3s linear both;
 }
 
 .fanMask img {
 	width: 100%;
 	height: auto;
 	clip-path: url(#fanMask);
+}
+
+@keyframes fan{
+	0%{
+		transform: scale(0.1) ;
+	}
+	25%{
+		transform: scale(0.3) ;
+	}
+	50%{
+		transform: scale(0.5) ;
+	}
+	75%{
+		transform: scale(0.7) ;
+	}
+	100%{
+		transform: scale(1) ;
+	}
 }
 
 #banner .title {
