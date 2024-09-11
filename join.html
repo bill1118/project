@@ -7,6 +7,7 @@
     <title>神火旅遊網</title>
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/join.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -183,10 +184,12 @@
             <small>版權所有 © 2024 神火旅遊</small>
         </div>
         <div id="butler"><img src="./images/side-btn/butler.svg" alt="小管家按鈕"></div>
-        <div id="gotop"><img src="./images/side-btn/top.svg" alt="回到頂部按鈕"></div>
+        <div id="gotop" onclick="scrollToTop()">
+            <img src="./images/icon/top.btn.svg" alt="Go to top" />
+        </div>
     </footer>
 
-    <script src="./js/script-ctu-inf-itn.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
