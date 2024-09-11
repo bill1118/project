@@ -23,9 +23,10 @@
 <body>
     <div id="root"></div>
     <script type="text/babel">
-
+        const { useState, useEffect } = React;
+        
         function App() {
-            const { useState, useEffect } = React;
+
             const [selectedRegion, setSelectedRegion] = useState('');
             const [selectedCategory, setSelectedCategory] = useState('');
             const [itinerary, setItinerary] = useState([[], [], []]);
