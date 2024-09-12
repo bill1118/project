@@ -253,7 +253,21 @@ h1 {
 	top: 50px;
 	animation: fan 3s linear both;
 }
-
+@media(max-width:1440px) {
+	.fanMask {
+		width: 80%;
+	}
+}
+@media(max-width:1440px) {
+	.fanMask {
+		width: 80%;
+	}
+}
+@media(max-width:1024px) {
+	.fanMask {
+		width: 90%;
+	}
+}
 .fanMask img {
 	width: 100%;
 	height: auto;
@@ -293,7 +307,11 @@ h1 {
 	letter-spacing: 1.5rem;
 	font-weight: 900;
 }
-
+@media(max-width:1024px) {
+	#banner h2 {
+		font-size: 40px;
+	}
+}
 #popular {
 	position: relative;
 }
