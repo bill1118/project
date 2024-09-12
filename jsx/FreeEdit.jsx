@@ -1,4 +1,4 @@
-function FreeEdit(props) {
+function FreeEdit(props ,isInItinerary) {
 
     const [isIntroducePopup, setIsIntroducePopup] = useState(false);
 
@@ -9,7 +9,7 @@ function FreeEdit(props) {
 
 
     return (
-        <>
+        <><div className={isInItinerary ? 'free-edit itinerary-style' : 'free-edit'}></div>
             <div className="list-item">
                 <a href="#" onClick={introduse}>
                     <figure>{props.img}
