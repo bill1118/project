@@ -24,7 +24,7 @@
     <div id="root"></div>
     <script type="text/babel">
         const { useState, useEffect } = React;
-        
+
         function App() {
 
             const [selectedRegion, setSelectedRegion] = useState('');
@@ -303,6 +303,7 @@
                                                     img2={product.img2}
                                                     p={product.p}
                                                     h2={product.h2}
+                                                    isInItinerary={true} 
                                                 />
                                             ))}
                                         </div>
