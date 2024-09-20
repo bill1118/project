@@ -25,14 +25,14 @@ function ContainerJourneyTwo(props) {
                 <div className="box-primary">
                     <div className="content">
                         <h2>{props.h2}</h2>
-                        <p>日本著名的歷史城堡，<br />
-                            為封建權利的象徵之一，<br />
-                            代表擁有者有著強大的武力。<br />
-                            在這裡可以了解<br />
-                            大阪的歷史和文化。<br />
-                            周圍的公園四季皆美，<br />
-                            很適合與朋友散步和拍照。<br />
-                        </p>
+                        <p1>{props.p1}</p1>
+                        <p2>{props.p2}</p2>
+                        <p3>{props.p3}</p3>
+                        <p4>{props.p4}</p4>
+                        <p5>{props.p5}</p5>
+                        <p6>{props.p6}</p6>
+                        <p7>{props.p7}</p7>
+
                     </div>
                     <div className="title">
                         <h1>{props.h1}</h1>
@@ -42,10 +42,10 @@ function ContainerJourneyTwo(props) {
                 <div className="box-second">
                     <div className="content">
                         <h3>{props.h3}</h3>
-                        <p>大阪著名的美食街，<br />
-                            有各種當地特色美食，<br />
-                            如章魚燒、大阪燒和串燒。<br />
-                        </p>
+                        <p8>{props.p8}</p8>
+                        <p9>{props.p9}</p9>
+                        <p10>{props.p10}</p10>
+
                     </div>
                     <figure className="small">{props.imgs}</figure>
                     <figure className="big">{props.imgb}</figure>
