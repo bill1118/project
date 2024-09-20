@@ -14,10 +14,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/MotionPathPlugin.min.js"></script>
 
-    <link rel="stylesheet" href="./css/style-friend.css">
+    <link rel="stylesheet" href="./css/style-family.css">
     <link rel="stylesheet" href="./css/logoin.css">
     <script type="text/babel" src="./jsx/Topbar2.jsx"></script>
-    <script type="text/babel" src="./jsx/Footer.jsx"></script>
+    <script type="text/babel" src="./jsx/Footer-family.jsx"></script>
     <script type="text/babel" src="./jsx/TrainAnimation.jsx"></script>
     <script type="text/babel" src="./jsx/ContainerJourney.jsx"></script>
     <script type="text/babel" src="./jsx/ContainerJourneyTwo.jsx"></script>
@@ -36,37 +36,37 @@
             const products = [
                 {
                     id: 1,
-                    img: <img src="./images/4-theme-friend/pexels-satoshi-4058519.jpg" alt="大阪" />,
-                    imgb: <img src="./images/4-theme-friend/food-1614130_640.jpg" alt="大阪" />,
-                    imgs: <img src="./images/4-theme-friend/pexels-haugenzhays-1798631.jpg" alt="大阪" />,
-                    h1: '大阪',
-                    h2: '天守閣',
-                    h3: '道頓堀',
-                    h4: '加賀流',
+                    img: <img src="./images/4-theme-family/senso-ji-temple.jpg" alt="淺草寺" />,
+                    imgb: <img src="./images/4-theme-family/big-black.jpg" alt="大黑家天婦羅" />,
+                    imgs: <img src="./images/4-theme-family/ueno-park.jpg" alt="上野公園" />,
+                    h1: '東京',
+                    h2: '淺草寺',
+                    h3: '上野公園',
+                    h4: '大黑家',
                     h5: '第一天',
-                    p1:'日本著名的歷史城堡',
-                    p2:'為封建權利的象徵之一，',
-                    p3:'代表擁有者有著強大的武力。',
-                    p4:'在這裡可以了解',
-                    p5:'大阪的歷史和文化。',
-                    p6:'周圍的公園四季皆美，',
-                    p7:'很適合與朋友散步和拍照。',
-                    p8:'大阪著名的美食街，',
-                    p9:'有各種當地特色美食，',
-                    p10:'如章魚燒、大阪燒和串燒。',
+                    p1:'是日本最古老且具代表性的佛教寺廟，',
+                    p2:'建於公元628年。',
+                    p3:'主殿供奉觀音菩薩',
+                    p4:'雷門是其著名地標，',
+                    p5:'吸引大量遊客參拜和拍照。',
+                    p6:'',
+                    p7:'',
+                    p8:'是著名的賞櫻地點，',
+                    p9:'擁有博物館、動物園',
+                    p10:'等文化與自然景觀。',
                 },
             ]
 
             const products2 = [
                 {
                     id: 1,
-                    img: <img src="./images/4-theme-friend/pexels-dsd-143941-1822605.jpg" alt="大阪" />,
-                    imgb: <img src="./images/4-theme-friend/pexels-leo-ming-795057970-19191148.jpg" alt="大阪" />,
-                    imgs: <img src="./images/4-theme-friend/pexels-1155579-2871756.jpg" alt="大阪" />,
+                    img: <img src="./images/4-theme-friend/pexels-dsd-143941-1822605.jpg" alt="伏見稻荷大社" />,
+                    imgb: <img src="./images/4-theme-family/inarizushi.jpg" alt="稻荷壽司" />,
+                    imgs: <img src="./images/4-theme-family/kyoto-railway-museum.jpg" alt="京都鐵道博物館" />,
                     h1: '京都',
                     h2: '伏見稻荷大社',
-                    h3: '二條城',
-                    h4: '鮮魚刺身',
+                    h3: '京都鐵道博物館',
+                    h4: '稻荷壽司',
                     h5: '第二天',
                     p1:'為近畿地方參拜者最多的社寺，',
                     p2:'以千本鳥居而聞名，',
@@ -75,33 +75,33 @@
                     p5:'',
                     p6:'',
                     p7:'',
-                    p8:'世界遺產，',
-                    p9:'著名的賞櫻和賞楓景點，',
-                    p10:'擁有美麗的日式庭園和歷史建築。',
+                    p8:'展示日本鐵道歷史的博物館，',
+                    p9:'有真實的列車和模擬駕駛體驗，',
+                    p10:'適合全家參觀。',
                 },
             ];
 
             const products3 = [
                 {
                     id: 1,
-                    img: <img src="./images/4-theme-friend/noppon-meenuch-z--KEW2ZVrw-unsplash.jpg" alt="大阪" />,
-                    imgb: <img src="./images/4-theme-friend/pexels-geepro-20036092.jpg" alt="大阪" />,
-                    imgs: <img src="./images/4-theme-friend/tsubasa-takifuji-h5N5krCK4Rk-unsplash.jpg" alt="大阪" />,
-                    h1: '神戶',
-                    h2: '北野異人館',
-                    h3: '神戶港',
-                    h4: '神戶和牛',
+                    img: <img src="./images/4-theme-family/todaiji-temple.jpg" alt="東大寺 " />,
+                    imgb: <img src="./images/4-theme-family/kakinoha-zushi.jpg" alt="柿葉壽司" />,
+                    imgs: <img src="./images/free/iamge-free-deer.jpg" alt="奈良公園" />,
+                    h1: '奈良',
+                    h2: '東大寺',
+                    h3: '奈良公園',
+                    h4: '柿葉壽司',
                     h5: '第三天',
-                    p1:'歷史悠久的街區之一，',
-                    p2:'擁有保存完好的西洋風格古老建築，',
-                    p3:'如今則成為了眾多博物館和',
-                    p4:'咖啡館的所在。',
+                    p1:'著名的大佛殿，',
+                    p2:'家庭可參觀世界最大的青銅佛像，',
+                    p3:'體驗古城奈良的歷史。',
+                    p4:'',
                     p5:'',
                     p6:'',
                     p7:'',
-                    p8:'可乘坐纜車上山，',
-                    p9:'俯瞰神戶市區和港口的美景。',
-                    p10:'還可在周操參觀博物館或乘坐遊船。',
+                    p8:'包含多個歷史遺址的公園，',
+                    p9:'包括春日大社、',
+                    p10:'數百隻自由漫步的鹿群。',
                 },
             ];
             return (
@@ -150,13 +150,13 @@
                                         </tbody>
                                     </table>
                                     <div className="content">
-                                        <h2>好友樂悠遊</h2>
-                                        <p>與朋友一起在京阪神收集回憶，</p>
-                                        <p>帶上您的三五好友，</p>
-                                        <p>計畫一次難忘的朋友之旅，</p>
-                                        <p>無論是探索新城市、享受美食，</p>
-                                        <p>還是一起挑戰極限，</p>
-                                        <p>我們都能為您們安排充滿驚喜的旅程。</p>
+                                        <h2>寵愛爸媽行</h2>
+                                        <p>和家人在東京奈共度美好時刻，</p>
+                                        <p>計劃一次充滿溫馨的家庭之旅，</p>
+                                        <p>無論是漫遊古跡、</p>
+                                        <p>品嚐豐盛的美食，</p>
+                                        <p>還是體驗獨特活動，</p>
+                                        <p>我們都為您打造專屬回憶。</p>
                                     </div>
                                 </div>
                             </div>
