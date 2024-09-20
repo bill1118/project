@@ -9,6 +9,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- 自訂的css -->
     <link rel="stylesheet" href="./css/style-contact-us.css">
+    <link rel="stylesheet" href="./css/butler.css">
 </head>
 
 <body>
@@ -159,11 +160,40 @@
         <div class="small">
             <small>版權所有 &copy; 2024 神火旅遊</small>
         </div>
+
+        <div id="collapsible" class="collapsible">
+            <div class="popup-header">
+                <img src="./images//butler/logo-union-white.svg" alt="Logo" class="logo">
+            </div>
+            <div class="popup-body">
+                <div class="message-row">
+                    <div class="circle-icon">
+                        <img src="./images//butler/small-logo.svg" alt="對話頭像">
+                    </div>
+                    <div class="message-content">歡迎使用查詢服務！</div>
+                </div>
+                <div class="message-row">
+                    <div class="circle-icon">
+                        <img src="./images//butler/small-logo.svg" alt="對話頭像">
+                    </div>
+                    <div class="message-content">您好！我是神火旅遊的小管家火火，歡迎隨時與我們聯繫！</div>
+                </div>
+                <!-- 放置在底部的輸入框和按鈕 -->
+                <div class="input-container">
+                    <input type="text" placeholder="請讓我知道大阪的觀光景點">
+                    <button class="submit-button">
+                        <img src="./images/butler/send 1.svg" alt="Icon" class="icon">
+                    </button>
+                </div>
+            </div>
+        </div>
+
         <div id="butler"><img src="./images/side-btn/butler.svg" alt="小管家按鈕"></div>
         <div id="gotop"><img src="./images/side-btn/top.svg" alt="回到頂部按鈕"></div>
     </footer>
 
     <!-- 自訂的JS，一定要寫在最下面，要在最後執行-->
+    <script src="./js/butler.js"></script>
     <script src="./js/script-ctu-inf-itn.js"></script>
 </body>
 
