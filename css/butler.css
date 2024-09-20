@@ -37,8 +37,9 @@ body {
 
 
 #collapsible {
-    display: none;
+    /* display: none; */
     /* 預設是隱藏的 */
+    visibility: hidden; /* 頁面初始時隱藏，防止閃現 */
     position: fixed;
     bottom: 100px;
     /* 控制視窗的高度，讓它位於按鈕上方 */
