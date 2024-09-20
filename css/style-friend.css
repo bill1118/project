@@ -358,6 +358,7 @@ th {
 	width: 100%;
 	cursor: pointer;
 	border-radius: 5px;
+	padding: 5px;
 }
 
 #container-banner .list td .btn2 {
@@ -367,6 +368,7 @@ th {
 	width: 100%;
 	cursor: pointer;
 	border-radius: 5px;
+	padding: 5px;
 }
 
 #container-banner .list td .btn2:hover{
@@ -377,7 +379,7 @@ th {
 .arrow {
 	width: 220%;
 	display: flex;
-	justify-content:space-between;
+	justify-content:flex-end;
 	align-items: center;
 	text-decoration: none;
 }
@@ -431,7 +433,7 @@ th {
 	cursor: pointer;
 	box-shadow: 0 4px 1px var(--secend);
 	position: absolute;
-    left: 73%;
+    left: 67%;
 	text-align: center; /* 先水平居中 */
     /* transform: translate(-50%, -50%); 同时调整水平和垂直的居中 */
 }
