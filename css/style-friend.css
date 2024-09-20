@@ -291,6 +291,8 @@ section {
 }
 
 section p {
+	font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
 	font-size: 16px;
 }
 
@@ -378,6 +380,8 @@ th {
 }
 
 #container-banner .list td .btn2 {
+	font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
 	border: 0.5px solid var(--secend);
 	color: var(--secend);
 	height: 100%;
@@ -442,12 +446,12 @@ th {
 
 #container-banner .btn div {
 	width: 8%;
-	border: 1px solid var(--secend);
+	border: 1px solid var(--primary-2);
 	border-radius: 99px;
-	color: var(--secend);
+	color: var(--primary-2);
 	padding: 10px 30px;
 	cursor: pointer;
-	box-shadow: 0 4px 1px var(--secend);
+	box-shadow: 0 4px 1px var(--primary-2);
 	position: absolute;
     left: 67%;
 	text-align: center; /* 先水平居中 */
@@ -455,15 +459,17 @@ th {
 }
 
 #container-banner .btn a{
-	color: var(--secend)
+	font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
+	color: var(--primary-2)
 }
 
 #container-banner .btn div:hover{
-	background-color: var(--primary);
+	background-color: #ececec;
 }
 
 #container-banner .btn div:hover a{
-	color:white
+	color:var(--primary-2)
 }
 
 
