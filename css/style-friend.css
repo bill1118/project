@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Shrikhand&&family=Lobster&family=Noto+Sans+TC:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Serif+TC:wght@200..900&display=swap');
 :root {
 	--primary: #A62014;
@@ -68,6 +69,21 @@ ol {
 /* 重置連接 */
 a {
     text-decoration: none;
+}
+#dBtn{
+	position: fixed;
+    right: 50px;
+    bottom: 140px;
+    z-index: 998;
+
+    width: 50px;
+    height: 50px;
+    /* 新增 */
+    /* display: none; */
+    background-color: var(--primary-4);
+    border-radius: 50%;
+    cursor: pointer;
+    /* 游標樣式:手指 */
 }
 #butler {
     position: fixed;
@@ -292,7 +308,7 @@ section p {
 	justify-content: flex-start;
 	align-items: flex-start;
 	width: 100%;;
-	gap: 450px;
+	gap: 300px;
 	padding-bottom: 50px;
 	margin-top: 50px;
 }
@@ -302,7 +318,7 @@ section p {
 	flex-direction: column;
 	align-items: center;
 	gap: 80px;
-	width: 25%;
+	width: 30%;
 	height: 100%;
 }
 
@@ -326,6 +342,7 @@ table {
 tr{
 	width: 100%;
 	height: 50px;
+	text-align: center;
 }
 .tableTop th{
 	color: #ffffff;
@@ -357,6 +374,7 @@ th {
 	width: 100%;
 	cursor: pointer;
 	border-radius: 5px;
+	padding: 5px;
 }
 
 #container-banner .list td .btn2 {
@@ -366,6 +384,7 @@ th {
 	width: 100%;
 	cursor: pointer;
 	border-radius: 5px;
+	padding: 5px;
 }
 
 #container-banner .list td .btn2:hover{
@@ -376,7 +395,7 @@ th {
 .arrow {
 	width: 220%;
 	display: flex;
-	justify-content:space-between;
+	justify-content:flex-end;
 	align-items: center;
 	text-decoration: none;
 }
@@ -393,12 +412,13 @@ th {
 	background-color: #F7F1F0;
 	border-radius: 30px;
 	max-width: 80%;
+	padding: 20px;
 }
 
 .layout-table_list .content h2 {
 	font-size: 20px;
 	font-weight: 600;
-	margin: 15px;
+	margin: 5px;
 }
 
 #container-banner .btn {
@@ -429,7 +449,7 @@ th {
 	cursor: pointer;
 	box-shadow: 0 4px 1px var(--secend);
 	position: absolute;
-    left: 73%;
+    left: 67%;
 	text-align: center; /* 先水平居中 */
     /* transform: translate(-50%, -50%); 同时调整水平和垂直的居中 */
 }

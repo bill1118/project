@@ -319,10 +319,11 @@ a {
     /* 設置文字陰影 */
 }
 
+
 /* 內容區 */
 
 #content {
-    z-index: 2;
+    z-index:0;
     padding: 3rem 1rem;
     /* 原先為padding-top:3rem */
     display: flex;
