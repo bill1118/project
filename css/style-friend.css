@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Shrikhand&&family=Lobster&family=Noto+Sans+TC:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Serif+TC:wght@200..900&display=swap');
 :root {
 	--primary: #A62014;
@@ -68,6 +69,21 @@ ol {
 /* 重置連接 */
 a {
     text-decoration: none;
+}
+#dBtn{
+	position: fixed;
+    right: 50px;
+    bottom: 140px;
+    z-index: 998;
+
+    width: 50px;
+    height: 50px;
+    /* 新增 */
+    /* display: none; */
+    background-color: var(--primary-4);
+    border-radius: 50%;
+    cursor: pointer;
+    /* 游標樣式:手指 */
 }
 #butler {
     position: fixed;

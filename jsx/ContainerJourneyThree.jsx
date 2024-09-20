@@ -2,7 +2,7 @@ function ContainerJourneyThree(props) {
     return (
         <>
             <section className="bee-animation">
-                <TrainAnimation uniqueId="3"  />
+                <TrainAnimation uniqueId="3" />
             </section>
             <section id="container-journey">
                 <div className="box-title">
@@ -28,13 +28,10 @@ function ContainerJourneyThree(props) {
                     </div>
                     <div className="content">
                         <h2>{props.h2}</h2>
-                        <p>日本著名的歷史城堡，<br />
-                            為封建權利的象徵之一，<br />
-                            代表擁有者有著強大的武力。<br />
-                            在這裡可以了解<br />
-                            大阪的歷史和文化。<br />
-                            周圍的公園四季皆美，<br />
-                            很適合與朋友散步和拍照。<br />
+                        <p>歷史悠久的街區之一，<br />
+                            擁有保存完好的西洋風格古老建築，<br />
+                            如今則成為了眾多博物館和<br />
+                            咖啡館的所在。<br />
                         </p>
                     </div>
                 </div>
@@ -43,9 +40,10 @@ function ContainerJourneyThree(props) {
                     <figure className="small">{props.imgs}</figure>
                     <div className="content">
                         <h3>{props.h3}</h3>
-                        <p>大阪著名的美食街，<br />
-                            有各種當地特色美食，<br />
-                            如章魚燒、大阪燒和串燒。<br />
+                        <p>可以乘坐纜車上山，<br />
+                            俯瞰神戶市區和港口的美景。<br />
+                            在周邊散步，<br />
+                            參觀海洋博物館或乘坐遊船。<br />
                         </p>
                     </div>
                 </div>
