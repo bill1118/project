@@ -213,6 +213,11 @@
                 event.preventDefault(); // 防止默認事件，以允許放置
             };
 
+            // 新增行程天数
+            const addDay = () => {
+                setItinerary([...itinerary, []]);  // 增加一个空的數組代表新的一天
+            };
+
 
             return (
                 <>
@@ -310,7 +315,7 @@
                                     </div>
                                 ))}
                                 <div className="btn">
-                                    <button>加入行程</button>
+                                    <button onClick={addDay}>加入行程</button>
                                 </div>
                                 <div className="btn2">
                                     <a href="./shopping.html"><button>進入購物車<img src="./images/icon/Shopping cart.svg" alt="" /></button></a>
