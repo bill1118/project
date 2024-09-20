@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Serif+TC:wght@200..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap');
 
 
 :root {
@@ -288,10 +288,14 @@ section {
 }
 
 h2{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
 	font-size: 20px;
 }
 
 p{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
 	font-size: 12px;
 }
 /* #container-banner */
@@ -315,6 +319,8 @@ p{
 }
 
 #container-banner .banner-content h1 {
+    font-family: "Noto Serif TC", serif;
+    font-weight: 900;
 	font-size: 36px;
 	color: white;
 	padding: 15px 15px 0 15px;
@@ -356,6 +362,8 @@ p{
 }
 
 .box-left select {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
 	font-size: 16px;
 	border: none;
 	outline: none;
@@ -377,6 +385,8 @@ p{
 }
 
 .box-left .list button{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
 	cursor: pointer;
 	border: none;
 	font-size: 16px;
@@ -549,6 +559,7 @@ p{
 }
 
 .box-right .box-list h2{
+    
 	margin: 15px;
 	letter-spacing: 5px;
 	font-weight: 550;
@@ -577,6 +588,8 @@ p{
 }
 
 .box-right  .btn button{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
 	border-radius: 99px;
 	border-style: none;
 	border: 1px solid var(--primary-2);
@@ -587,6 +600,8 @@ p{
 }
 
 .box-right .btn button:hover{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
 	background-color: var(--primary-2);
 	color: white;
 }
@@ -596,6 +611,8 @@ p{
 }
 
 .box-right .btn2 button{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
 	border-radius: 99px;
 	border-style: none;
 	padding: 10px 30px;
