@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>神火旅遊</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/MotionPathPlugin.min.js"></script>
+
+    <link rel="stylesheet" href="./css/style-food.css">
+    <link rel="stylesheet" href="./css/logoin.css">
+    <script type="text/babel" src="./jsx/Topbar2.jsx"></script>
+    <script type="text/babel" src="./jsx/Footer-food.jsx"></script>
+    <script type="text/babel" src="./jsx/TrainAnimation.jsx"></script>
+    <script type="text/babel" src="./jsx/ContainerJourney.jsx"></script>
+    <script type="text/babel" src="./jsx/ContainerJourneyTwo.jsx"></script>
+    <script type="text/babel" src="./jsx/ContainerJourneyThree.jsx"></script>
+
+
+
+</head>
+
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        const { useEffect } = React;
+        function App() {
+
+            const products = [
+                {
+                    id: 1,
+                    img: <img src="./images/4-theme-food/tsukiji-outer-market.jpg" alt="築地市場" />,
+                    imgb: <img src="./images/4-theme-food/takeshita-street.jpg" alt="原宿竹下通" />,
+                    imgs: <img src="./images/4-theme-food/shibuya-crossing.jpg" alt="澀谷十字路口" />,
+                    h1: '東京',
+                    h2: '築地市場',
+                    h3: '澀谷十字路口',
+                    h4: '原宿竹下通',
+                    h5: '第一天',
+                    p1:'號稱「東京廚房」，',
+                    p2:'可品嘗最新鮮的壽司、',
+                    p3:'海鮮丼等，如壽司大等名店。',
+                    p4:'',
+                    p5:'',
+                    p6:'',
+                    p7:'',
+                    p8:'世界上最繁忙的十字路口，',
+                    p9:'經典打卡地點。',
+                    p10:'',
+                },
+            ]
+
+            const products2 = [
+                {
+                    id: 1,
+                    img: <img src="./images/4-theme-food/shinsekai.jpg" alt="新世界" />,
+                    imgb: <img src="./images/4-theme-food/kuromon-ichiba-market.jpg" alt="ふな定" />,
+                    imgs: <img src="./images/4-theme-food/umeda-sky-building.jpg" alt="梅田天空大廈" />,
+                    h1: '大阪',
+                    h2: '新世界',
+                    h3: '梅田天空大廈',
+                    h4: 'ふな定',
+                    h5: '第二天',
+                    p1:'這是大阪著名的美食區，',
+                    p2:'是一個充滿復古風情的娛樂區，',
+                    p3:'以通天閣和美食著稱，',
+                    p4:'可以品嘗炸串和大阪燒等經典小吃。',
+                    p5:'',
+                    p6:'',
+                    p7:'',
+                    p8:'這座摩天大樓的「空中庭園展望台」',
+                    p9:'提供了360度的大阪市區夜景。',
+                    p10:'適合參觀。',
+                },
+            ];
+
+            const products3 = [
+                {
+                    id: 1,
+                    img: <img src="./images/4-theme-food/dazaifu-tenmangu.jpg" alt="太宰府天滿宮 " />,
+                    imgb: <img src="./images/4-theme-food/hakata-ramen.jpg" alt="福岡拉麵" />,
+                    imgs: <img src="./images/4-theme-food/mojiko-retro.jpg" alt="門司港" />,
+                    h1: '福岡',
+                    h2: '東大寺',
+                    h3: '門司港',
+                    h4: '福岡拉麵',
+                    h5: '第三天',
+                    p1:'這是福岡最著名的神社之一，',
+                    p2:'以供奉學問之神天神而聞名，',
+                    p3:'擁有美麗的庭園和歷史建築。',
+                    p4:'',
+                    p5:'',
+                    p6:'',
+                    p7:'',
+                    p8:'一個充滿懷舊氛圍的港口小鎮，',
+                    p9:'有著歷史建築和美麗的海景。',
+                    p10:'',
+                },
+            ];
+            return (
+                <>
+                    <Topbar2 />
+                    <main>
+                        <section id="container-banner">
+                            <div className="layout-space"></div>
+                            <div className="layout-list">
+                                <figure></figure>
+                                <div className="layout-table_list">
+                                    <table>
+                                        <tbody>
+                                            <tr className="tableTop">
+                                                <th>出發時間</th>
+                                                <th>售價</th>
+                                                <th>狀態</th>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr className="list">
+                                                <td>2024/09/27(五)</td>
+                                                <td>$13,000起</td>
+                                                <td><button>額滿</button></td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr className="list">
+                                                <td>2024/10/11(五)</td>
+                                                <td>$15,000起</td>
+                                                <td><button>額滿</button></td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr className="list">
+                                                <td>2024/11/08(五)</td>
+                                                <td>$13,000起</td>
+                                                <td><button className="btn2">預定</button></td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr className="arrow">
+                                                {/*<td className="arrowl"><img src="./images/icon/Arrow2.svg" alt="left" /></td>*/}
+                                                <td><img src="./images/icon/Arrow1.svg" alt="right" /></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div className="content">
+                                        <h2>美食先打卡</h2>
+                                        <p>在京阪福品味當地新鮮特色美食，</p>
+                                        <p>從街邊小吃到米其林餐廳，</p>
+                                        <p>體驗各地風味的美食饗宴，</p>
+                                        <p>無論是從燒烤到壽司，</p>
+                                        <p>還是甜點到咖啡館，</p>
+                                        <p>讓每一口都留下美好回憶。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="btn">
+                                <figure></figure>
+                                <div><a href="./join.html" target="_blank">報名行程</a></div>
+                            </div>
+                        </section>
+
+                        {products.map((item, index) => (
+                            <React.Fragment key={item.id}>
+                                <ContainerJourney
+                                    img={item.img}
+                                    imgb={item.imgb}
+                                    imgs={item.imgs}
+                                    h1={item.h1}
+                                    h2={item.h2}
+                                    h3={item.h3}
+                                    h4={item.h4}
+                                    h5={item.h5}
+
+                                    p1={item.p1}
+                                    p2={item.p2}
+                                    p3={item.p3}
+                                    p4={item.p4}
+                                    p5={item.p5}
+                                    p6={item.p6}
+                                    p7={item.p7}
+                                    p8={item.p8}
+                                    p9={item.p9}
+                                    p10={item.p10}
+                                />
+                            </React.Fragment>
+                        ))}
+
+                        {products2.map((item2, index) => (
+                            <React.Fragment key={item2.id}>
+                                <ContainerJourneyTwo
+                                    key={item2.id}
+                                    img={item2.img}
+                                    imgb={item2.imgb}
+                                    imgs={item2.imgs}
+                                    h1={item2.h1}
+                                    h2={item2.h2}
+                                    h3={item2.h3}
+                                    h4={item2.h4}
+                                    h5={item2.h5}
+
+                                    p1={item2.p1}
+                                    p2={item2.p2}
+                                    p3={item2.p3}
+                                    p4={item2.p4}
+                                    p5={item2.p5}
+                                    p6={item2.p6}
+                                    p7={item2.p7}
+                                    p8={item2.p8}
+                                    p9={item2.p9}
+                                    p10={item2.p10}
+                        
+                                />
+                            </React.Fragment>
+                        ))}
+
+                        {products3.map((item3, index) => (
+                            <React.Fragment key={item3.id}>
+                                <ContainerJourneyThree
+                                    key={item3.id}
+                                    img={item3.img}
+                                    imgb={item3.imgb}
+                                    imgs={item3.imgs}
+                                    h1={item3.h1}
+                                    h2={item3.h2}
+                                    h3={item3.h3}
+                                    h4={item3.h4}
+                                    h5={item3.h5}
+
+                                    p1={item3.p1}
+                                    p2={item3.p2}
+                                    p3={item3.p3}
+                                    p4={item3.p4}
+                                    p5={item3.p5}
+                                    p6={item3.p6}
+                                    p7={item3.p7}
+                                    p8={item3.p8}
+                                    p9={item3.p9}
+                                    p10={item3.p10}
+                                />
+                            </React.Fragment>
+                        ))}
+
+                    </main>
+                    <Footer />
+                </>
+            )
+        }
+        ReactDOM
+            .createRoot(document.getElementById('root'))
+            .render(<App />);
+    </script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>
