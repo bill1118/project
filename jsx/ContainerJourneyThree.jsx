@@ -2,7 +2,7 @@ function ContainerJourneyThree(props) {
     return (
         <>
             <section className="bee-animation">
-                <TrainAnimation uniqueId="3" />
+                <TrainAnimation uniqueId="3"  />
             </section>
             <section id="container-journey">
                 <div className="box-title">
