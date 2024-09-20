@@ -2,7 +2,7 @@ function ContainerJourneyThree(props) {
     return (
         <>
             <section className="bee-animation">
-                <TrainAnimation uniqueId="3" />
+                <TrainAnimation uniqueId="3"  />
             </section>
             <section id="container-journey">
                 <div className="box-title">
@@ -28,11 +28,13 @@ function ContainerJourneyThree(props) {
                     </div>
                     <div className="content">
                         <h2>{props.h2}</h2>
-                        <p>歷史悠久的街區之一，<br />
-                            擁有保存完好的西洋風格古老建築，<br />
-                            如今則成為了眾多博物館和<br />
-                            咖啡館的所在。<br />
-                        </p>
+                        <p1>{props.p1}</p1>
+                        <p2>{props.p2}</p2>
+                        <p3>{props.p3}</p3>
+                        <p4>{props.p4}</p4>
+                        <p5>{props.p5}</p5>
+                        <p6>{props.p6}</p6>
+                        <p7>{props.p7}</p7>
                     </div>
                 </div>
                 <div className="box-second">
@@ -40,11 +42,9 @@ function ContainerJourneyThree(props) {
                     <figure className="small">{props.imgs}</figure>
                     <div className="content">
                         <h3>{props.h3}</h3>
-                        <p>可以乘坐纜車上山，<br />
-                            俯瞰神戶市區和港口的美景。<br />
-                            在周邊散步，<br />
-                            參觀海洋博物館或乘坐遊船。<br />
-                        </p>
+                        <p8>{props.p8}</p8>
+                        <p9>{props.p9}</p9>
+                        <p10>{props.p10}</p10>
                     </div>
                 </div>
             </section>

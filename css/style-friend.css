@@ -612,6 +612,13 @@ h5{
 	border-bottom-left-radius: 999px;
 	border-bottom-right-radius: 999px;
 }
+
+.box-second .content{
+	display: flex;
+	flex-direction: column;
+	justify-content:flex-start;
+	align-items:flex-start;
+}
 /* container-journey2 */
 #container-journey2 {
 	background-image: url(../images/4-theme-friend/background/background.jpg);

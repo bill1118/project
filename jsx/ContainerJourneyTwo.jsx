@@ -25,10 +25,14 @@ function ContainerJourneyTwo(props) {
                 <div className="box-primary">
                     <div className="content">
                         <h2>{props.h2}</h2>
-                        <p>為近畿地方參拜者最多的社寺，<br />
-                            以千本鳥居而聞名，<br />
-                            也是京都最受歡迎的景點之一。<br />
-                        </p>
+                        <p1>{props.p1}</p1>
+                        <p2>{props.p2}</p2>
+                        <p3>{props.p3}</p3>
+                        <p4>{props.p4}</p4>
+                        <p5>{props.p5}</p5>
+                        <p6>{props.p6}</p6>
+                        <p7>{props.p7}</p7>
+
                     </div>
                     <div className="title">
                         <h1>{props.h1}</h1>
@@ -38,10 +42,10 @@ function ContainerJourneyTwo(props) {
                 <div className="box-second">
                     <div className="content">
                         <h3>{props.h3}</h3>
-                        <p>世界遺產，<br />
-                        著名的賞櫻和賞楓景點，<br />
-                        擁有美麗的日式庭園和歷史建築。<br />
-                        </p>
+                        <p8>{props.p8}</p8>
+                        <p9>{props.p9}</p9>
+                        <p10>{props.p10}</p10>
+
                     </div>
                     <figure className="small">{props.imgs}</figure>
                     <figure className="big">{props.imgb}</figure>

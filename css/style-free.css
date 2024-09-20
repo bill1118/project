@@ -397,11 +397,40 @@ p{
 	background-color: #ECECEC;
 }
 
+.itinerary-style{
+    width: 100px;
+    height: 50px;
+    border: 1px solid red;
+}
+
+.itinerary-style .list-item{
+    width: 10px;
+}
+
+.itinerary-style .list-item img{
+    width: 20px;
+    height: 20px;
+}
+
+.itinerary-style .list-text .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+.itinerary-style .list-text .title{
+    display: none;
+}
+
+.itinerary-style .list-text .icon{
+    display: none;
+}
 
 #box-list {
 	display: flex;
 	flex-wrap: wrap;
-	align-items: center;
+	align-items:flex-start;
 	width: 100%;
 	gap: 68px;
     height: 100vh;
