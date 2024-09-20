@@ -768,6 +768,28 @@ footer .small {
     opacity: 0.9;
 }
 
+.city {
+	position: absolute;
+	left: 70px;
+	display: flex;
+	align-items: flex-end;
+	bottom: 0px;
+	overflow: hidden;
+	width: 30%;
+	z-index: -1;
+}
+
+.mountain {
+	position: absolute;
+	left: 1000px;
+	display: flex;
+	align-items: flex-end;
+	bottom: 0px;
+	overflow: hidden;
+	width: 20%;
+	z-index: -1;
+}
+
 
 /* 1440px以下解析度的布局调整 */
 @media screen and (max-width: 1300px) {

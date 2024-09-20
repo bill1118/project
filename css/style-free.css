@@ -407,36 +407,7 @@ p{
 	background-color: #ECECEC;
 }
 
-.itinerary-style{
-    width: 100px;
-    height: 50px;
-    border: 1px solid red;
-}
-
-.itinerary-style .list-item{
-    width: 10px;
-}
-
-.itinerary-style .list-item img{
-    width: 20px;
-    height: 20px;
-}
-
-.itinerary-style .list-text .content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 16px;
-}
-
-.itinerary-style .list-text .title{
-    display: none;
-}
-
-.itinerary-style .list-text .icon{
-    display: none;
-}
-
+/* free-edit */
 #box-list {
 	display: flex;
 	flex-wrap: wrap;
@@ -502,6 +473,66 @@ p{
 	font-weight: 550;
 }
 
+.list-item .delete-btn{
+    display: none;
+}
+
+/* itinerary-style */
+.itinerary-style{
+    width: 250px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.itinerary-style .list-item{
+    border: 1px solid gray;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.itinerary-style .list-item figure{
+    width:15vh;
+    height: 6vw;
+    overflow: hidden;
+}
+
+.itinerary-style .list-item img{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.itinerary-style .list-text .title{
+    display: none;
+}
+
+.itinerary-style .list-text .text h2{
+    font-size: 12px;
+}
+
+.itinerary-style .list-text .text h2::after{
+    display: none;
+}
+
+.itinerary-style .delete{
+    cursor: pointer;
+    width: 30%;
+}
+
+.itinerary-style .delete-btn{
+    display: block;
+}
+
+
+
 /* box-right  */
 .box-right {
 	width: 30%;
@@ -554,8 +585,10 @@ p{
 
 .box-right .box-list .content{
 	display: flex;
-	flex-wrap: wrap;
-	height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	gap: 70px;
 }
 
 .box-right .box-list h2{
@@ -585,6 +618,7 @@ p{
     box-shadow: 0 1px 0 0 black; 
 	width: 55%;
 	height: 10%;
+    margin-top: 50px;
 }
 
 .box-right  .btn button{
