@@ -38,7 +38,7 @@
                 img2: <img src="./images/icon/circle btn (1).svg" alt="大阪" />,
                 p: '大阪',
                 h2: '黑門市場',
-                region: '北海道',
+                region: '關西地區',
                 category: '景點',
             },
             {
@@ -48,8 +48,8 @@
                 img2: <img src="./images/icon/circle btn (1).svg" alt="大阪" />,
                 p: '大阪',
                 h2: '環球影城',
-                region: '北海道',
-                category: '美食',
+                region: '關西地區',
+                category: '景點',
             },
             {
                 id: 3,
@@ -58,7 +58,7 @@
                 img2: <img src="./images/icon/circle btn (1).svg" alt="大阪" />,
                 p: '神戶',
                 h2: '神戶港塔',
-                region: '東北地區',
+                region: '關西地區',
                 category: '景點',
             },
             {
@@ -68,8 +68,8 @@
                 img2: <img src="./images/icon/circle btn (1).svg" alt="大阪" />,
                 p: '大阪',
                 h2: '新世界本通商店街',
-                region: '東北地區',
-                category: '美食',
+                region: '關西地區',
+                category: '景點',
             },
             {
                 id: 6,
@@ -78,7 +78,7 @@
                 img2: <img src="./images/icon/circle btn (1).svg" alt="大阪" />,
                 p: '京都',
                 h2: '伏見稻荷大社',
-                region: '中部地區',
+                region: '關西地區',
                 category: '景點',
             },
             {
@@ -88,8 +88,8 @@
                 img2: <img src="./images/icon/circle btn (1).svg" alt="大阪" />,
                 p: '京都',
                 h2: '清水寺三重塔',
-                region: '中部地區',
-                category: '美食',
+                region: '關西地區',
+                category: '景點',
             },
             {
                 id: 8,
@@ -109,7 +109,7 @@
                 p: '和歌山',
                 h2: '那智瀑布',
                 region: '關東地區',
-                category: '美食',
+                category: '景點',
             },
             {
                 id: 10,
@@ -119,7 +119,7 @@
                 p: '奈良',
                 h2: '奈良公園',
                 region: '關西地區',
-                category: '美食',
+                category: '景點',
             },
             {
                 id: 11,
@@ -138,7 +138,7 @@
                 img2: <img src="./images/icon/circle btn (1).svg" alt="大阪" />,
                 p: '沖繩',
                 h2: '宮古牛',
-                region: '中國地區',
+                region: '九州地方',
                 category: '美食',
             },
             {
@@ -148,7 +148,7 @@
                 img2: <img src="./images/icon/circle btn (1).svg" alt="大阪" />,
                 p: '福岡',
                 h2: '門司港',
-                region: '中國地區',
+                region: '九州地方',
                 category: '景點',
             },
             {
@@ -158,7 +158,7 @@
                 img2: <img src="./images/icon/circle btn (1).svg" alt="大阪" />,
                 p: '東京',
                 h2: '澀谷十字路口',
-                region: '四國地區',
+                region: '關東地區',
                 category: '景點',
             },
             {
@@ -168,7 +168,7 @@
                 img2: <img src="./images/icon/circle btn (1).svg" alt="大阪" />,
                 p: '福岡',
                 h2: '川端通商店街',
-                region: '四國地區',
+                region: '九州地方',
                 category: '美食',
             },
             {
@@ -178,7 +178,7 @@
                 img2: <img src="./images/icon/circle btn (1).svg" alt="大阪" />,
                 p: '東京',
                 h2: '上野公園',
-                region: '九州',
+                region: '關東地區',
                 category: '景點',
             },
             {
@@ -188,7 +188,7 @@
                 img2: <img src="./images/icon/circle btn (1).svg" alt="大阪" />,
                 p: '札幌',
                 h2: '拉麵橫丁',
-                region: '九州',
+                region: '北海道',
                 category: '美食',
             },
             ];
@@ -298,11 +298,12 @@
                                                 <FreeEdit
                                                     key={i}
                                                     img={product.img}
-                                                    img1={product.img1}
-                                                    img2={product.img2}
-                                                    p={product.p}
                                                     h2={product.h2}
-                                                    itInItinerary={true} 
+                                                    itInItinerary={true}
+                                                    onDelete={() => handleDelete(product.id, index)}
+                                                    itemId={product.id}
+                                                    dayIndex={index}
+                                                    setItinerary={setItinerary}
                                                 />
                                             ))}
                                         </div>
@@ -312,7 +313,7 @@
                                     <button>加入行程</button>
                                 </div>
                                 <div className="btn2">
-                                    <button>進入購物車<img src="./images/icon/Shopping cart.svg" alt="" /></button>
+                                    <a href="./shopping.html"><button>進入購物車<img src="./images/icon/Shopping cart.svg" alt="" /></button></a>
                                 </div>
                             </div>
                         </section>
