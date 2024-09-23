@@ -1,4 +1,4 @@
-function ContainerJourney(props) {
+function ContainerJourney(props) {    
     return (
         <>
             <section className="bee-animation">
@@ -28,13 +28,13 @@ function ContainerJourney(props) {
                     </div>
                     <div className="content">
                         <h2>{props.h2}</h2>
-                        <p1>{props.p1}</p1>
-                        <p2>{props.p2}</p2>
-                        <p3>{props.p3}</p3>
-                        <p4>{props.p4}</p4>
-                        <p5>{props.p5}</p5>
-                        <p6>{props.p6}</p6>
-                        <p7>{props.p7}</p7>
+                        <p>{props.p1}</p>
+                        <p>{props.p2}</p>
+                        <p>{props.p3}</p>
+                        <p>{props.p4}</p>
+                        <p>{props.p5}</p>
+                        <p>{props.p6}</p>
+                        <p>{props.p7}</p>
                     </div>
                 </div>
                 <div className="box-second">
@@ -42,9 +42,9 @@ function ContainerJourney(props) {
                     <figure className="small">{props.imgs}</figure>
                     <div className="content">
                         <h3>{props.h3}</h3>
-                        <p8>{props.p8}</p8>
-                        <p9>{props.p9}</p9>
-                        <p10>{props.p10}</p10>
+                        <p>{props.p8}</p>
+                        <p>{props.p9}</p>
+                        <p>{props.p10}</p>
                     </div>
                 </div>
             </section>
