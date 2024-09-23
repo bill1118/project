@@ -1,13 +1,16 @@
 function FreeEdit(props) {
-
-    const { itInItinerary, setItinerary, dayIndex, itemId } = props;
+    const { itInItinerary, setItinerary, dayIndex, itemId, img, img1, p, h2, img2 } = props;
 
     const [isIntroducePopup, setIsIntroducePopup] = useState(false);
+    const [currentImg, setCurrentImg] = useState('');
+    const [selectedProduct, setSelectedProduct] = useState(null);
 
     /* 介紹視窗 */
-    const introduse = () => {
-        setIsIntroducePopup(!isIntroducePopup);
-    }
+    const introduse = (img, products) => {
+        setSelectedProduct(products); // 儲存當前選中的產品
+        setCurrentImg(img); // 更新當前圖片
+        setIsIntroducePopup(true); // 打開彈窗
+    };
 
     /* 刪除功能 */
     const handleDelete = () => {
@@ -16,46 +19,40 @@ function FreeEdit(props) {
             updatedItinerary[dayIndex] = updatedItinerary[dayIndex].filter(item => item.id !== itemId);
             return updatedItinerary;
         });
-    }
+    };
 
     /* 增減數值 */
-    // 初始化数量为 1
     const [quantity, setQuantity] = useState(1);
 
-    // 增加数量
     const increaseQuantity = () => {
         setQuantity(quantity + 1);
     };
 
-    // 减少数量，确保最小值为 1
     const decreaseQuantity = () => {
         if (quantity > 1) {
             setQuantity(quantity - 1);
         }
     };
 
-
-
-
     return (
         <>
             <div className={itInItinerary ? 'itinerary-style' : 'free-edit'}>
                 <div className="list-item">
-                    <a href="#" onClick={introduse}>
-                        <figure>{props.img}</figure>
+                    <a href="#" onClick={() => introduse(img, props)}>
+                        <figure>{img}</figure>
                     </a>
                     <div className="list-text">
                         <div className="text-content">
                             <div className="title">
-                                {props.img1}
-                                <p>{props.p}</p>
+                                {img1}
+                                <p>{p}</p>
                             </div>
                             <div className="text">
-                                <h2>{props.h2}</h2>
+                                <h2>{h2}</h2>
                             </div>
                         </div>
                         <div className="icon">
-                            <a href="#" onClick={introduse}>{props.img2}</a>
+                            <a href="#" onClick={() => introduse(img, props)}></a>
                         </div>
                     </div>
                     <div className='delete'>
@@ -64,20 +61,20 @@ function FreeEdit(props) {
                 </div>
 
                 {/* 介绍弹窗 */}
-                {isIntroducePopup && (
+                {isIntroducePopup && selectedProduct && (
                     <div id="myModal" className="modal">
                         <div className="modal-content">
                             <div className="img_L">
-                                <img src="./images/introduce/usj-1914942_1000.jpg" alt="" />
+                                {selectedProduct.img}
                             </div>
                             <div className="inf_R">
-                                <span className="close" onClick={introduse}>×</span>
+                                <span className="close" onClick={() => setIsIntroducePopup(false)}>×</span>
                                 <div className="write">
                                     <h2>環球影城</h2>
                                     <hr />
                                     <div className="icon">
                                         <img src="./images/introduce/map-marker.png" alt="" />
-                                        <p>&nbsp;大阪</p>
+                                        <p>&nbsp;{selectedProduct.p}</p>
                                     </div>
                                     <p>簡介:</p>
                                     <p>是一座大型主題樂園，於2001年開幕，擁有多個受歡迎的主題區和遊樂設施。</p>
@@ -97,7 +94,7 @@ function FreeEdit(props) {
                                     <input type="date" name="date" id="date" title="date" placeholder="請選擇日期" />
                                     <div className="quantity">
                                         <button className="minus" type="button" onClick={decreaseQuantity}>-</button>
-                                        <input type="text" defaultValue={quantity} readOnly />
+                                        <input type="text" value={quantity} readOnly />
                                         <button className="plus" type="button" onClick={increaseQuantity}>+</button>
                                     </div>
                                     <div className="btn">
@@ -111,9 +108,6 @@ function FreeEdit(props) {
                     </div>
                 )}
             </div>
-
-
         </>
     );
-};
-
+}

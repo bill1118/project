@@ -38,4 +38,11 @@ $(window).scroll(function () {
     }
 });
 
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 200) {
+        $('#butler').stop().fadeTo('slow', 1);
+    } else {
+        $('#butler').stop().fadeOut('slow');
+    }
+});
 
