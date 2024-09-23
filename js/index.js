@@ -15,6 +15,7 @@ const handleScroll = () => {
     }
 };
 
+
 function scrollToTop() {
     $('html, body').animate({ scrollTop: 0 }, 1000);  // 平滑滾動到頂部
 }
