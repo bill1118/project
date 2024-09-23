@@ -70,7 +70,7 @@ function FreeEdit(props) {
                             <div className="inf_R">
                                 <span className="close" onClick={() => setIsIntroducePopup(false)}>×</span>
                                 <div className="write">
-                                    <h2>環球影城</h2>
+                                    <h2>{selectedProduct.h2}</h2>
                                     <hr />
                                     <div className="icon">
                                         <img src="./images/introduce/map-marker.png" alt="" />
