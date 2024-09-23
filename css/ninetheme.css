@@ -172,6 +172,12 @@ main img {
 	color: white;
 }
 
+/* 滾軸事件 */
+#container-topbar.scrolled {
+	background-color: var(--primary-2) !important;
+	opacity: 0.9;
+}
+
 /*主頁共用區*/
 .sakura {
 	margin-top: 70px;
