@@ -43,7 +43,7 @@ function FreeEdit(props) {
                         </div>
                     </div>
                     <div className='delete'>
-                        <img src="../images/icon/trash.svg" alt="垃圾桶" onClick={handleDelete} className="delete-btn" />
+                        <img src="./images/icon/trash.svg" alt="垃圾桶" onClick={handleDelete} className="delete-btn" />
                     </div>
                 </div>
 
