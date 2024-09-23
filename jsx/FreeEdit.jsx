@@ -18,6 +18,22 @@ function FreeEdit(props) {
         });
     }
 
+    /* 增減數值 */
+    // 初始化数量为 1
+    const [quantity, setQuantity] = useState(1);
+
+    // 增加数量
+    const increaseQuantity = () => {
+        setQuantity(quantity + 1);
+    };
+
+    // 减少数量，确保最小值为 1
+    const decreaseQuantity = () => {
+        if (quantity > 1) {
+            setQuantity(quantity - 1);
+        }
+    };
+
 
 
 
@@ -80,9 +96,9 @@ function FreeEdit(props) {
                                 <form action="" name="form-date" id="form-date" title="選人数">
                                     <input type="date" name="date" id="date" title="date" placeholder="請選擇日期" />
                                     <div className="quantity">
-                                        <button className="minus">-</button>
-                                        <input type="text" value="1" min="1" />
-                                        <button className="plus">+</button>
+                                        <button className="minus" type="button" onClick={decreaseQuantity}>-</button>
+                                        <input type="text" defaultValue={quantity} readOnly />
+                                        <button className="plus" type="button" onClick={increaseQuantity}>+</button>
                                     </div>
                                     <div className="btn">
                                         <button type="submit" name="btn__contact--submit" id="btn__contact--submit" title="送出按钮">
@@ -100,3 +116,4 @@ function FreeEdit(props) {
         </>
     );
 };
+
