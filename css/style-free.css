@@ -489,6 +489,7 @@ p{
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    height: auto;
 }
 
 .itinerary-style .list-item{
@@ -585,7 +586,7 @@ p{
 	background-color: white;
 	width: 57%;
 	border-radius: 10px;
-    height: auto;
+    
 }
 
 .box-right .box-list .content{
@@ -593,7 +594,7 @@ p{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-	gap: 70px;
+	gap: 10px;
 }
 
 .box-right .box-list h2{
