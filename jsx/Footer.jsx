@@ -55,7 +55,7 @@ function Footer() {
                     <small>版權所有 &copy; 2024 神火旅遊</small>
                 </div>
                 <div id="dBtn"><a href="./topic-detail-itinerary.html"><img src="./images/side-btn/deatailitinerary-btn.svg" alt="" /></a></div>
-                <div id="butler"><img src="./images/side-btn/butler.svg" alt="小管家按鈕"/></div>
+                <div id="butler"><img src="./images/side-btn/butler.svg" alt="小管家按鈕" /></div>
                 <div id="gotop" onClick={() => {
                     $('html,body').animate({ scrollTop: 0 }, 1000);
                 }}><img src="./images/icon/top.btn.svg" alt="" /></div>
