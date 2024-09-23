@@ -262,6 +262,7 @@ section {
 
 /* boxleft */
 .boxleft {
+    background-color: white;
     width: 20%;
     height: 70%;
     display: flex;
@@ -444,6 +445,7 @@ section {
 
 /* boxright-personal */
 .boxright {
+    background-color: white;
     width: 50%;
     height: 70%;
     display: flex;
@@ -456,6 +458,7 @@ section {
     box-shadow: 1px 1px 1px black;
     margin-right: 200px;
     padding: 35px;
+    z-index: 990;
 }
 
 .boxright .title {
@@ -787,7 +790,7 @@ footer .small {
 	bottom: 0px;
 	overflow: hidden;
 	width: 20%;
-	z-index: -1;
+    z-index: -1;
 }
 
 
