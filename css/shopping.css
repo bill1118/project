@@ -373,7 +373,6 @@ h4 {
 	max-width: 100%;
 	width: 90%;
 	height: 204px;
-	margin-bottom: 45px;
 	align-items: center;
 }
 
@@ -506,6 +505,7 @@ h4 {
 	height: 122px;
 	margin-bottom: 117px;
 	align-items: center;
+	margin-top: 45px;
 }
 
 .option2 .check {

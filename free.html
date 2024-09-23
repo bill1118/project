@@ -138,7 +138,7 @@
                 img2: <img src="./images/icon/circle btn (1).svg" alt="大阪" />,
                 p: '沖繩',
                 h2: '宮古牛',
-                region: '九州地方',
+                region: '九州地區',
                 category: '美食',
             },
             {
@@ -148,7 +148,7 @@
                 img2: <img src="./images/icon/circle btn (1).svg" alt="大阪" />,
                 p: '福岡',
                 h2: '門司港',
-                region: '九州地方',
+                region: '九州地區',
                 category: '景點',
             },
             {
@@ -165,10 +165,10 @@
                 id: 15,
                 img: <img src="./images/free/unadon.jpg" alt="川端通商店街" />,
                 img1: <img src="./images/icon/map-marker.svg" alt="地標" />,
-                img2: <img src="./images/icon/circle btn (1).svg" alt="大阪" />,
+                img2: <img src="./images/icon/circle btn (1).svg" alt="福岡" />,
                 p: '福岡',
                 h2: '川端通商店街',
-                region: '九州地方',
+                region: '北海道地區',
                 category: '美食',
             },
             {
@@ -188,7 +188,47 @@
                 img2: <img src="./images/icon/circle btn (1).svg" alt="大阪" />,
                 p: '札幌',
                 h2: '拉麵橫丁',
-                region: '北海道',
+                region: '北海道地區',
+                category: '美食',
+            },
+            {
+                id: 18,
+                img: <img src="./images/free/ramen-yokocho.jpg" alt="札幌拉麵橫丁" />,
+                img1: <img src="./images/icon/map-marker.svg" alt="地標" />,
+                img2: <img src="./images/icon/circle btn (1).svg" alt="大阪" />,
+                p: '札幌',
+                h2: '拉麵橫丁',
+                region: '北海道地區',
+                category: '美食',
+            },
+            {
+                id: 19,
+                img: <img src="./images/free/ramen-yokocho.jpg" alt="札幌拉麵橫丁" />,
+                img1: <img src="./images/icon/map-marker.svg" alt="地標" />,
+                img2: <img src="./images/icon/circle btn (1).svg" alt="大阪" />,
+                p: '札幌',
+                h2: '拉麵橫丁',
+                region: '北海道地區',
+                category: '美食',
+            },
+            {
+                id: 20,
+                img: <img src="./images/free/ramen-yokocho.jpg" alt="札幌拉麵橫丁" />,
+                img1: <img src="./images/icon/map-marker.svg" alt="地標" />,
+                img2: <img src="./images/icon/circle btn (1).svg" alt="大阪" />,
+                p: '札幌',
+                h2: '拉麵橫丁',
+                region: '北海道地區',
+                category: '美食',
+            },
+            {
+                id: 21,
+                img: <img src="./images/free/ramen-yokocho.jpg" alt="札幌拉麵橫丁" />,
+                img1: <img src="./images/icon/map-marker.svg" alt="地標" />,
+                img2: <img src="./images/icon/circle btn (1).svg" alt="大阪" />,
+                p: '札幌',
+                h2: '拉麵橫丁',
+                region: '北海道地區',
                 category: '美食',
             },
             ];
@@ -243,19 +283,19 @@
                                                 value={selectedRegion}
                                                 onChange={(e) => setSelectedRegion(e.target.value)}>
                                                 <option value="">所有地區</option>
-                                                <option value="北海道">北海道地方</option>
+                                                <option value="北海道地區">北海道</option>
                                                 <option value="東北地區">東北地方</option>
                                                 <option value="中部地區">中部地方</option>
                                                 <option value="關東地區">關東地方</option>
                                                 <option value="關西地區">關西地方</option>
                                                 <option value="中國地區">中國地方</option>
                                                 <option value="四國地區">四國地方</option>
-                                                <option value="九州">九州地方</option>
+                                                <option value="九州地區">九州</option>
                                             </select>
                                         </form>
                                     </div>
                                     <div className="list">
-                                        <button
+                                        <button 
                                             onClick={() => setSelectedCategory(selectedCategory === '景點' ? '' : '景點')}
                                             className={selectedCategory === '景點' ? 'active' : ''}>景點</button>
                                     </div>

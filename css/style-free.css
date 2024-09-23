@@ -379,6 +379,10 @@ p{
     height: 10%;
 }
 
+.box-left .active{
+    color: #A62014;
+}
+
 .box-left .list form{
 	display: flex;
 	align-items: normal;
