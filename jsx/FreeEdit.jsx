@@ -34,6 +34,8 @@ function FreeEdit(props) {
         }
     };
 
+    
+
     return (
         <>
             <div className={itInItinerary ? 'itinerary-style' : 'free-edit'}>

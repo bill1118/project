@@ -34,6 +34,11 @@
             const [itinerary, setItinerary] = useState([[], [], []]);
             const [selectedProduct, setSelectedProduct] = useState(null);
 
+            useEffect(() => {
+                    // 當組件掛載後，顯示 alert
+                    window.alert('可以將行程拖拉到右側行程列表！');
+                }, []);
+
             const products = [{
                 id: 1,
                 img: <img src="./images/free/freecompress-pexels-ruiz-2450697.jpg" alt="黑門市場" />,
@@ -462,119 +467,119 @@
             };
 
 
-            return (
-                <>
-                    <Topbar2 />
-                    <main>
-                        <section id="container-banner">
-                            <div className="banner-content">
-                                <img src="./images/icon/inverted-commas 左.png" alt="" />
-                                <h1>輕鬆規劃行程</h1>
-                                <img src="./images/icon/inverted-commas 右.png" alt="" />
-                            </div>
-                            <div className="search-bar">
-                                <input type="text" placeholder="搜尋" />
-                            </div>
-                        </section>
-
-                        <section id="container-database">
-                            <div className="box-left">
-                                <div className="select-bar">
-                                    <div className="list">
-                                        <form action="">
-                                            <select
-                                                value={selectedRegion}
-                                                onChange={(e) => setSelectedRegion(e.target.value)}>
-                                                <option value="">所有地區</option>
-                                                <option value="北海道地區">北海道地方</option>
-                                                <option value="東北地區">東北地方</option>
-                                                <option value="中部地區">中部地方</option>
-                                                <option value="關東地區">關東地方</option>
-                                                <option value="關西地區">關西地方</option>
-                                                <option value="中國地區">中國地方</option>
-                                                <option value="四國地區">四國地方</option>
-                                                <option value="九州地區">九州地方</option>
-                                            </select>
-                                        </form>
-                                    </div>
-                                    <div className="list">
-                                        <button 
-                                            onClick={() => setSelectedCategory(selectedCategory === '景點' ? '' : '景點')}
-                                            className={selectedCategory === '景點' ? 'active' : ''}>景點</button>
-                                    </div>
-                                    <div className="list">
-                                        <button
-                                            onClick={() => setSelectedCategory(selectedCategory === '美食' ? '' : '美食')}
-                                            className={selectedCategory === '美食' ? 'active' : ''}>美食</button>
-                                    </div>
+                return (
+                    <>
+                        <Topbar2 />
+                        <main>
+                            <section id="container-banner">
+                                <div className="banner-content">
+                                    <img src="./images/icon/inverted-commas 左.png" alt="" />
+                                    <h1>輕鬆規劃行程</h1>
+                                    <img src="./images/icon/inverted-commas 右.png" alt="" />
                                 </div>
-                                <div id="box-list">
-                                    {products
-                                        .filter(item =>
-                                            (!selectedRegion || item.region === selectedRegion) &&
-                                            (!selectedCategory || item.category === selectedCategory)
-                                        ).map((item) => (
-
-                                            <div key={item.id}
-                                                draggable
-                                                onDragStart={(event) => handleDragStart(event, item.id)}>
-                                                <FreeEdit
-                                                    img={item.img}
-                                                    img1={item.img1}
-                                                    img2={item.img2}
-                                                    p={item.p}
-                                                    h2={item.h2}
-                                                />
-                                            </div>
-
-                                        ))
-                                    }
+                                <div className="search-bar">
+                                    <input type="text" placeholder="搜尋" />
                                 </div>
-                            </div>
-                            <div className="box-right">
-                                <div className="title">
-                                    <p>行程列表</p>
-                                    <a href="./free-detail.itinerary.html"><img src="./images/icon/Vector.svg" alt="download" /></a>
-                                </div>
-                                {['第一天', '第二天', '第三天'].map((day, index) => (
-                                    <div className="box-list" key={index}
-                                        onDrop={(event) => handleDrop(event, index)}
-                                        onDragOver={handleDragOver}>
-                                        <h2>{day}</h2>
-                                        <div className="content">
-                                            {itinerary[index].map((product, i) => (
-                                                <FreeEdit
-                                                    key={i}
-                                                    img={product.img}
-                                                    h2={product.h2}
-                                                    itInItinerary={true}
-                                                    onDelete={() => handleDelete(product.id, index)}
-                                                    itemId={product.id}
-                                                    dayIndex={index}
-                                                    setItinerary={setItinerary}
-                                                />
-                                            ))}
+                            </section>
+
+                            <section id="container-database">
+                                <div className="box-left">
+                                    <div className="select-bar">
+                                        <div className="list">
+                                            <form action="">
+                                                <select
+                                                    value={selectedRegion}
+                                                    onChange={(e) => setSelectedRegion(e.target.value)}>
+                                                    <option value="">所有地區</option>
+                                                    <option value="北海道地區">北海道地方</option>
+                                                    <option value="東北地區">東北地方</option>
+                                                    <option value="中部地區">中部地方</option>
+                                                    <option value="關東地區">關東地方</option>
+                                                    <option value="關西地區">關西地方</option>
+                                                    <option value="中國地區">中國地方</option>
+                                                    <option value="四國地區">四國地方</option>
+                                                    <option value="九州地區">九州地方</option>
+                                                </select>
+                                            </form>
+                                        </div>
+                                        <div className="list">
+                                            <button
+                                                onClick={() => setSelectedCategory(selectedCategory === '景點' ? '' : '景點')}
+                                                className={selectedCategory === '景點' ? 'active' : ''}>景點</button>
+                                        </div>
+                                        <div className="list">
+                                            <button
+                                                onClick={() => setSelectedCategory(selectedCategory === '美食' ? '' : '美食')}
+                                                className={selectedCategory === '美食' ? 'active' : ''}>美食</button>
                                         </div>
                                     </div>
-                                ))}
-                                <div className="btn">
-                                    <button onClick={addDay}>加入行程</button>
+                                    <div id="box-list">
+                                        {products
+                                            .filter(item =>
+                                                (!selectedRegion || item.region === selectedRegion) &&
+                                                (!selectedCategory || item.category === selectedCategory)
+                                            ).map((item) => (
+
+                                                <div key={item.id}
+                                                    draggable
+                                                    onDragStart={(event) => handleDragStart(event, item.id)}>
+                                                    <FreeEdit
+                                                        img={item.img}
+                                                        img1={item.img1}
+                                                        img2={item.img2}
+                                                        p={item.p}
+                                                        h2={item.h2}
+                                                    />
+                                                </div>
+
+                                            ))
+                                        }
+                                    </div>
                                 </div>
-                                <div className="btn2">
-                                    <a href="./shopping.html"><button>進入購物車<img src="./images/icon/Shopping cart.svg" alt="" /></button></a>
+                                <div className="box-right">
+                                    <div className="title">
+                                        <p>行程列表</p>
+                                        <a href="./free-detail.itinerary.html"><img src="./images/icon/Vector.svg" alt="download" /></a>
+                                    </div>
+                                    {['第一天', '第二天', '第三天'].map((day, index) => (
+                                        <div className="box-list" key={index}
+                                            onDrop={(event) => handleDrop(event, index)}
+                                            onDragOver={handleDragOver}>
+                                            <h2>{day}</h2>
+                                            <div className="content">
+                                                {itinerary[index].map((product, i) => (
+                                                    <FreeEdit
+                                                        key={i}
+                                                        img={product.img}
+                                                        h2={product.h2}
+                                                        itInItinerary={true}
+                                                        onDelete={() => handleDelete(product.id, index)}
+                                                        itemId={product.id}
+                                                        dayIndex={index}
+                                                        setItinerary={setItinerary}
+                                                    />
+                                                ))}
+                                            </div>
+                                        </div>
+                                    ))}
+                                    <div className="btn">
+                                        <button onClick={addDay}>加入行程</button>
+                                    </div>
+                                    <div className="btn2">
+                                        <a href="./shopping.html"><button>進入購物車<img src="./images/icon/Shopping cart.svg" alt="" /></button></a>
+                                    </div>
                                 </div>
-                            </div>
-                        </section>
+                            </section>
 
 
-                    </main>
-                    <Footer />
-                </>
-            )
-        }
-        ReactDOM
-            .createRoot(document.getElementById('root'))
-            .render(<App />);
+                        </main>
+                        <Footer />
+                    </>
+                )
+            }
+            ReactDOM
+                .createRoot(document.getElementById('root'))
+                .render(<App />);
     </script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="./js/index.js"></script>
