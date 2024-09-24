@@ -46,7 +46,7 @@ function Topbar() {
             <h1 className="logo">
                 <a href="./index.html"><img src="./images/logo/logo-union-white.svg" alt="神火旅遊logo" /></a>
             </h1>
-            <nav className={`navigation ${scrolled ? 'scrolled' : ''}`}>
+            <nav className='navigation'>
                 <ul className="menu">
                     <li><a href="#container-topics">主題行程</a></li>
                     <li><a href="#container-free">自由規劃</a></li>

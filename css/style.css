@@ -188,7 +188,7 @@ section {
 }
 
 #container-topics .more-info {
-	border: 1px solid var(--primary-3);
+	border: 1px solid var(--primary-2);
 	color: #A62014;
 	padding: 8px 30px;
 	font-family: 'Noto Sans TC', sans-serif;
@@ -202,7 +202,7 @@ section {
 }
 
 .more-info a {
-	color: var(--primary-3);
+	color: var(--primary-2);
 }
 
 .more-info:hover {
@@ -554,7 +554,7 @@ section {
 }
 
 #container-free .more-info {
-	border: 1px solid var(--primary-3);
+	border: 1px solid var(--primary-2);
 	color: #A62014;
 	padding: 8px 30px;
 	font-size: 16px;
